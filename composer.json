@@ -2,12 +2,40 @@
     "name": "laravel-enso/roaddresses",
     "description": "Romanian Addreses extension for Addresses Manager",
     "type": "library",
+    "require": {
+        "laravel-enso/addressesmanager": "1.0.*",
+        "laravel-enso/formbuilder": "1.3.*",
+        "laravel-enso/helpers": "1.3.*",
+        "laravel-enso/vueadminlte": "1.3.*",
+        "laravel-enso/structuremanager": "1.3.*",
+        "laravel/framework": "5.5.*",
+        "php": ">=7.1.0"
+    },
     "license": "MIT",
     "authors": [
         {
             "name": "Mihai",
-            "email": "mihai.ocneanu@gmail.com"
+            "email": "mihai.ocneanu@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\RoAddresses\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\RoAddresses\\RoAddressesServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
 }
