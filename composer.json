@@ -1,0 +1,13 @@
+{
+    "name": "laravel-enso/roaddresses",
+    "description": "Romanian Addreses extension for Addresses Manager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai",
+            "email": "mihai.ocneanu@gmail.com"
+        }
+    ],
+    "require": {}
+}

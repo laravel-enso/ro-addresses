@@ -1,0 +1,173 @@
+{
+    "title": null,
+    "action": null,
+    "url": null,
+    "icon": "fa fa-location-arrow",
+    "wrapperClass": "col-md-4",
+    "theme": "success",
+    "solid": false,
+    "submitStore": "Create",
+    "submitUpdate": "Save",
+    "submitDelete": "Delete",
+    "attributes": [
+        {
+            "label": "Street Type",
+            "column": "street_type",
+            "value": "",
+            "config": {
+                "type": "select",
+                "multiple": false,
+                "source": null,
+                "keyMap": "string",
+                "options": {}
+            }
+        },
+        {
+            "label": "Street",
+            "column": "street",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Number",
+            "column": "number",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Building",
+            "column": "building",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Entry",
+            "column": "entry",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Floor",
+            "column": "floor",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Apartment",
+            "column": "apartment",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Neighborhood",
+            "column": "neighborhood",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "County",
+            "column": "county_id",
+            "value": null,
+            "config": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": null,
+                "options": {}
+            }
+        },
+        {
+            "label": "Locality",
+            "column": "locality_id",
+            "value": null,
+            "config": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": "/localities/getOptionList",
+                "options": {}
+            }
+        },
+
+        {
+            "label": "Postal Area",
+            "column": "postal_area",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Country",
+            "column": "country_id",
+            "value": 1685,
+            "config": {
+                "disabled": true,
+                "type": "select",
+                "multiple": false,
+                "source": "/countries/getOptionList",
+                "options": {}
+            }
+        },
+        {
+            "label": "Observations",
+            "column": "obs",
+            "value": null,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "disabled": false
+            }
+        },
+        {
+            "label": "Is Default",
+            "column": "is_default",
+            "value": true,
+            "config": {
+                "custom": false,
+                "type": "input",
+                "content": "checkbox",
+                "disabled": true
+            }
+        }
+    ]
+}
