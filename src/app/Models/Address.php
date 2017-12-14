@@ -10,10 +10,8 @@ namespace LaravelEnso\RoAddresses\app\Models;
 
 class Address extends \LaravelEnso\AddressesManager\app\Models\Address
 {
-
     protected $fillable = ['country_id', 'county_id', 'locality_id', 'type', 'is_default', 'apartment', 'floor', 'entry',
         'building', 'number', 'street', 'neighborhood', 'postal_area', 'obs', ];
-
 
     protected $appends = ['city', 'administrative_area', 'country_name'];
 

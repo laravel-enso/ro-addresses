@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class InsertAllLocalitiesForVS extends Migration
@@ -490,7 +488,7 @@ class InsertAllLocalitiesForVS extends Migration
      */
     public function down()
     {
-        $sql = "DELETE FROM localities WHERE county_id=40;";
+        $sql = 'DELETE FROM localities WHERE county_id=40;';
         DB::connection()->getPdo()->exec($sql);
     }
 }
