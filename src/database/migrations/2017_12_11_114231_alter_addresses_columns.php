@@ -1,17 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class AlterAddressesColumns extends Migration
 {
-
     public function up()
     {
         Schema::table('addresses', function (Blueprint $table) {
-
-
             $table->renameColumn('sub_administrative_area', 'neighborhood');
 
             $table->dropColumn('administrative_area');
@@ -27,11 +24,9 @@ class AlterAddressesColumns extends Migration
         });
     }
 
-
     public function down()
     {
         Schema::table('addresses', function (Blueprint $table) {
-
             $table->dropForeign(['locality_id']);
             $table->dropForeign(['county_id']);
 

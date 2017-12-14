@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class InsertAllLocalitiesForBZ extends Migration
@@ -13,7 +11,7 @@ class InsertAllLocalitiesForBZ extends Migration
      */
     public function up()
     {
-        $sql='INSERT INTO localities (county_id, township, name, created_at, updated_at) VALUES
+        $sql = 'INSERT INTO localities (county_id, township, name, created_at, updated_at) VALUES
             (11, "","Amaru", NOW(), NOW()),
             (11, "","Balta Alba", NOW(), NOW()),
             (11, "","Beceni", NOW(), NOW()),
@@ -513,8 +511,7 @@ class InsertAllLocalitiesForBZ extends Migration
      */
     public function down()
     {
-        $sql="DELETE FROM localities WHERE county_id=11;";
+        $sql = 'DELETE FROM localities WHERE county_id=11;';
         DB::connection()->getPdo()->exec($sql);
     }
 }
-

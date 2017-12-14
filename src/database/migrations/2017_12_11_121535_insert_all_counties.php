@@ -1,15 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class InsertAllCounties extends Migration
 {
-
     public function up()
     {
-        $sql="INSERT INTO counties (id, abbreviation, name, created_at, updated_at) VALUES
+        $sql = "INSERT INTO counties (id, abbreviation, name, created_at, updated_at) VALUES
             (1, 'AB', 'Alba', NOW(), NOW()),
             (2, 'AR', 'Arad', NOW(), NOW()),
             (3, 'AG', 'Arges', NOW(), NOW()),
@@ -56,10 +53,9 @@ class InsertAllCounties extends Migration
         DB::connection()->getPdo()->exec($sql);
     }
 
-
     public function down()
     {
-        $sql="DELETE FROM counties WHERE 1=1;";
+        $sql = 'DELETE FROM counties WHERE 1=1;';
         DB::connection()->getPdo()->exec($sql);
     }
 }

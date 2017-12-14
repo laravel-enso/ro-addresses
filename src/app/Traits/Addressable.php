@@ -8,7 +8,6 @@
 
 namespace LaravelEnso\RoAddresses\app\Traits;
 
-
 use LaravelEnso\RoAddresses\app\Models\Address;
 
 trait Addressable

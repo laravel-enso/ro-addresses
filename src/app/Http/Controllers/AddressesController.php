@@ -44,13 +44,13 @@ class AddressesController extends Controller
         ];
     }
 
-
     /**
      * @param Address $address
      *
-     * @return array
      * @throws \Exception
      * @throws \Throwable
+     *
+     * @return array
      */
     public function setDefault(Address $address)
     {
