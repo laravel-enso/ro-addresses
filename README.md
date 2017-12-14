@@ -1,6 +1,5 @@
 <!--h-->
 # Romanian Addresses
-
 [![StyleCI](https://styleci.io/repos/114126709/shield?branch=master)](https://styleci.io/repos/114126709)
 [![License](https://poser.pugx.org/laravel-enso/permissionmanager/license)](https://https://packagist.org/packages/laravel-enso/roaddresses)
 [![Total Downloads](https://poser.pugx.org/laravel-enso/roaddresses/downloads)](https://packagist.org/packages/laravel-enso/roaddresses)
@@ -26,6 +25,20 @@ Take note that both [Addresses Manager](https://github.com/laravel-enso/Addresse
 trait with the same name, so make sure to import the correct one. 
 - insert the `RoAddreses` vue component where required. It takes the same parameters as `Addresses` - `id` and `type` 
 being the essential ones.
+
+```
+<ro-addresses :id="modelId" type="model_alias">
+</ro-addresses>
+```
+
+Note that the labels are take from the global Store -  if needed you may customize them in `config/labels.php`.
+
+### Publishes
+- `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
+- `php artisan vendor:publish --tag=ro-addresses-form` - form used for creating/editing addresses
+- `php artisan vendor:publish --tag=enso-config` - a common alias for when wanting to update the config,
+once a newer version is released
+
  
 ### Notes
 

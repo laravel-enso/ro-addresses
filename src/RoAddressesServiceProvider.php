@@ -36,6 +36,10 @@ class RoAddressesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/app/Forms' => app_path().'/Forms/vendor/',
         ], 'ro-addresses-form');
+
+        $this->publishes([
+            __DIR__.'/config' => config_path(),
+        ], 'enso-config');
     }
 
     private function loadDependencies()
