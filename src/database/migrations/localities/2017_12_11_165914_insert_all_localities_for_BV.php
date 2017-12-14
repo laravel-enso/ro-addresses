@@ -1,15 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class InsertAllLocalitiesForBV extends Migration
 {
-
     public function up()
     {
-        $sql='INSERT INTO localities (county_id, township, name, created_at, updated_at) VALUES
+        $sql = 'INSERT INTO localities (county_id, township, name, created_at, updated_at) VALUES
           (9, "","Apata", NOW(), NOW()),
           (9, "","Beclean", NOW(), NOW()),
           (9, "","Bod", NOW(), NOW()),
@@ -186,7 +183,7 @@ class InsertAllLocalitiesForBV extends Migration
      */
     public function down()
     {
-        $sql="DELETE FROM localities WHERE county_id=9;";
+        $sql = 'DELETE FROM localities WHERE county_id=9;';
         DB::connection()->getPdo()->exec($sql);
     }
 }

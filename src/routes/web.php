@@ -1,4 +1,5 @@
 <?php
+
 Route::middleware(['web', 'auth', 'core'])
     ->namespace('LaravelEnso\RoAddresses\app\Http\Controllers')
     ->group(function () {
