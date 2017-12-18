@@ -1,6 +1,7 @@
 <?php
 
 Route::middleware(['web', 'auth', 'core'])
+    ->prefix('api')
     ->namespace('LaravelEnso\RoAddresses\app\Http\Controllers')
     ->group(function () {
         Route::prefix('addresses')->as('addresses.')->group(function () {
