@@ -44,7 +44,7 @@ class RoAddressesServiceProvider extends ServiceProvider
 
     private function loadDependencies()
     {
-        $this->mergeConfigFrom(__DIR__.'/config/addresses.php', 'addresses');
+        $this->mergeConfigFrom(__DIR__.'/config/addresses.php', 'enso.addresses');
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
         $this->loadMigrationsFrom([__DIR__.'/database/migrations', __DIR__.'/database/migrations/localities']);
     }
