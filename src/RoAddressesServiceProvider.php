@@ -30,7 +30,7 @@ class RoAddressesServiceProvider extends ServiceProvider
     private function publishesAll()
     {
         $this->publishes([
-            __DIR__.'/config' => config_path(),
+            __DIR__.'/config' => config_path('enso'),
         ], 'ro-addresses-config');
 
         $this->publishes([
@@ -38,14 +38,14 @@ class RoAddressesServiceProvider extends ServiceProvider
         ], 'ro-addresses-form');
 
         $this->publishes([
-            __DIR__.'/config' => config_path(),
+            __DIR__.'/config' => config_path('enso'),
         ], 'enso-config');
     }
 
     private function loadDependencies()
     {
         $this->mergeConfigFrom(__DIR__.'/config/addresses.php', 'addresses');
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
         $this->loadMigrationsFrom([__DIR__.'/database/migrations', __DIR__.'/database/migrations/localities']);
     }
 }

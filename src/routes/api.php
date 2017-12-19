@@ -9,9 +9,10 @@ Route::middleware(['web', 'auth', 'core'])
             Route::get('create', 'AddressesController@getCreateForm')->name('create');
             Route::get('list', 'AddressesController@list')->name('list');
             Route::get('setDefault/{address}', 'AddressesController@setDefault')->name('setDefault');
-            Route::post('/{type}/{id}', 'AddressesController@store')->name('store');
-            Route::patch('/{address}', 'AddressesController@update')->name('update');
         });
+
+        Route::resource('addresses', 'AddressesController',
+            ['except' => ['show', 'edit', 'create', 'index']]);
 
         Route::prefix('localities')->as('localities.')->group(function () {
             Route::get('getOptionList', 'LocalitiesSelectController@getOptionList')->name('getOptionList');

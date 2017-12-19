@@ -1,20 +1,15 @@
 {
     "title": null,
-    "action": null,
-    "url": null,
     "icon": "fa fa-location-arrow",
-    "wrapperClass": "col-md-4",
-    "theme": "success",
-    "solid": false,
-    "submitStore": "Create",
-    "submitUpdate": "Save",
-    "submitDelete": "Delete",
-    "attributes": [
+    "columns": 4,
+    "method": null,
+    "prefix": "addresses",
+    "fields": [
         {
             "label": "Street Type",
             "column": "street_type",
             "value": "",
-            "config": {
+            "meta": {
                 "type": "select",
                 "multiple": false,
                 "source": null,
@@ -26,7 +21,7 @@
             "label": "Street",
             "column": "street",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -37,7 +32,7 @@
             "label": "Number",
             "column": "number",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -48,7 +43,7 @@
             "label": "Building",
             "column": "building",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -59,7 +54,7 @@
             "label": "Entry",
             "column": "entry",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -70,7 +65,7 @@
             "label": "Floor",
             "column": "floor",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -81,7 +76,7 @@
             "label": "Apartment",
             "column": "apartment",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -92,7 +87,7 @@
             "label": "Neighborhood",
             "column": "neighborhood",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -103,7 +98,7 @@
             "label": "County",
             "column": "county_id",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": true,
                 "type": "select",
                 "multiple": false,
@@ -115,11 +110,11 @@
             "label": "Locality",
             "column": "locality_id",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": true,
                 "type": "select",
                 "multiple": false,
-                "source": "/localities/getOptionList",
+                "source": "localities.getOptionList",
                 "options": {}
             }
         },
@@ -128,7 +123,7 @@
             "label": "Postal Area",
             "column": "postal_area",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -139,11 +134,11 @@
             "label": "Country",
             "column": "country_id",
             "value": 185,
-            "config": {
+            "meta": {
                 "disabled": true,
                 "type": "select",
                 "multiple": false,
-                "source": "/countries/getOptionList",
+                "source": "countries.getOptionList",
                 "options": {}
             }
         },
@@ -151,7 +146,7 @@
             "label": "Observations",
             "column": "obs",
             "value": null,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "text",
@@ -162,7 +157,7 @@
             "label": "Is Default",
             "column": "is_default",
             "value": true,
-            "config": {
+            "meta": {
                 "custom": false,
                 "type": "input",
                 "content": "checkbox",

@@ -14,16 +14,13 @@ use LaravelEnso\RoAddresses\app\Models\County;
 
 class AddressesController extends Controller
 {
-    public function index()
+    public function store(ValidateAddressRequest $request)
     {
-        return view('laravel-enso/addressesmanager::index');
-    }
+        $params = (object) $request->get('_params');
 
-    public function store(ValidateAddressRequest $request, string $type, int $id)
-    {
         $address = new Address($request->all());
-        $address->addressable_id = $id;
-        $address->addressable_type = config('addresses.addressables.'.$type);
+        $address->addressable_id = $params->id;
+        $address->addressable_type = config('addresses.addressables.'.$params->type);
         $address->is_default = $this->isTheFirst($address) ?: false;
 
         $address->save();
@@ -93,29 +90,25 @@ class AddressesController extends Controller
     {
         $editForm = (new FormBuilder($this->getFormPath(), $address))
             ->setTitle('Edit')
-            ->setAction('PATCH')
-            ->setUrl('/addresses/'.$address->id)
-            ->setSelectOptions('street_type', (object) (new StreetTypes())->getData())
-            ->setSelectOptions('county_id', (object) (County::pluck('name', 'id')))
+            ->setMethod('PATCH')
+            ->setActions(['update', 'destroy'])
+            ->setSelectOptions('street_type', StreetTypes::object())
+            ->setSelectOptions('county_id', County::pluck('name', 'id'))
             ->getData();
 
-        return $editForm;
+        return compact('editForm');
     }
 
     public function getCreateForm(Request $request)
     {
-        $postUrl = sprintf('/addresses/%s/%s',
-            $request->get('addressable_type'), $request->get('addressable_id'));
-
         $createForm = (new FormBuilder($this->getFormPath()))
             ->setTitle('Insert')
-            ->setAction('POST')
-            ->setUrl($postUrl)
-            ->setSelectOptions('street_type', (object) (new StreetTypes())->getData())
-            ->setSelectOptions('county_id', (object) (County::pluck('name', 'id')))
+            ->setMethod('POST')
+            ->setSelectOptions('street_type', StreetTypes::object())
+            ->setSelectOptions('county_id', County::pluck('name', 'id'))
             ->getData();
 
-        return $createForm;
+        return compact('createForm');
     }
 
     /**
