@@ -19,6 +19,7 @@ and the template for the address cards
 - comes with its own trait
 
 ### Usage
+- run the migrations, as they change the addresses table, add two other tables, and insert all the localities
 - the configuration should be published, and inside you need to define the addresable types
 - for the models you want to make addressable, you should use **this** package's `Addresable` trait. 
 Take note that both [Addresses Manager](https://github.com/laravel-enso/AddressesManager) and this package come with a 
@@ -31,7 +32,9 @@ being the essential ones.
 </ro-addresses>
 ```
 
-Note that the labels are take from the global Store -  if needed you may customize them in `config/labels.php`.
+where
+* `modelId` is the addressable model id
+* `model_alias` is the alias given in the `config/enso/addresses.php` configuration, in the addresables section
 
 ### Publishes
 - `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
