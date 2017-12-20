@@ -8,6 +8,8 @@
 
 Romanian Addresses extension for [Addresses Manager](https://github.com/laravel-enso/AddressesManager), the [Laravel Enso](https://github.com/laravel-enso/Enso) package.
 
+[![Screenshot](https://laravel-enso.github.io/roaddresses/screenshots/bulma_040_thumb.png)](https://laravel-enso.github.io/roaddresses/screenshots/bulma_040.png)
+
 ### Features
 
 - makes changes to the addresses columns to better fit the Romanian locale
