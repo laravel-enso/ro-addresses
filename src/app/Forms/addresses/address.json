@@ -3,11 +3,11 @@
     "icon": "fa fa-location-arrow",
     "columns": 4,
     "method": null,
-    "prefix": "addresses",
+    "routePrefix": "core.addresses",
     "fields": [
         {
             "label": "Street Type",
-            "column": "street_type",
+            "name": "street_type",
             "value": "",
             "meta": {
                 "type": "select",
@@ -19,7 +19,7 @@
         },
         {
             "label": "Street",
-            "column": "street",
+            "name": "street",
             "value": null,
             "meta": {
                 "custom": false,
@@ -30,7 +30,7 @@
         },
         {
             "label": "Number",
-            "column": "number",
+            "name": "number",
             "value": null,
             "meta": {
                 "custom": false,
@@ -41,7 +41,7 @@
         },
         {
             "label": "Building",
-            "column": "building",
+            "name": "building",
             "value": null,
             "meta": {
                 "custom": false,
@@ -52,7 +52,7 @@
         },
         {
             "label": "Entry",
-            "column": "entry",
+            "name": "entry",
             "value": null,
             "meta": {
                 "custom": false,
@@ -63,7 +63,7 @@
         },
         {
             "label": "Floor",
-            "column": "floor",
+            "name": "floor",
             "value": null,
             "meta": {
                 "custom": false,
@@ -74,7 +74,7 @@
         },
         {
             "label": "Apartment",
-            "column": "apartment",
+            "name": "apartment",
             "value": null,
             "meta": {
                 "custom": false,
@@ -85,7 +85,7 @@
         },
         {
             "label": "Neighborhood",
-            "column": "neighborhood",
+            "name": "neighborhood",
             "value": null,
             "meta": {
                 "custom": false,
@@ -96,7 +96,7 @@
         },
         {
             "label": "County",
-            "column": "county_id",
+            "name": "county_id",
             "value": null,
             "meta": {
                 "custom": true,
@@ -108,20 +108,20 @@
         },
         {
             "label": "Locality",
-            "column": "locality_id",
+            "name": "locality_id",
             "value": null,
             "meta": {
                 "custom": true,
                 "type": "select",
                 "multiple": false,
-                "source": "localities.getOptionList",
+                "source": "core.addresses.localitiesSelectOptions",
                 "options": {}
             }
         },
 
         {
             "label": "Postal Area",
-            "column": "postal_area",
+            "name": "postal_area",
             "value": null,
             "meta": {
                 "custom": false,
@@ -132,19 +132,19 @@
         },
         {
             "label": "Country",
-            "column": "country_id",
+            "name": "country_id",
             "value": 185,
             "meta": {
                 "disabled": true,
                 "type": "select",
                 "multiple": false,
-                "source": "countries.getOptionList",
+                "source": "core.addresses.countriesSelectOptions",
                 "options": {}
             }
         },
         {
             "label": "Observations",
-            "column": "obs",
+            "name": "obs",
             "value": null,
             "meta": {
                 "custom": false,
@@ -155,7 +155,7 @@
         },
         {
             "label": "Is Default",
-            "column": "is_default",
+            "name": "is_default",
             "value": true,
             "meta": {
                 "custom": false,

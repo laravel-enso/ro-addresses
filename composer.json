@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\RoAddresses\\RoAddressesServiceProvider"
+                "LaravelEnso\\RoAddresses\\AppServiceProvider"
             ],
             "aliases": {}
         }

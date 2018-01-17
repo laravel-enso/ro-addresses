@@ -5,12 +5,12 @@ use LaravelEnso\StructureManager\app\Classes\StructureMigration;
 class CreateStructureForLocalities extends StructureMigration
 {
     protected $permissionGroup = [
-        'name' => 'localities', 'description' => 'Localities group',
+        'name' => 'core.addresses', 'description' => 'Addresses group',
     ];
 
     protected $permissions = [
 
-        ['name' => 'localities.getOptionList', 'description' => 'Get localities for the select', 'type' => 0, 'default' => false],
+        ['name' => 'core.addresses.localitiesSelectOptions', 'description' => 'Get localities for the select', 'type' => 0, 'default' => false],
 
     ];
 }

@@ -10,7 +10,6 @@ return [
 
     'addressables' => [
         'owner' => \App\Owner::class,
-        'user'  => \App\User::class,
     ],
     'streetTypes'  => [
         'Street'    => 'Street',
