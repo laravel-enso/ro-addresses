@@ -96,6 +96,7 @@ class AddressesController extends Controller
     public function index()
     {
         $addressable = $this->getAddressable();
+
         return $addressable->addresses()->get();
     }
 
