@@ -81,7 +81,7 @@ class AddressesController extends Controller
         return compact('form');
     }
 
-    public function create(Request $request)
+    public function create()
     {
         $form = (new Form($this->getFormPath()))
             ->title('Insert')
