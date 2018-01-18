@@ -35,6 +35,10 @@ being the essential ones.
 
 Note that the labels are take from the global Store -  if needed you may customize them in `config/labels.php`.
 
+**Also Note** that it is necessary for this package to be loaded *after* the addresses manager package for routing 
+to work properly. Because Laravel's package auto-discovery does not offer control over the loading order, 
+this package's service provider needs to be added in `config/app.php`.
+
 ### Publishes
 - `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
 - `php artisan vendor:publish --tag=ro-addresses-form` - form used for creating/editing addresses

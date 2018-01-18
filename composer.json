@@ -28,13 +28,5 @@
         "psr-4": {
             "LaravelEnso\\RoAddresses\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "LaravelEnso\\RoAddresses\\RoAddressesServiceProvider"
-            ],
-            "aliases": {}
-        }
     }
 }
