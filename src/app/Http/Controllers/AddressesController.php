@@ -15,7 +15,6 @@ use LaravelEnso\RoAddresses\app\Models\County;
 
 class AddressesController extends Controller
 {
-
     public function store(ValidateAddressRequest $request)
     {
         $params = (object) $request->get('_params');
