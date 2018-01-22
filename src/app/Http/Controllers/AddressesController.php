@@ -4,8 +4,6 @@ namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use LaravelEnso\AddressesManager\app\Exceptions\AddressException;
 use LaravelEnso\AddressesManager\app\Handlers\ConfigMapper;
 use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
 use LaravelEnso\FormBuilder\app\Classes\Form;
