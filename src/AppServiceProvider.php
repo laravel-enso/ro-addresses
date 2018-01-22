@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
         ], 'ro-addresses-config');
 
         $this->publishes([
-            __DIR__.'/app/Forms' => app_path().'/Forms/vendor/',
+            __DIR__.'/app/Forms/Templates' => app_path().'/Forms/vendor/',
         ], 'ro-addresses-form');
 
         $this->publishes([

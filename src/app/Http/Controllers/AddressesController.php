@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use LaravelEnso\AddressesManager\app\Enums\StreetTypes;
 use LaravelEnso\AddressesManager\app\Exceptions\AddressException;
+use LaravelEnso\AddressesManager\app\Handlers\ConfigMapper;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
 use LaravelEnso\Core\app\Exceptions\EnsoException;
 use LaravelEnso\FormBuilder\app\Classes\Form;
@@ -15,6 +17,14 @@ use LaravelEnso\RoAddresses\app\Models\County;
 
 class AddressesController extends Controller
 {
+
+    public function index()
+    {
+        $addressable = $this->getAddressable();
+
+        return $addressable->addresses()->get();
+    }
+
     public function store(ValidateAddressRequest $request)
     {
         $params = (object) $request->get('_params');
@@ -68,65 +78,20 @@ class AddressesController extends Controller
         ];
     }
 
-    public function edit(Address $address)
+    public function edit(Address $address, AddressForm $form)
     {
-        $form = (new Form($this->getFormPath()))
-            ->edit($address)
-            ->title('Edit')
-            ->actions(['update', 'destroy'])
-            ->options('street_type', StreetTypes::object())
-            ->options('county_id', County::pluck('name', 'id'))
-            ->get();
-
-        return compact('form');
+        return ['form' => $form->edit($address)];
     }
 
-    public function create()
+    public function create(AddressForm $form)
     {
-        $form = (new Form($this->getFormPath()))
-            ->title('Insert')
-            ->create()
-            ->options('street_type', StreetTypes::object())
-            ->options('county_id', County::pluck('name', 'id'))
-            ->get();
-
-        return compact('form');
-    }
-
-    public function index()
-    {
-        $addressable = $this->getAddressable();
-
-        return $addressable->addresses()->get();
+        return ['form' => $form->create()];
     }
 
     private function getAddressable()
     {
-        return $this->getAddressableClass()::find(request()->get('id'));
-    }
-
-    private function getAddressableClass()
-    {
-        $class = config('enso.addresses.addressables.'.request()->get('type'));
-
-        if (!$class) {
-            throw new EnsoException(
-                __('Current entity does not exist in enso/addresses.php config file: ').request()->get('type')
-            );
-        }
-
-        return $class;
-    }
-
-    private function getFormPath(): string
-    {
-        $publishedForm = app_path('Forms/vendor/addresses/address.json');
-
-        if (file_exists($publishedForm)) {
-            return $publishedForm;
-        }
-
-        return __DIR__.'/../../Forms/addresses/address.json';
+        return (new ConfigMapper(request()->get('type')))->class()
+            ::find(request()->get('id'));
     }
 
     private function isTheFirst(Address $address)

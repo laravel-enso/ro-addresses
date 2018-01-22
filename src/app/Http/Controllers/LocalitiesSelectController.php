@@ -4,11 +4,11 @@ namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use LaravelEnso\RoAddresses\app\Models\Locality;
-use LaravelEnso\Select\app\Traits\SelectListBuilder;
+use LaravelEnso\Select\app\Traits\OptionsBuilder;
 
 class LocalitiesSelectController extends Controller
 {
-    use SelectListBuilder;
+    use OptionsBuilder;
 
-    protected $selectSourceClass = Locality::class;
+    protected $class = Locality::class;
 }
