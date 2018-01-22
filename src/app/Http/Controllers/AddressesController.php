@@ -21,57 +21,30 @@ class AddressesController extends Controller
         return $addressable->addresses()->get();
     }
 
-    public function store(ValidateAddressRequest $request)
+    public function store(ValidateAddressRequest $request, Address $address)
     {
-        $params = (object) $request->get('_params');
+        $address->store($request->all(), $request->get('_params'));
 
-        $address = new Address($request->all());
-        $address->addressable_id = $params->id;
-        $address->addressable_type = config('enso.addresses.addressables.'.$params->type);
-        $address->is_default = $this->isTheFirst($address);
-
-        $address->save();
-
-        return [
-            'message'  => __('Created Address'),
-            'redirect' => '',
-        ];
+        return ['message' => __('Created Address')];
     }
 
     public function update(ValidateAddressRequest $request, Address $address)
     {
-        $address->fill($request->all());
-        $address->save();
+        $address->update($request->all());
 
-        return [
-            'message' => __('The Changes have been saved!'),
-        ];
+        return ['message' => __('The Changes have been saved!')];
     }
 
     public function setDefault(Address $address)
     {
-        DB::transaction(function () use ($address) {
-            $this->unsetDefaultAddress($address);
-            $address->is_default = true;
-            $address->save();
-        });
-
-        return [
-            'message' => __('Address set as default'),
-        ];
+        $address->setDefault();
     }
 
     public function destroy(Address $address)
     {
-        if ($address->is_default) {
-            throw new AddressException(__('The default address cannot be deleted'));
-        }
         $address->delete();
 
-        return [
-            'message'  => __('Operation was successful'),
-            'redirect' => '',
-        ];
+        return ['message' => __('Operation was successful')];
     }
 
     public function edit(Address $address, AddressForm $form)
@@ -88,24 +61,5 @@ class AddressesController extends Controller
     {
         return (new ConfigMapper(request()->get('type')))->class()
             ::find(request()->get('id'));
-    }
-
-    private function isTheFirst(Address $address)
-    {
-        $count = $address->addressable->addresses()->count();
-
-        return $count === 0;
-    }
-
-    private function unsetDefaultAddress(Address $address)
-    {
-        $defaultAddress = $address->addressable->addresses()
-            ->whereIsDefault(true)
-            ->first();
-
-        if (!is_null($defaultAddress)) {
-            $defaultAddress->is_default = false;
-            $defaultAddress->save();
-        }
     }
 }

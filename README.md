@@ -21,6 +21,7 @@ and the template for the address cards
 - comes with its own trait
 
 ### Usage
+- add the package's `AppServiceProvider` to the `config/app.php` list of providers (package auto-discovery is not used as loading order is important)
 - run the migrations, as they change the addresses table, add two other tables, and insert all the localities
 - the configuration should be published, and inside you need to define the addresable types
 - for the models you want to make addressable, you should use **this** package's `Addresable` trait. 
