@@ -6,6 +6,30 @@
     "routePrefix": "core.addresses",
     "fields": [
         {
+            "label": "County",
+            "name": "county_id",
+            "value": null,
+            "meta": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": null,
+                "options": {}
+            }
+        },
+        {
+            "label": "Locality",
+            "name": "locality_id",
+            "value": null,
+            "meta": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": "core.addresses.localitiesSelectOptions",
+                "options": {}
+            }
+        },
+        {
             "label": "Street Type",
             "name": "street_type",
             "value": "",
@@ -95,31 +119,6 @@
             }
         },
         {
-            "label": "County",
-            "name": "county_id",
-            "value": null,
-            "meta": {
-                "custom": true,
-                "type": "select",
-                "multiple": false,
-                "source": null,
-                "options": {}
-            }
-        },
-        {
-            "label": "Locality",
-            "name": "locality_id",
-            "value": null,
-            "meta": {
-                "custom": true,
-                "type": "select",
-                "multiple": false,
-                "source": "core.addresses.localitiesSelectOptions",
-                "options": {}
-            }
-        },
-
-        {
             "label": "Postal Area",
             "name": "postal_area",
             "value": null,
@@ -132,14 +131,12 @@
         },
         {
             "label": "Country",
-            "name": "country_id",
-            "value": 185,
+            "name": "country_name",
+            "value": "Romania",
             "meta": {
                 "disabled": true,
-                "type": "select",
-                "multiple": false,
-                "source": "core.addresses.countriesSelectOptions",
-                "options": {}
+                "type": "input",
+                "content": "text"
             }
         },
         {

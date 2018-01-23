@@ -14,6 +14,5 @@ return [
         'street'      => 'required',
         'locality_id' => 'required',
         'county_id'   => 'required',
-        'country_id'  => 'required',
     ],
 ];
