@@ -26,7 +26,8 @@ and the template for the address cards
 - the configuration should be published, and inside you need to define the addresable types
 - for the models you want to make addressable, you should use **this** package's `Addresable` trait. 
 Take note that both [Addresses Manager](https://github.com/laravel-enso/AddressesManager) and this package come with a 
-trait with the same name, so make sure to import the correct one. 
+trait with the same name, so make sure to import the correct one.
+- publish the VueJs component.
 - insert the `RoAddreses` vue component where required. It takes the same parameters as `Addresses` - `id` and `type` 
 being the essential ones.
 
@@ -43,6 +44,9 @@ where
 - `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
 - `php artisan vendor:publish --tag=ro-addresses-form` - form used for creating/editing addresses
 - `php artisan vendor:publish --tag=enso-config` - a common alias for when wanting to update the config,
+once a newer version is released
+- `php artisan vendor:publish --tag=ro-addresses-assets` - the VueJS component,
+- `php artisan vendor:publish --tag=enso-assets` - a common alias for when wanting to update the VueJS component,
 once a newer version is released
 
  

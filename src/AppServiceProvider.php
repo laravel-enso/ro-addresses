@@ -43,6 +43,10 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/resources/assets/js' => resource_path('assets/js'),
+        ], 'ro-addresses-assets');
+
+        $this->publishes([
+            __DIR__.'/resources/assets/js' => resource_path('assets/js'),
         ], 'enso-assets');
     }
 

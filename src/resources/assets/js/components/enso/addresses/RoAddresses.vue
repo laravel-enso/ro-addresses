@@ -22,8 +22,14 @@
             <br>
             <span v-if="props.address.postal_area">{{ props.address.postal_area }}</span>
             <br>
+            <span class="icon">
+                <i class="fas fa-globe"></i>
+            </span>
             {{ props.address.country_name }} <br>
-            <i class="fa fa-sticky-note "></i> {{ props.address.obs }} <br>
+            <span class="icon" v-if="props.address.obs">
+                <i class="fas fa-sticky-note"></i>
+            </span>
+            {{ props.address.obs }}
         </template>
 
         <!--custom form elements-->
@@ -49,7 +55,7 @@
 
 import { mapGetters } from 'vuex';
 import Addresses from './Addresses.vue';
-import VueSelect from '../select/VueSelect.vue';
+import VueSelect from '../vueforms/VueSelect.vue';
 
 export default {
     components: { Addresses, VueSelect },
@@ -65,7 +71,6 @@ export default {
     },
     methods: {
         getCountyId(form) {
-            debugger;
             const attribute = form.fields.find((attribute) => {
                 return attribute.name === 'county_id';
             });
