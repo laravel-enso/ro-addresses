@@ -402,7 +402,9 @@ class InsertAllLocalitiesForOT extends Migration
             (31, "Vulturesti","Valea lui Alb", NOW(), NOW()),
             (31, "Vulturesti","Vlangaresti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

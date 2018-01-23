@@ -197,7 +197,9 @@ class InsertAllLocalitiesForGL extends Migration
           (18, "Varlezi","Craiesti", NOW(), NOW()),
           (18, "Vladesti","Branesti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

@@ -249,7 +249,9 @@ class InsertAllLocalitiesForTR extends Migration
             (37, "Vitanesti","Schitu Poienari", NOW(), NOW()),
             (37, "Vitanesti","Silistea", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

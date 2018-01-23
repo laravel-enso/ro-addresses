@@ -425,7 +425,9 @@ class InsertAllLocalitiesForSV extends Migration
             (36, "Zvoristea","Stancuta", NOW(), NOW()),
             (36, "Zvoristea","Serbanesti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

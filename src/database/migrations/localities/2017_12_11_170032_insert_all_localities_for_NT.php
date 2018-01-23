@@ -373,7 +373,9 @@ class InsertAllLocalitiesForNT extends Migration
             (30, "Vanatori-Neamt","Nemtisor", NOW(), NOW()),
             (30, "Zanesti","Traian", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

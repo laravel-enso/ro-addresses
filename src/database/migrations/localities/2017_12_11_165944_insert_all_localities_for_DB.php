@@ -387,7 +387,9 @@ class InsertAllLocalitiesForDB extends Migration
             (16, "Vulcana-Pandele","Laculete-Gara", NOW(), NOW()),
             (16, "Vulcana-Pandele","Toculesti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

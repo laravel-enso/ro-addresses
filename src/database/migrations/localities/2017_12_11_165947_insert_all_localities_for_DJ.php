@@ -403,7 +403,9 @@ class InsertAllLocalitiesForDJ extends Migration
             (17, "Vela","Stiubei", NOW(), NOW()),
             (17, "Verbita","Verbicioara", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

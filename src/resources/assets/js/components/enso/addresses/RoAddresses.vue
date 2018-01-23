@@ -7,11 +7,11 @@
 
         <!--customized card content-->
         <template slot="address" slot-scope="props">
-            <span v-if="props.address.street_type">{{props.address.street_type}}</span>
+            <span v-if="props.address.street_type">{{ __(props.address.street_type) }}</span>
             <span v-if="props.address.street">{{props.address.street}}</span>
             <span v-if="props.address.number">{{__('Number')}}: {{ props.address.number }}</span>
             <br>
-            <span v-if="props.address.building">{{__('Building')}}: {{ props.address.building }}</span>
+            <span v-if="props.address.building"><span class="has-text-grey">{{__(props.address.building_type)}} </span>{{ props.address.building }},</span>
             <span v-if="props.address.entry">{{__('Entry')}}: {{ props.address.entry }}</span>
             <span v-if="props.address.floor">{{__('Floor')}}: {{ props.address.floor }}</span>
             <span v-if="props.address.apartment">{{__('Apartment')}}: {{ props.address.apartment }}</span>

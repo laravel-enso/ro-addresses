@@ -226,7 +226,9 @@ class InsertAllLocalitiesForCT extends Migration
             (14, "Topraisar","Potarnichea", NOW(), NOW()),
             (14, "Tortoman","Dropia", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

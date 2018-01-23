@@ -154,7 +154,9 @@ class InsertAllLocalitiesForTL extends Migration
           (39, "Valea Nucarilor","Agighiol", NOW(), NOW()),
           (39, "Valea Nucarilor","Iazurile", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

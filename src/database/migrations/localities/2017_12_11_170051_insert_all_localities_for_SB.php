@@ -201,7 +201,9 @@ class InsertAllLocalitiesForSB extends Migration
             (35, "Turnu Rosu","Sebesu de Jos", NOW(), NOW()),
             (35, "Valea Viilor","Motis", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

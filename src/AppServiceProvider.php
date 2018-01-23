@@ -38,6 +38,10 @@ class AppServiceProvider extends ServiceProvider
         ], 'ro-addresses-form');
 
         $this->publishes([
+            __DIR__.'/app/Importing' => app_path().'/Importing/',
+        ], 'ro-addresses-import');
+
+        $this->publishes([
             __DIR__.'/config' => config_path('enso'),
         ], 'enso-config');
 

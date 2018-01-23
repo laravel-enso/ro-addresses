@@ -448,7 +448,9 @@ class InsertAllLocalitiesForGJ extends Migration
             (19, "Vladimir","Frasin", NOW(), NOW()),
             (19, "Vladimir","Valea Desului", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

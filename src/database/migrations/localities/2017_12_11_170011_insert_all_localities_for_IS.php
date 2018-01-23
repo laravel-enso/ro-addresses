@@ -442,7 +442,9 @@ class InsertAllLocalitiesForIS extends Migration
             (24, "Voinesti","Slobozia", NOW(), NOW()),
             (24, "Voinesti","Vocotesti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

@@ -531,7 +531,9 @@ class InsertAllLocalitiesForMS extends Migration
             (29, "Zau De Campie","Tau", NOW(), NOW()),
             (29, "Zau De Campie","Stefaneaca", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

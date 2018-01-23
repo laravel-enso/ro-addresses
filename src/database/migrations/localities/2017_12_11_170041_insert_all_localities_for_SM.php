@@ -247,7 +247,9 @@ class InsertAllLocalitiesForSM extends Migration
             (33, "Viile Satu Mare","Tireac", NOW(), NOW()),
             (33, "Viile Satu Mare","Tataresti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

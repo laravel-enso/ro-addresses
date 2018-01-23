@@ -11,8 +11,9 @@ class InsertAllLocalitiesForB extends Migration
      */
     public function up()
     {
+        $now = now();
         $sql = 'INSERT INTO localities (county_id, township, name, created_at, updated_at) VALUES
-            (4, "","Bucuresti", NOW(), NOW())
+            (4, "","Bucuresti", "'.$now.'", "'.$now.'")
         ;';
         DB::connection()->getPdo()->exec($sql);
     }

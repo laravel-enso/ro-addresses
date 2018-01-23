@@ -447,7 +447,9 @@ class InsertAllLocalitiesForCJ extends Migration
             (13, "Vultureni","Faureni", NOW(), NOW()),
             (13, "Vultureni","Soimeni", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

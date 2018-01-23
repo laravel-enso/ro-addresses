@@ -302,7 +302,9 @@ class InsertAllLocalitiesForSJ extends Migration
             (34, "Zimbor","Sutoru", NOW(), NOW()),
             (34, "Zimbor","Sancraiu Almasului", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

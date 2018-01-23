@@ -117,7 +117,9 @@ class InsertAllLocalitiesForIF extends Migration
           (26, "Vidra","Cretesti", NOW(), NOW()),
           (26, "Vidra","Sintesti", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

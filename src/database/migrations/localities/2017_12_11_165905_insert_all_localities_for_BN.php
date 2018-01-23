@@ -263,7 +263,9 @@ class InsertAllLocalitiesForBN extends Migration
             (7, "Zagra","Suplai", NOW(), NOW())
 
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

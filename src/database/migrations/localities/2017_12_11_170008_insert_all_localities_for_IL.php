@@ -152,7 +152,9 @@ class InsertAllLocalitiesForIL extends Migration
             (23, "Valea Ciorii","Murgeanca", NOW(), NOW()),
             (23, "Valea Macrisului","Grindasi", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

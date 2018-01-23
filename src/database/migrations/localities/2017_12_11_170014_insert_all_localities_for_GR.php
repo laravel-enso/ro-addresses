@@ -183,7 +183,9 @@ class InsertAllLocalitiesForGR extends Migration
           (25, "Vanatorii Mici","Zadariciu", NOW(), NOW()),
           (25, "Varasti","Dobreni", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

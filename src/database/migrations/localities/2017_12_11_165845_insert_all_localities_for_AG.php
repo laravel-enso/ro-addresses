@@ -598,7 +598,9 @@ class InsertAllLocalitiesForAG extends Migration
             (3, "Vulturesti","Barzesti", NOW(), NOW() ),
             (3, "Vulturesti","Huluba", NOW(), NOW() )
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

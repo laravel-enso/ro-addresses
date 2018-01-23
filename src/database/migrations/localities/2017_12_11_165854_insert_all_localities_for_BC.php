@@ -523,7 +523,9 @@ class InsertAllLocalitiesForBC extends Migration
             (5, "Vultureni","Tiganesti", NOW(), NOW()),
             (5, "Zemes","Bolatau", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

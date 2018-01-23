@@ -1,0 +1,39 @@
+{
+    "sheets": [
+        {
+            "name": "localitati",
+            "columns": [
+                {
+                    "name": "judet",
+                    "laravelValidations": "string|required|exists:counties,name",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "township",
+                    "laravelValidations": "string|nullable",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "localitate",
+                    "laravelValidations": "string|required|exists:localities,name",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "SIRUTA",
+                    "laravelValidations": "string|nullable",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "e activa",
+                    "laravelValidations": "required|boolean",
+                    "complexValidations": [],
+                    "customValidations": []
+                }
+            ]
+        }
+    ]
+}

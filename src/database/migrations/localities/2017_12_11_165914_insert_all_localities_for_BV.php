@@ -173,7 +173,9 @@ class InsertAllLocalitiesForBV extends Migration
           (9, "Vulcan","Holbav", NOW(), NOW()),
           (9, "Zarnesti","Tohanu Nou", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

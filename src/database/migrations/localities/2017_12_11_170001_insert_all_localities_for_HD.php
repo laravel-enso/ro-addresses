@@ -500,7 +500,9 @@ class InsertAllLocalitiesForHD extends Migration
             (21, "Zam","Tamasesti", NOW(), NOW()),
             (21, "Zam","Valea", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

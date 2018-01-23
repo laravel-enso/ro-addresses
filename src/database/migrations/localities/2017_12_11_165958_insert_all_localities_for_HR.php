@@ -277,7 +277,9 @@ class InsertAllLocalitiesForHR extends Migration
             (20, "Zetea","Sub Cetate", NOW(), NOW()),
             (20, "Zetea","Sicasau", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

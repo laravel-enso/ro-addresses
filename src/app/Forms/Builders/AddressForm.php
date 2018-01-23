@@ -2,6 +2,7 @@
 
 namespace LaravelEnso\RoAddresses\app\Forms\Builders;
 
+use LaravelEnso\AddressesManager\app\Enums\BuildingTypes;
 use LaravelEnso\AddressesManager\app\Enums\StreetTypes;
 use LaravelEnso\FormBuilder\app\Classes\Form;
 use LaravelEnso\RoAddresses\app\Models\Address;
@@ -22,6 +23,7 @@ class AddressForm
     {
         return $this->form->title('Insert')
             ->options('street_type', StreetTypes::object())
+            ->options('building_type', BuildingTypes::object())
             ->options('county_id', County::pluck('name', 'id'))
             ->create();
     }
@@ -31,6 +33,7 @@ class AddressForm
         return $this->form->title('Edit')
             ->actions(['update', 'destroy'])
             ->options('street_type', StreetTypes::object())
+            ->options('building_type', BuildingTypes::object())
             ->options('county_id', County::pluck('name', 'id'))
             ->edit($address);
     }

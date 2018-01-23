@@ -471,7 +471,9 @@ class InsertAllLocalitiesForBH extends Migration
             (6, "Viisoara","Padureni", NOW(), NOW()),
             (6, "Viisoara","Reghea", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

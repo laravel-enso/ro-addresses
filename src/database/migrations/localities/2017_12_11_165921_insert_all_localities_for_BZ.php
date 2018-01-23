@@ -501,7 +501,9 @@ class InsertAllLocalitiesForBZ extends Migration
             (11, "Ziduri","Lanurile", NOW(), NOW()),
             (11, "Ziduri","Zoita", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

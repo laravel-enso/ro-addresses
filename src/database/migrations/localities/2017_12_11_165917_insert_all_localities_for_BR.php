@@ -157,7 +157,9 @@ class InsertAllLocalitiesForBR extends Migration
             (10, "Viziru","Lanurile", NOW(), NOW()),
             (10, "Zavoaia","Dudescu", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

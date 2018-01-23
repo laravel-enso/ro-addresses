@@ -10,5 +10,7 @@ class LocalitiesSelectController extends Controller
 {
     use OptionsBuilder;
 
+    protected $label = 'displayLabel';
+
     protected $class = Locality::class;
 }

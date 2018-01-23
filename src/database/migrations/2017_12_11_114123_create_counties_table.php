@@ -19,8 +19,10 @@ class CreateCountiesTable extends Migration
             $table->string('abbreviation', 2);
             $table->string('name');
 
+            $table->boolean('is_active')->default(true);
+
             $table->integer('created_by')->unsigned()->index()->nullable();
-            $table->foreign('created_by')->references('id')->on('users')->onUpdate('restrict')->onDelete('restrict');
+            $table->foreign('created_by')->references('id')->on('users')->onUpdate('no action')->onDelete('no action');
 
             $table->timestamps();
         });

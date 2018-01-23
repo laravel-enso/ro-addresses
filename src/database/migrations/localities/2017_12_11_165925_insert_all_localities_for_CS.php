@@ -322,7 +322,9 @@ class InsertAllLocalitiesForCS extends Migration
             (12, "Zavoi","Voislova", NOW(), NOW()),
             (12, "Zorlentu Mare","Zorlencior", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

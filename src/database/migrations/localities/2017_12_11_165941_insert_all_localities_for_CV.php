@@ -141,7 +141,9 @@ class InsertAllLocalitiesForCV extends Migration
             (15, "Zabala","Tamasfalau", NOW(), NOW()),
             (15, "Zagon","Papauti", NOW(), NOW())
           ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

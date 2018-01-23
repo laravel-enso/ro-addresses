@@ -359,7 +359,9 @@ class InsertAllLocalitiesForVN extends Migration
             (42, "Vulturu","Maluri", NOW(), NOW()),
             (42, "Vulturu","Vadu Rosca", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

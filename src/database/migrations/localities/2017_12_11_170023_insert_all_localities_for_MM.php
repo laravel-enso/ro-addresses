@@ -260,7 +260,9 @@ class InsertAllLocalitiesForMM extends Migration
             (27, "Vima Mica","Vima Mare", NOW(), NOW()),
             (27, "Viseu De Sus","Viseu de Mijloc", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

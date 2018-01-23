@@ -178,7 +178,9 @@ class InsertAllLocalitiesForCL extends Migration
             (22, "Vasilati","Popesti", NOW(), NOW()),
             (22, "Vlad Tepes","Mihai Viteazu", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

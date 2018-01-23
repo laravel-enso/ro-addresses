@@ -338,7 +338,9 @@ class InsertAllLocalitiesForTM extends Migration
             (38, "Victor Vlad Delamarina","Visag", NOW(), NOW()),
             (38, "Voiteg","Folea", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

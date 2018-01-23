@@ -371,7 +371,9 @@ class InsertAllLocalitiesForMH extends Migration
             (28, "Voloiac","Voloicel", NOW(), NOW()),
             (28, "Voloiac","Titirigi", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

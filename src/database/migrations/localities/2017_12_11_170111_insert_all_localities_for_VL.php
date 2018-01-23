@@ -622,7 +622,9 @@ class InsertAllLocalitiesForVL extends Migration
             (41, "Zatreni","Valeni", NOW(), NOW()),
             (41, "Zatreni","Zatrenii de Sus", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**

@@ -478,7 +478,9 @@ class InsertAllLocalitiesForVS extends Migration
             (40, "Zorleni","Popeni", NOW(), NOW()),
             (40, "Zorleni","Simila", NOW(), NOW())
         ;';
-        DB::connection()->getPdo()->exec($sql);
+        if (config('app.env') !== 'testing') {
+            DB::connection()->getPdo()->exec($sql);
+        }
     }
 
     /**
