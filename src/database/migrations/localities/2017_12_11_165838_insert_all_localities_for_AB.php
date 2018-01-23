@@ -728,12 +728,11 @@ class InsertAllLocalitiesForAB extends Migration
         if (config('app.env') !== 'testing') {
             DB::connection()->getPdo()->exec($sql);
         }
-
     }
 
     public function down()
     {
-        $sql = "DELETE FROM localities WHERE county_id=1;";
+        $sql = 'DELETE FROM localities WHERE county_id=1;';
         DB::connection()->getPdo()->exec($sql);
     }
 }
