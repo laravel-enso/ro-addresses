@@ -134,7 +134,7 @@
             "name": "country_name",
             "value": "Romania",
             "meta": {
-                "disabled": true,
+                "readonly": true,
                 "type": "input",
                 "content": "text"
             }
