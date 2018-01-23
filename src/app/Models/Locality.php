@@ -18,6 +18,6 @@ class Locality extends Model
     /* helpers */
     public function getDisplayLabelAttribute()
     {
-        return $this->township ? $this->name . ' ('.$this->township.')' : $this->name;
+        return $this->township ? $this->name.' ('.$this->township.')' : $this->name;
     }
 }
