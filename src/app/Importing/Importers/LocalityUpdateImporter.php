@@ -2,7 +2,6 @@
 
 namespace App\Importing\Importers;
 
-use App\Owner;
 use LaravelEnso\DataImport\app\Classes\Importers\AbstractImporter;
 use LaravelEnso\RoAddresses\app\Exceptions\AddressImportException;
 use LaravelEnso\RoAddresses\app\Models\County;
@@ -35,7 +34,7 @@ class LocalityUpdateImporter extends AbstractImporter
         $queryBuilder = Locality::whereName($row['localitate'])
             ->where('county_id', $county->id);
 
-        if(!empty($row['municipalitate'])) {
+        if (!empty($row['municipalitate'])) {
             $queryBuilder->whereTownship($row['municipalitate']);
         }
 
@@ -47,11 +46,11 @@ class LocalityUpdateImporter extends AbstractImporter
 
     private function checkValidity($localities, String $localityName)
     {
-        if($localities->count() === 0) {
-            throw new AddressImportException($localityName . ' nu a fost gasita');
+        if ($localities->count() === 0) {
+            throw new AddressImportException($localityName.' nu a fost gasita');
         }
 
-        if($localities->count() > 1) {
+        if ($localities->count() > 1) {
             throw new AddressImportException($localityName.' nu a fost identificata corect. Avem '.$localities->count().' rezultate');
         }
     }
