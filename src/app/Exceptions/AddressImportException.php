@@ -6,5 +6,4 @@ use LaravelEnso\Helpers\app\Exceptions\EnsoException;
 
 class AddressImportException extends EnsoException
 {
-
 }
