@@ -4,19 +4,19 @@
             "name": "localitati",
             "columns": [
                 {
-                    "name": "judet",
+                    "name": "county",
                     "laravelValidations": "string|required|exists:counties,name",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "municipalitate",
+                    "name": "township",
                     "laravelValidations": "string|nullable|exists:localities,township",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "localitate",
+                    "name": "locality",
                     "laravelValidations": "string|required|exists:localities,name",
                     "complexValidations": [],
                     "customValidations": []
@@ -28,25 +28,25 @@
                     "customValidations": []
                 },
                 {
-                    "name": "e_activa",
-                    "laravelValidations": "required|numeric",
+                    "name": "is_active",
+                    "laravelValidations": "required|in:0,1",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "regiune",
+                    "name": "region",
                     "laravelValidations": "string|nullable",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "latitudine",
+                    "name": "lat",
                     "laravelValidations": "numeric|nullable",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "longitudine",
+                    "name": "long",
                     "laravelValidations": "numeric|nullable",
                     "complexValidations": [],
                     "customValidations": []

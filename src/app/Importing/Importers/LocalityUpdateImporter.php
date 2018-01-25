@@ -30,38 +30,26 @@ class LocalityUpdateImporter extends AbstractImporter
 
     private function findLocality($row)
     {
-        $county = County::whereName($row['judet'])->first();
-        $queryBuilder = Locality::whereName($row['localitate'])
+        $county = County::whereName($row['county'])->first();
+        $queryBuilder = Locality::whereName($row['locality'])
             ->where('county_id', $county->id);
 
-        if (!empty($row['municipalitate'])) {
-            $queryBuilder->whereTownship($row['municipalitate']);
+        if (!empty($row['township'])) {
+            $queryBuilder->whereTownship($row['township']);
         }
 
         $localities = $queryBuilder->get();
-        $this->checkValidity($localities, $row['localitate']);
 
         return $localities->first();
     }
 
-    private function checkValidity($localities, String $localityName)
-    {
-        if ($localities->count() === 0) {
-            throw new AddressImportException($localityName.' nu a fost gasita');
-        }
-
-        if ($localities->count() > 1) {
-            throw new AddressImportException($localityName.' nu a fost identificata corect. Avem '.$localities->count().' rezultate');
-        }
-    }
-
     private function updateAttributes(Locality $locality, $row)
     {
-        $locality->township = $row['municipalitate'];
-        $locality->region = $row['regiune'];
+        $locality->township = $row['township'];
+        $locality->region = $row['region'];
         $locality->SIRUTA = $row['siruta'];
-        $locality->lat = $row['latitudine'];
-        $locality->long = $row['longitudine'];
-        $locality->is_active = $row['e_activa'];
+        $locality->lat = $row['lat'];
+        $locality->long = $row['long'];
+        $locality->is_active = $row['is_active'];
     }
 }

@@ -42,12 +42,14 @@ where
 * `model_alias` is the alias given in the `config/enso/addresses.php` configuration, in the addresables section
 
 ### Import
-If you need to use the import, publish the template and the importer, and add the new import to your configuration:
+If you need to use the import, publish the included template, importer and validator, 
+and add the new import to your configuration:
 ```php
 'localitiesUpdate' => [
     'label' => 'Localities Update',
     'template' => 'app/Importing/Templates/localityUpdate.json',
-    'importerClass' => 'App\\Importing\\Importers\\LocalityUpdateImporter',
+    'importerClass' => 'App\Importing\Importers\LocalityUpdateImporter',
+    'customValidatorClass' => \App\Importing\Validators\LocalityUpdateValidator::class,
     'sheetEntriesLimit' => 5000,
     'stopOnErrors' => true,
 ],
