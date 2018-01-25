@@ -3,7 +3,6 @@
 namespace App\Importing\Importers;
 
 use LaravelEnso\DataImport\app\Classes\Importers\AbstractImporter;
-use LaravelEnso\RoAddresses\app\Exceptions\AddressImportException;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
 
