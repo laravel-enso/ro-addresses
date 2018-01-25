@@ -23,11 +23,11 @@
             <span v-if="props.address.postal_area">{{ props.address.postal_area }}</span>
             <br>
             <span class="icon">
-                <i class="fas fa-globe"></i>
+                <fa icon="globe"/>
             </span>
             {{ props.address.country_name }} <br>
             <span class="icon" v-if="props.address.obs">
-                <i class="fas fa-sticky-note"></i>
+                <fa icon="sticky-note"/>
             </span>
             {{ props.address.obs }}
         </template>

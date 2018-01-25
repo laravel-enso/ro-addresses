@@ -3,11 +3,13 @@
 namespace LaravelEnso\RoAddresses\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use LaravelEnso\Helpers\app\Traits\IsActive;
 
 class Locality extends Model
 {
-    protected $fillable = ['county_id', 'name', 'township', 'SIRUTA'];
+    use IsActive;
 
+    protected $fillable = ['county_id', 'name', 'township', 'SIRUTA'];
     protected $appends = ['displayLabel'];
 
     public function county()

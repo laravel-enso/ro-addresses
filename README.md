@@ -19,6 +19,7 @@ Romanian Addresses extension for [Addresses Manager](https://github.com/laravel-
 - comes with its own VueJS components `ro-addresses` in order to customize the form 
 and the template for the address cards
 - comes with its own trait
+- comes with an import that updates localities
 
 ### Usage
 - add the package's `AppServiceProvider` to the `config/app.php` list of providers (package auto-discovery is not used as loading order is important)
@@ -40,9 +41,22 @@ where
 * `modelId` is the addressable model id
 * `model_alias` is the alias given in the `config/enso/addresses.php` configuration, in the addresables section
 
+### Import
+If you need to use the import, publish the template and the importer, and add the new import to your configuration:
+```php
+'localitiesUpdate' => [
+    'label' => 'Localities Update',
+    'template' => 'app/Importing/Templates/localityUpdate.json',
+    'importerClass' => 'App\\Importing\\Importers\\LocalityUpdateImporter',
+    'sheetEntriesLimit' => 5000,
+    'stopOnErrors' => true,
+],
+```
+
 ### Publishes
 - `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
 - `php artisan vendor:publish --tag=ro-addresses-form` - form used for creating/editing addresses
+- `php artisan vendor:publish --tag=ro-addresses-import` - form used for updating localities
 - `php artisan vendor:publish --tag=enso-config` - a common alias for when wanting to update the config,
 once a newer version is released
 - `php artisan vendor:publish --tag=ro-addresses-assets` - the VueJS component,

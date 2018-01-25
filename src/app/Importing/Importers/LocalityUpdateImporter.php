@@ -4,6 +4,9 @@ namespace App\Importing\Importers;
 
 use App\Owner;
 use LaravelEnso\DataImport\app\Classes\Importers\AbstractImporter;
+use LaravelEnso\RoAddresses\app\Exceptions\AddressImportException;
+use LaravelEnso\RoAddresses\app\Models\County;
+use LaravelEnso\RoAddresses\app\Models\Locality;
 
 class LocalityUpdateImporter extends AbstractImporter
 {
@@ -21,6 +24,45 @@ class LocalityUpdateImporter extends AbstractImporter
 
     private function importRow($row)
     {
-        $owner = Owner::create($row->toArray());
+        $locality = $this->findLocality($row);
+        $this->updateAttributes($locality, $row);
+        $locality->save();
+    }
+
+    private function findLocality($row)
+    {
+        $county = County::whereName($row['judet'])->first();
+        $queryBuilder = Locality::whereName($row['localitate'])
+            ->where('county_id', $county->id);
+
+        if(!empty($row['municipalitate'])) {
+            $queryBuilder->whereTownship($row['municipalitate']);
+        }
+
+        $localities = $queryBuilder->get();
+        $this->checkValidity($localities, $row['localitate']);
+
+        return $localities->first();
+    }
+
+    private function checkValidity($localities, String $localityName)
+    {
+        if($localities->count() === 0) {
+            throw new AddressImportException($localityName . ' nu a fost gasita');
+        }
+
+        if($localities->count() > 1) {
+            throw new AddressImportException($localityName.' nu a fost identificata corect. Avem '.$localities->count().' rezultate');
+        }
+    }
+
+    private function updateAttributes(Locality $locality, $row)
+    {
+        $locality->township = $row['municipalitate'];
+        $locality->region = $row['regiune'];
+        $locality->SIRUTA = $row['siruta'];
+        $locality->lat = $row['latitudine'];
+        $locality->long = $row['longitudine'];
+        $locality->is_active = $row['e_activa'];
     }
 }

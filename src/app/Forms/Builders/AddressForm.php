@@ -24,7 +24,7 @@ class AddressForm
         return $this->form->title('Insert')
             ->options('street_type', StreetTypes::object())
             ->options('building_type', BuildingTypes::object())
-            ->options('county_id', County::pluck('name', 'id'))
+            ->options('county_id', County::active()->pluck('name', 'id'))
             ->create();
     }
 
@@ -34,7 +34,7 @@ class AddressForm
             ->actions(['update', 'destroy'])
             ->options('street_type', StreetTypes::object())
             ->options('building_type', BuildingTypes::object())
-            ->options('county_id', County::pluck('name', 'id'))
+            ->options('county_id', County::active()->pluck('name', 'id'))
             ->edit($address);
     }
 

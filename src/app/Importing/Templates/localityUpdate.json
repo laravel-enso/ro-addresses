@@ -10,8 +10,8 @@
                     "customValidations": []
                 },
                 {
-                    "name": "township",
-                    "laravelValidations": "string|nullable",
+                    "name": "municipalitate",
+                    "laravelValidations": "string|nullable|exists:localities,township",
                     "complexValidations": [],
                     "customValidations": []
                 },
@@ -22,14 +22,32 @@
                     "customValidations": []
                 },
                 {
-                    "name": "SIRUTA",
+                    "name": "siruta",
+                    "laravelValidations": "nullable",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "e_activa",
+                    "laravelValidations": "required|numeric",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "regiune",
                     "laravelValidations": "string|nullable",
                     "complexValidations": [],
                     "customValidations": []
                 },
                 {
-                    "name": "e activa",
-                    "laravelValidations": "required|boolean",
+                    "name": "latitudine",
+                    "laravelValidations": "numeric|nullable",
+                    "complexValidations": [],
+                    "customValidations": []
+                },
+                {
+                    "name": "longitudine",
+                    "laravelValidations": "numeric|nullable",
                     "complexValidations": [],
                     "customValidations": []
                 }
