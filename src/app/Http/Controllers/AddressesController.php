@@ -16,7 +16,10 @@ class AddressesController extends Controller
     {
         $addressable = $this->getAddressable();
 
-        return $addressable->addresses()->get();
+        return $addressable
+            ->addresses()
+            ->orderBy('is_default', 'desc')
+            ->get();
     }
 
     public function store(ValidateAddressRequest $request, Address $address)
