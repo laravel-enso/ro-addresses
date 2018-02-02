@@ -11,6 +11,30 @@
     "submitDelete": "Delete",
     "attributes": [
         {
+            "label": "County",
+            "column": "county_id",
+            "value": null,
+            "config": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": null,
+                "options": {}
+            }
+        },
+        {
+            "label": "Locality",
+            "column": "locality_id",
+            "value": null,
+            "config": {
+                "custom": true,
+                "type": "select",
+                "multiple": false,
+                "source": "/addresses/localitiesSelectOptions",
+                "options": {}
+            }
+        },
+        {
             "label": "Street Type",
             "column": "street_type",
             "value": "",
@@ -99,31 +123,6 @@
                 "disabled": false
             }
         },
-        {
-            "label": "County",
-            "column": "county_id",
-            "value": null,
-            "config": {
-                "custom": true,
-                "type": "select",
-                "multiple": false,
-                "source": null,
-                "options": {}
-            }
-        },
-        {
-            "label": "Locality",
-            "column": "locality_id",
-            "value": null,
-            "config": {
-                "custom": true,
-                "type": "select",
-                "multiple": false,
-                "source": "/addresses/localitiesSelectOptions",
-                "options": {}
-            }
-        },
-
         {
             "label": "Postal Area",
             "column": "postal_area",
