@@ -1,7 +1,7 @@
 <!--h-->
 # Romanian Addresses
 [![StyleCI](https://styleci.io/repos/114126709/shield?branch=master)](https://styleci.io/repos/114126709)
-[![License](https://poser.pugx.org/laravel-enso/permissionmanager/license)](https://https://packagist.org/packages/laravel-enso/roaddresses)
+[![License](https://poser.pugx.org/laravel-enso/permissionmanager/license)](https://packagist.org/packages/laravel-enso/roaddresses)
 [![Total Downloads](https://poser.pugx.org/laravel-enso/roaddresses/downloads)](https://packagist.org/packages/laravel-enso/roaddresses)
 [![Latest Stable Version](https://poser.pugx.org/laravel-enso/roaddresses/version)](https://packagist.org/packages/laravel-enso/roaddresses)
 <!--/h-->
