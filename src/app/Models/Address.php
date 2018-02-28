@@ -35,4 +35,9 @@ class Address extends \LaravelEnso\AddressesManager\app\Models\Address
     {
         return $this->county->name;
     }
+
+    public function getLabelAttribute()
+    {
+        return $this->getCityAttribute().' '.$this->street;
+    }
 }
