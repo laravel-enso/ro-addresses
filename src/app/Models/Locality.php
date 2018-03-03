@@ -10,7 +10,7 @@ class Locality extends Model
     use IsActive;
 
     protected $fillable = [
-        'county_id', 'name', 'township', 'siruta', 'region', 'lat', 'long', 'is_active',
+        'county_id', 'name', 'township', 'siruta', 'region', 'lat', 'long', 'is_active'
     ];
 
     protected $appends = ['label'];

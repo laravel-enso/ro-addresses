@@ -12,6 +12,7 @@ class LocalitiesSelectController extends Controller
 
     protected $label = 'displayLabel';
     protected $class = Locality::class;
+    protected $queryAttributes = ['name', 'siruta', 'township'];
 
     public function query()
     {
