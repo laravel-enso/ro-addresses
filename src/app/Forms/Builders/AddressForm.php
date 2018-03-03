@@ -22,9 +22,9 @@ class AddressForm
     public function create()
     {
         return $this->form->title('Insert')
-            ->options('street_type', StreetTypes::object())
-            ->options('building_type', BuildingTypes::object())
-            ->options('county_id', County::active()->pluck('name', 'id'))
+            ->options('street_type', StreetTypes::select())
+            ->options('building_type', BuildingTypes::select())
+            ->options('county_id', County::active()->get(['name', 'id']))
             ->create();
     }
 
@@ -32,9 +32,9 @@ class AddressForm
     {
         return $this->form->title('Edit')
             ->actions(['update', 'destroy'])
-            ->options('street_type', StreetTypes::object())
-            ->options('building_type', BuildingTypes::object())
-            ->options('county_id', County::active()->pluck('name', 'id'))
+            ->options('street_type', StreetTypes::select())
+            ->options('building_type', BuildingTypes::select())
+            ->options('county_id', County::active()->get(['name', 'id']))
             ->edit($address);
     }
 

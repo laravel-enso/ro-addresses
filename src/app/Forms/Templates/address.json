@@ -14,7 +14,7 @@
                 "type": "select",
                 "multiple": false,
                 "source": null,
-                "options": {}
+                "options": []
             }
         },
         {
@@ -26,19 +26,18 @@
                 "type": "select",
                 "multiple": false,
                 "source": "core.addresses.localitiesSelectOptions",
-                "options": {}
+                "options": []
             }
         },
         {
             "label": "Street Type",
             "name": "street_type",
-            "value": "",
+            "value": null,
             "meta": {
                 "type": "select",
                 "multiple": false,
                 "source": null,
-                "keyMap": "string",
-                "options": {}
+                "options": []
             }
         },
         {
@@ -66,13 +65,12 @@
         {
             "label": "Building Type",
             "name": "building_type",
-            "value": "",
+            "value": null,
             "meta": {
                 "multiple": false,
                 "type": "select",
-                "keyMap": "string",
                 "source": null,
-                "options": {}
+                "options": []
             }
         },
         {
