@@ -16,7 +16,7 @@ class AddressForm
 
     public function __construct()
     {
-        $this->form = new Form($this->formTemplate());
+        $this->form = new Form($this->formPath());
     }
 
     public function create()
@@ -38,14 +38,12 @@ class AddressForm
             ->edit($address);
     }
 
-    private function formTemplate()
+    private function formPath()
     {
         $publishedForm = app_path('Forms/vendor/address.json');
 
-        if (file_exists($publishedForm)) {
-            return $publishedForm;
-        }
-
-        return self::FormPath;
+        return \File::exists($publishedForm)
+            ? $publishedForm
+            : self::FormPath;
     }
 }
