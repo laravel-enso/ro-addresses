@@ -11,44 +11,33 @@ class LocalityUpdateImporter extends AbstractImporter
     public function run()
     {
         \DB::transaction(function () {
-            $sheet = $this->getSheet('localitati');
-
-            foreach ($sheet as $row) {
-                $result = $this->importRow($row);
-                $this->incSuccess();
-            }
+            $this->rowsFromSheet('localitati')
+                ->each(function ($row) {
+                    $this->importRow($row);
+                });
         });
     }
 
     private function importRow($row)
     {
-        $locality = $this->findLocality($row);
-        $this->updateAttributes($locality, $row);
-        $locality->save();
+        $this->locality($row)->update($row);
+        $this->incSuccess();
     }
 
-    private function findLocality($row)
+    private function locality($row)
     {
-        $county = County::whereName($row['county'])->first();
-        $queryBuilder = Locality::whereName($row['locality'])
-            ->where('county_id', $county->id);
+        $query = Locality::whereName($row['locality'])
+            ->where('county_id', $this->countyId($row));
 
         if (!empty($row['township'])) {
-            $queryBuilder->whereTownship($row['township']);
+            $query->whereTownship($row['township']);
         }
 
-        $localities = $queryBuilder->get();
-
-        return $localities->first();
+        return $query->first();
     }
 
-    private function updateAttributes(Locality $locality, $row)
+    private function countyId($row)
     {
-        $locality->township = $row['township'];
-        $locality->region = $row['region'];
-        $locality->SIRUTA = $row['siruta'];
-        $locality->lat = $row['lat'];
-        $locality->long = $row['long'];
-        $locality->is_active = $row['is_active'];
+        return County::whereName($row['county'])->first(['id'])->id;
     }
 }

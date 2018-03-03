@@ -26,7 +26,8 @@
                 "type": "select",
                 "multiple": false,
                 "source": "core.addresses.localitiesSelectOptions",
-                "options": []
+                "options": [],
+                "label": "label"
             }
         },
         {

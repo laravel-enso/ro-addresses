@@ -1,55 +1,42 @@
 {
+    "importerClass": "LaravelEnso\\RoAddresses\\app\\Importers\\LocalityUpdateImporter",
+    "entryLimit": 5000,
+    "stopsOnIssues": false,
     "sheets": [
         {
             "name": "localitati",
             "columns": [
                 {
                     "name": "county",
-                    "laravelValidations": "string|required|exists:counties,name",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "string|required|exists:counties,name"
                 },
                 {
                     "name": "township",
-                    "laravelValidations": "string|nullable|exists:localities,township",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "string|nullable|exists:localities,township"
                 },
                 {
                     "name": "locality",
-                    "laravelValidations": "string|required|exists:localities,name",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "string|required|exists:localities,name"
                 },
                 {
                     "name": "siruta",
-                    "laravelValidations": "nullable",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "nullable"
                 },
                 {
                     "name": "is_active",
-                    "laravelValidations": "required|in:0,1",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "required|in:0,1"
                 },
                 {
                     "name": "region",
-                    "laravelValidations": "string|nullable",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "string|nullable"
                 },
                 {
                     "name": "lat",
-                    "laravelValidations": "numeric|nullable",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "numeric|nullable"
                 },
                 {
                     "name": "long",
-                    "laravelValidations": "numeric|nullable",
-                    "complexValidations": [],
-                    "customValidations": []
+                    "laravelValidations": "numeric|nullable"
                 }
             ]
         }

@@ -13,6 +13,8 @@ class Address extends \LaravelEnso\AddressesManager\app\Models\Address
 
     protected $appends = ['city', 'administrative_area', 'country_name'];
 
+    protected $casts = ['is_default' => 'boolean'];
+
     public function county()
     {
         return $this->belongsTo(County::class);
@@ -23,7 +25,6 @@ class Address extends \LaravelEnso\AddressesManager\app\Models\Address
         return $this->belongsTo(Locality::class);
     }
 
-    /* getters and setters */
     public function getCityAttribute()
     {
         return $this->locality->name;

@@ -23,7 +23,7 @@ class CreateLocalitiesTable extends Migration
             $table->string('township')->nullable();
             $table->string('name');
             $table->string('region')->nullable();
-            $table->string('SIRUTA')->nullable();
+            $table->string('siruta')->nullable();
 
             $table->float('lat', 10, 6)->nullable();
             $table->float('long', 10, 6)->nullable();

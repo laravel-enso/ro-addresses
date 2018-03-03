@@ -9,17 +9,27 @@ class Locality extends Model
 {
     use IsActive;
 
-    protected $fillable = ['county_id', 'name', 'township', 'SIRUTA'];
-    protected $appends = ['displayLabel'];
+    protected $fillable = [
+        'county_id', 'name', 'township', 'siruta', 'region', 'lat', 'long', 'is_active'
+    ];
+
+    protected $appends = ['label'];
+
+    protected $casts = ['is_active' => 'boolean'];
 
     public function county()
     {
         return $this->belongsTo(County::class);
     }
 
-    /* helpers */
-    public function getDisplayLabelAttribute()
+    public function getLabelAttribute()
     {
-        return $this->township ? $this->name.' ('.$this->township.')' : $this->name;
+        $label = $this->siruta
+            ? $this->name.' - '.$this->siruta
+            : $this->name;
+
+        return $this->township
+            ? $label.' ('.$this->township.')'
+            : $label;
     }
 }
