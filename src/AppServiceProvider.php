@@ -6,22 +6,12 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
     public function boot()
     {
         $this->publishesAll();
         $this->loadDependencies();
     }
 
-    /**
-     * Register the application services.
-     *
-     * @return void
-     */
     public function register()
     {
         //
@@ -34,11 +24,11 @@ class AppServiceProvider extends ServiceProvider
         ], 'ro-addresses-config');
 
         $this->publishes([
-            __DIR__.'/app/Forms/Templates' => app_path().'/Forms/vendor/',
+            __DIR__.'/app/Forms/Templates' => app_path('Forms/vendor/'),
         ], 'ro-addresses-form');
 
         $this->publishes([
-            __DIR__.'/app/Importing' => app_path().'/Importing/',
+            __DIR__.'/app/Imports' => app_path('Imports/'),
         ], 'ro-addresses-import');
 
         $this->publishes([
