@@ -27,7 +27,7 @@
                 "multiple": false,
                 "source": "core.addresses.localitiesSelectOptions",
                 "options": [],
-                "label": "label"
+                "label": "displayLabel"
             }
         },
         {
