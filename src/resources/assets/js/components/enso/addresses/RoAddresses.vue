@@ -81,12 +81,14 @@
 </template>
 <script>
 
-import { mapGetters } from 'vuex';
 import Addresses from './Addresses.vue';
 import VueSelect from '../select/VueSelect.vue';
 
 export default {
+    name: 'RoAddresses',
+
     components: { Addresses, VueSelect },
+
     data() {
         return {
             params: {
@@ -94,9 +96,7 @@ export default {
             },
         };
     },
-    computed: {
-        ...mapGetters('locale', ['__']),
-    },
+
     methods: {
         countyId(form) {
             return form.sections
