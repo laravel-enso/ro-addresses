@@ -13,7 +13,7 @@ class Address extends Addresses
 
     protected $attributes = ['country_id' => self::RomaniaCountryId];
 
-    protected $appends = ['city', 'administrative_area', 'country_name'];
+    protected $appends = ['locality_name', 'county_name', 'country_name'];
 
     protected $casts = ['is_default' => 'boolean'];
 
@@ -27,13 +27,22 @@ class Address extends Addresses
         return $this->belongsTo(Locality::class);
     }
 
-    public function getCityAttribute()
+    public function getLocalityNameAttribute()
     {
         return $this->locality->name;
     }
 
-    public function getAdministrativeAreaAttribute()
+    public function getCountyNameAttribute()
     {
         return $this->county->name;
+    }
+
+    public function getLabelAttribute()
+    {
+        return collect(config('enso.addresses.label.attributes'))
+            ->map(function ($attribute) {
+                return $this->$attribute;
+            })->filter()
+            ->implode(config('enso.addresses.label.separator'));
     }
 }
