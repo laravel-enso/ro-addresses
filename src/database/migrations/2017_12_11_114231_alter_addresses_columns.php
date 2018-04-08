@@ -9,18 +9,19 @@ class AlterAddressesColumns extends Migration
     public function up()
     {
         Schema::table('addresses', function (Blueprint $table) {
-            $table->renameColumn('sub_administrative_area', 'neighborhood');
-
+            $table->dropColumn('sub_administrative_area');
             $table->dropColumn('administrative_area');
             $table->dropColumn('city');
 
-            $table->integer('county_id')->unsigned()->index()->after('postal_area');
+            $table->integer('county_id')->unsigned()->index()->after('country_id');
             $table->foreign('county_id')->references('id')->on('counties')
                ->onDelete('restrict')->onUpdate('restrict');
 
-            $table->integer('locality_id')->unsigned()->index()->after('postal_area');
+            $table->integer('locality_id')->unsigned()->index()->after('county_id');
             $table->foreign('locality_id')->references('id')->on('localities')
                ->onDelete('restrict')->onUpdate('restrict');
+
+            $table->string('neighbourhood')->nullable()->after('locality_id');
         });
     }
 
@@ -32,11 +33,11 @@ class AlterAddressesColumns extends Migration
 
             $table->dropColumn('locality_id');
             $table->dropColumn('county_id');
+            $table->dropColumn('neighbourhood');
 
             $table->string('city');
             $table->string('administrative_area')->nullable();
-
-            $table->renameColumn('neighborhood', 'sub_administrative_area');
+            $table->string('sub_administrative_area')->nullable();
         });
     }
 }

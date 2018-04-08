@@ -29,8 +29,8 @@
                 "label": "label"
             }
         }, {
-            "label": "Neighborhood",
-            "name": "neighborhood",
+            "label": "Neighbourhood",
+            "name": "neighbourhood",
             "value": null,
             "meta": {
                 "custom": false,

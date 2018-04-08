@@ -33,8 +33,8 @@
                 </span>
             </p>
             <p>
-                <span v-if="address.sub_administrative_area">
-                    {{ __('Neighborhood') }}: {{ address.sub_administrative_area }}
+                <span v-if="address.neighbourhood">
+                    {{ __('Neighbourhood') }}: {{ address.neighbourhood }}
                 </span>
                 <span v-if="address.city">
                     {{ address.city }},
