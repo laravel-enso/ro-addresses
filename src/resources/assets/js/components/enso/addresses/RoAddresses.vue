@@ -36,11 +36,11 @@
                 <span v-if="address.neighbourhood">
                     {{ __('Neighbourhood') }}: {{ address.neighbourhood }}
                 </span>
-                <span v-if="address.city">
-                    {{ address.city }},
+                <span v-if="address.locality_name">
+                    {{ address.locality_name }},
                 </span>
-                <span v-if="address.administrative_area">
-                    {{ address.administrative_area }}
+                <span v-if="address.neighbourhood">
+                    {{ address.neighbourhood }}
                 </span>
                 <br>
                 <span v-if="address.postal_area">
