@@ -12,30 +12,27 @@
                     {{ address.street }}
                 </span>
                 <span v-if="address.number">
-                    {{ __('Number') }}: {{ address.number }}
+                    <span >
+                        {{ __('Number') }}
+                    </span>
+                    {{ address.number }}
                 </span>
             </p>
             <p>
                 <span v-if="address.building">
-                    <span class="has-text-grey">
-                        {{ __(address.building_type) }}
-                    </span>
-                    {{ address.building }},
+                    {{ __(address.building_type) }}: {{ address.building }},
                 </span>
                 <span v-if="address.entry">
-                    {{ __('Entry') }}: {{ address.entry }}
+                    {{ __('Entry') }}: {{ address.entry }},
                 </span>
                 <span v-if="address.floor">
-                    {{ __('Floor') }}: {{ address.floor }}
+                    {{ __('Floor') }}: {{ address.floor }},
                 </span>
                 <span v-if="address.apartment">
-                    {{ __('Apartment') }}: {{ address.apartment }}
+                    {{ __('Apt') }}: {{ address.apartment }},
                 </span>
             </p>
             <p>
-                <span v-if="address.neighbourhood">
-                    {{ __('Neighbourhood') }}: {{ address.neighbourhood }}
-                </span>
                 <span v-if="address.locality_name">
                     {{ address.locality_name }},
                 </span>
