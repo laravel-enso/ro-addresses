@@ -39,7 +39,7 @@
                 <span v-if="address.neighbourhood">
                     {{ address.neighbourhood }}
                 </span>
-                <span v-if="address.neighbourhood">
+                <span v-if="address.sector">
                     {{ __('Sector') }}: {{ address.sector }}
                 </span>
                 <br>
