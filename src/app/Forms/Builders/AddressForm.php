@@ -33,7 +33,7 @@ class AddressForm
     public function edit(Address $address)
     {
         return $this->form->title('Edit')
-            ->actions(['update', 'destroy'])
+            ->actions(['update'])
             ->options('street_type', StreetTypes::select())
             ->options('building_type', BuildingTypes::select())
             ->options('county_id', County::active()->get(['name', 'id']))
