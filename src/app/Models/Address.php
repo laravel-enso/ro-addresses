@@ -11,7 +11,7 @@ class Address extends Addresses
     protected $fillable = [
         'addressable_id', 'addressable_type', 'county_id', 'locality_id', 'neighbourhood', 'sector',
         'street_type', 'street', 'number', 'building_type', 'building', 'entry', 'floor', 'apartment',
-        'postal_area', 'obs', 'is_default'
+        'postal_area', 'obs', 'is_default',
     ];
 
     protected $attributes = ['country_id' => self::RomaniaCountryId];
