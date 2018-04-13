@@ -8,8 +8,11 @@ class Address extends Addresses
 {
     private const RomaniaCountryId = 184;
 
-    protected $fillable = ['addressable_id', 'addressable_type', 'county_id', 'locality_id', 'type', 'is_default', 'apartment', 'floor', 'entry',
-        'building_type', 'building', 'number', 'street', 'street_type', 'neighbourhood', 'postal_area', 'obs', ];
+    protected $fillable = [
+        'addressable_id', 'addressable_type', 'county_id', 'locality_id', 'neighbourhood', 'sector',
+        'street_type', 'street', 'number', 'building_type', 'building', 'entry', 'floor', 'apartment',
+        'postal_area', 'obs', 'is_default'
+    ];
 
     protected $attributes = ['country_id' => self::RomaniaCountryId];
 

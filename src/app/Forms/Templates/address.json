@@ -4,7 +4,7 @@
     "method": null,
     "routePrefix": "core.addresses",
     "sections": [{
-        "columns": 3,
+        "columns": 4,
         "fields": [{
             "label": "County",
             "name": "county_id",
@@ -37,6 +37,15 @@
                 "type": "input",
                 "content": "text",
                 "disabled": false
+            }
+        }, {
+            "label": "Sector",
+            "name": "sector",
+            "value": null,
+            "meta": {
+                "custom": true,
+                "type": "select",
+                "options": []
             }
         }]
     }, {

@@ -39,6 +39,9 @@
                 <span v-if="address.neighbourhood">
                     {{ address.neighbourhood }}
                 </span>
+                <span v-if="address.neighbourhood">
+                    {{ __('Sector') }}: {{ address.sector }}
+                </span>
                 <br>
                 <span v-if="address.postal_area">
                     {{ address.postal_area }}
@@ -57,20 +60,27 @@
         </template>
 
         <template slot="county_id" slot-scope="{ field, errors }">
-            <vue-select name="county_id"
-                :label="field.meta.label || 'name'"
+            <vue-select :label="field.meta.label || 'name'"
                 v-model="field.value"
                 @input="params.county_id=$event;errors.clear(field.name);"
                 :options="field.meta.options">
             </vue-select>
         </template>
         <template slot="locality_id" slot-scope="{ field, errors }">
-            <vue-select name="locality_id"
-                :label="field.meta.label || 'name'"
+            <vue-select :label="field.meta.label"
                 :params="params"
                 v-model="field.value"
-                @input="errors.clear(field.name);"
+                @input="errors.clear(field.name); sectors = $event === bucharestId;"
                 :source="field.meta.source">
+            </vue-select>
+        </template>
+        <template slot="sector" slot-scope="{ field, errors }">
+            <vue-select :label="field.meta.label"
+                :disabled="!sectors"
+                ref="sector"
+                v-model="field.value"
+                @input="errors.clear(field.name);"
+                :options="field.meta.options">
             </vue-select>
         </template>
     </addresses>
@@ -88,10 +98,20 @@ export default {
 
     data() {
         return {
+            sectors: false,
+            bucharestId: 13749,
             params: {
                 county_id: null,
             },
         };
+    },
+
+    watch: {
+        sectors() {
+            if (!this.sectors) {
+                this.$refs.sector.clear();
+            }
+        },
     },
 
     methods: {

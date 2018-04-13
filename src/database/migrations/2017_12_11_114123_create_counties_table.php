@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCountiesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('counties', function (Blueprint $table) {
@@ -28,11 +23,6 @@ class CreateCountiesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('counties');

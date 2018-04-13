@@ -21,7 +21,8 @@ class AlterAddressesColumns extends Migration
             $table->foreign('locality_id')->references('id')->on('localities')
                ->onDelete('restrict')->onUpdate('restrict');
 
-            $table->string('neighbourhood')->nullable()->after('locality_id');
+            $table->tinyInteger('sector')->nullable()->after('locality_id');
+            $table->string('neighbourhood')->nullable()->after('sector');
         });
     }
 
