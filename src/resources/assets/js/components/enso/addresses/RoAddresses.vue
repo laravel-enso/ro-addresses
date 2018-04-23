@@ -63,16 +63,14 @@
             <vue-select :label="field.meta.label || 'name'"
                 v-model="field.value"
                 @input="params.county_id=$event;errors.clear(field.name);"
-                :options="field.meta.options">
-            </vue-select>
+                :options="field.meta.options"/>
         </template>
         <template slot="locality_id" slot-scope="{ field, errors }">
             <vue-select :label="field.meta.label"
                 :params="params"
                 v-model="field.value"
                 @input="errors.clear(field.name); sectors = $event === bucharestId;"
-                :source="field.meta.source">
-            </vue-select>
+                :source="field.meta.source"/>
         </template>
         <template slot="sector" slot-scope="{ field, errors }">
             <vue-select :label="field.meta.label"
@@ -80,8 +78,7 @@
                 ref="sector"
                 v-model="field.value"
                 @input="errors.clear(field.name);"
-                :options="field.meta.options">
-            </vue-select>
+                :options="field.meta.options"/>
         </template>
     </addresses>
 
