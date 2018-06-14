@@ -2,38 +2,42 @@
 
 namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use LaravelEnso\AddressesManager\app\Handlers\ConfigMapper;
-use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
+use App\Http\Controllers\Controller;
 use LaravelEnso\FormBuilder\app\Classes\Form;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\RoAddresses\app\Models\Address;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
 
 class AddressesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $addressable = $this->getAddressable();
-
-        return $addressable
-            ->addresses()
-            ->orderBy('is_default', 'desc')
+        return Address::for($request->only([
+                'addressable_id', 'addressable_type',
+            ]))->ordered()
             ->get();
     }
 
-    public function store(ValidateAddressRequest $request, Address $address)
+    public function store(ValidateAddressRequest $request)
     {
-        $address->store($request->all(), $request->get('_params'));
+        Address::store(
+            $request->all(),
+            $request->get('_params')
+        );
 
-        return ['message' => __('Created Address')];
+        return [
+            'message' => __('The address was successfully created'),
+        ];
     }
 
     public function update(ValidateAddressRequest $request, Address $address)
     {
         $address->update($request->all());
 
-        return ['message' => __('The Changes have been saved!')];
+        return [
+            'message' => __('The address have been successfully updated'),
+        ];
     }
 
     public function setDefault(Address $address)
@@ -56,11 +60,5 @@ class AddressesController extends Controller
     public function create(AddressForm $form)
     {
         return ['form' => $form->create()];
-    }
-
-    private function getAddressable()
-    {
-        return (new ConfigMapper(request()->get('type')))->class()
-            ::find(request()->get('id'));
     }
 }
