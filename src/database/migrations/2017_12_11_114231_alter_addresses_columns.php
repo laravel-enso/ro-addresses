@@ -9,15 +9,13 @@ class AlterAddressesColumns extends Migration
     public function up()
     {
         Schema::table('addresses', function (Blueprint $table) {
-            $table->dropColumn('sub_administrative_area');
-            $table->dropColumn('administrative_area');
-            $table->dropColumn('city');
+            $table->dropColumn(['administrative_area', 'city', 'sub_administrative_area']);
 
-            $table->integer('county_id')->unsigned()->index()->after('country_id');
+            $table->integer('county_id')->unsigned()->index()->nullable()->after('country_id');
             $table->foreign('county_id')->references('id')->on('counties')
                ->onDelete('restrict')->onUpdate('restrict');
 
-            $table->integer('locality_id')->unsigned()->index()->after('county_id');
+            $table->integer('locality_id')->unsigned()->index()->nullable()->after('county_id');
             $table->foreign('locality_id')->references('id')->on('localities')
                ->onDelete('restrict')->onUpdate('restrict');
 
