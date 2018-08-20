@@ -5,7 +5,6 @@ namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
-use LaravelEnso\FormBuilder\app\Classes\Form;
 use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\RoAddresses\app\Models\Address;
 
@@ -22,7 +21,7 @@ class AddressesController extends Controller
     public function store(ValidateAddressRequest $request)
     {
         Address::store(
-            $request->all(),
+            $request->except(['country_name']),
             $request->get('_params')
         );
 
