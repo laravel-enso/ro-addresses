@@ -1,0 +1,212 @@
+{    
+    "0":{
+        "abbreviation": "AB",
+        "name": "Alba",
+        "is_active": 1
+    },
+    "1":{
+        "abbreviation": "AR",
+        "name": "Arad",
+        "is_active": 1
+    },
+    "2":{
+        "abbreviation": "AG",
+        "name": "Arges",
+        "is_active": 1
+    },
+    "3":{
+        "abbreviation": "B",
+        "name": "Bucuresti",
+        "is_active": 1
+    },
+    "4":{
+        "abbreviation": "BC",
+        "name": "Bacau",
+        "is_active": 1
+    },
+    "5":{
+        "abbreviation": "BH",
+        "name": "Bihor",
+        "is_active": 1
+    },
+    "6":{
+        "abbreviation": "BN",
+        "name": "Bistrita-Nasaud",
+        "is_active": 1
+    },
+    "7":{
+        "abbreviation": "BT",
+        "name": "Botosani",
+        "is_active": 1
+    },
+    "8":{
+        "abbreviation": "BV",
+        "name": "Brasov",
+        "is_active": 1
+    },
+    "9":{
+        "abbreviation": "BR",
+        "name": "Braila",
+        "is_active": 1
+    },
+    "10":{
+        "abbreviation": "BZ",
+        "name": "Buzau",
+        "is_active": 1
+    },
+    "11":{
+        "abbreviation": "CS",
+        "name": "Caras-Severin",
+        "is_active": 1
+    },
+    "12":{
+        "abbreviation": "CJ",
+        "name": "Cluj",
+        "is_active": 1
+    },
+    "13":{
+        "abbreviation": "CT",
+        "name": "Constanta",
+        "is_active": 1
+    },
+    "14":{
+        "abbreviation": "CV",
+        "name": "Covasna",
+        "is_active": 1
+    },
+    "15":{
+        "abbreviation": "DB",
+        "name": "Dambovita",
+        "is_active": 1
+    },
+    "16":{
+        "abbreviation": "DJ",
+        "name": "Dolj",
+        "is_active": 1
+    },
+    "17":{
+        "abbreviation": "GL",
+        "name": "Galati",
+        "is_active": 1
+    },
+    "18":{
+        "abbreviation": "GJ",
+        "name": "Gorj",
+        "is_active": 1
+    },
+    "19":{
+        "abbreviation": "HR",
+        "name": "Harghita",
+        "is_active": 1
+    },
+    "20":{
+        "abbreviation": "HD",
+        "name": "Hunedoara",
+        "is_active": 1
+    },
+    "21":{
+        "abbreviation": "CL",
+        "name": "Calarasi",
+        "is_active": 1
+    },
+    "22":{
+        "abbreviation": "IL",
+        "name": "Ialomita",
+        "is_active": 1
+    },
+    "23":{
+        "abbreviation": "IS",
+        "name": "Iasi",
+        "is_active": 1
+    },
+    "24":{
+        "abbreviation": "GR",
+        "name": "Giurgiu",
+        "is_active": 1
+    },
+    "25":{
+        "abbreviation": "IF",
+        "name": "Ilfov",
+        "is_active": 1
+    },
+    "26":{
+        "abbreviation": "MM",
+        "name": "Maramures",
+        "is_active": 1
+    },
+    "27":{
+        "abbreviation": "MH",
+        "name": "Mehedinti",
+        "is_active": 1
+    },
+    "28":{
+        "abbreviation": "MS",
+        "name": "Mures",
+        "is_active": 1
+    },
+    "29":{
+        "abbreviation": "NT",
+        "name": "Neamt",
+        "is_active": 1
+    },
+    "30":{
+        "abbreviation": "OT",
+        "name": "Olt",
+        "is_active": 1
+    },
+    "31":{
+        "abbreviation": "PH",
+        "name": "Prahova",
+        "is_active": 1
+    },
+    "32":{
+        "abbreviation": "SM",
+        "name": "Satu Mare",
+        "is_active": 1
+    },
+    "33":{
+        "abbreviation": "SJ",
+        "name": "Salaj",
+        "is_active": 1
+    },
+    "34":{
+        "abbreviation": "SB",
+        "name": "Sibiu",
+        "is_active": 1
+    },
+    "35":{
+        "abbreviation": "SV",
+        "name": "Suceava",
+        "is_active": 1
+    },
+    "36":{
+        "abbreviation": "TR",
+        "name": "Teleorman",
+        "is_active": 1
+    },
+    "37":{
+        "abbreviation": "TM",
+        "name": "Timis",
+        "is_active": 1
+    },
+    "38":{
+        "abbreviation": "TL",
+        "name": "Tulcea",
+        "is_active": 1
+    },
+    "39":{
+        "abbreviation": "VS",
+        "name": "Vaslui",
+        "is_active": 1
+    },
+    "40":{
+        "abbreviation": "VL",
+        "name": "Valcea",
+        "is_active": 1
+    },
+    "41":{
+        "abbreviation": "VN",
+        "name": "Vrancea",
+        "is_active": 1
+    }
+}

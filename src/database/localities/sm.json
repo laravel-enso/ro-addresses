@@ -1,0 +1,1406 @@
+{
+    "0":{
+        "county_id": 33,
+        "township": "",
+        "name": "Andrid",
+        "is_active": 1
+    },
+    "1":{
+        "county_id": 33,
+        "township": "",
+        "name": "Apa",
+        "is_active": 1
+    },
+    "2":{
+        "county_id": 33,
+        "township": "",
+        "name": "Ardud",
+        "is_active": 1
+    },
+    "3":{
+        "county_id": 33,
+        "township": "",
+        "name": "Beltiug",
+        "is_active": 1
+    },
+    "4":{
+        "county_id": 33,
+        "township": "",
+        "name": "Berveni",
+        "is_active": 1
+    },
+    "5":{
+        "county_id": 33,
+        "township": "",
+        "name": "Bixad",
+        "is_active": 1
+    },
+    "6":{
+        "county_id": 33,
+        "township": "",
+        "name": "Bogdand",
+        "is_active": 1
+    },
+    "7":{
+        "county_id": 33,
+        "township": "",
+        "name": "Botiz",
+        "is_active": 1
+    },
+    "8":{
+        "county_id": 33,
+        "township": "",
+        "name": "Batarci",
+        "is_active": 1
+    },
+    "9":{
+        "county_id": 33,
+        "township": "",
+        "name": "Carei",
+        "is_active": 1
+    },
+    "10":{
+        "county_id": 33,
+        "township": "",
+        "name": "Cehal",
+        "is_active": 1
+    },
+    "11":{
+        "county_id": 33,
+        "township": "",
+        "name": "Certeze",
+        "is_active": 1
+    },
+    "12":{
+        "county_id": 33,
+        "township": "",
+        "name": "Craidorolt",
+        "is_active": 1
+    },
+    "13":{
+        "county_id": 33,
+        "township": "",
+        "name": "Crucisor",
+        "is_active": 1
+    },
+    "14":{
+        "county_id": 33,
+        "township": "",
+        "name": "Calinesti-Oas",
+        "is_active": 1
+    },
+    "15":{
+        "county_id": 33,
+        "township": "",
+        "name": "Camin",
+        "is_active": 1
+    },
+    "16":{
+        "county_id": 33,
+        "township": "",
+        "name": "Camarzana",
+        "is_active": 1
+    },
+    "17":{
+        "county_id": 33,
+        "township": "",
+        "name": "Capleni",
+        "is_active": 1
+    },
+    "18":{
+        "county_id": 33,
+        "township": "",
+        "name": "Cauas",
+        "is_active": 1
+    },
+    "19":{
+        "county_id": 33,
+        "township": "",
+        "name": "Doba",
+        "is_active": 1
+    },
+    "20":{
+        "county_id": 33,
+        "township": "",
+        "name": "Dorolt",
+        "is_active": 1
+    },
+    "21":{
+        "county_id": 33,
+        "township": "",
+        "name": "Foieni",
+        "is_active": 1
+    },
+    "22":{
+        "county_id": 33,
+        "township": "",
+        "name": "Gherta Mica",
+        "is_active": 1
+    },
+    "23":{
+        "county_id": 33,
+        "township": "",
+        "name": "Halmeu",
+        "is_active": 1
+    },
+    "24":{
+        "county_id": 33,
+        "township": "",
+        "name": "Hodod",
+        "is_active": 1
+    },
+    "25":{
+        "county_id": 33,
+        "township": "",
+        "name": "Lazuri",
+        "is_active": 1
+    },
+    "26":{
+        "county_id": 33,
+        "township": "",
+        "name": "Livada",
+        "is_active": 1
+    },
+    "27":{
+        "county_id": 33,
+        "township": "",
+        "name": "Mediesu Aurit",
+        "is_active": 1
+    },
+    "28":{
+        "county_id": 33,
+        "township": "",
+        "name": "Micula",
+        "is_active": 1
+    },
+    "29":{
+        "county_id": 33,
+        "township": "",
+        "name": "Negresti-Oas",
+        "is_active": 1
+    },
+    "30":{
+        "county_id": 33,
+        "township": "",
+        "name": "Odoreu",
+        "is_active": 1
+    },
+    "31":{
+        "county_id": 33,
+        "township": "",
+        "name": "Orasu Nou",
+        "is_active": 1
+    },
+    "32":{
+        "county_id": 33,
+        "township": "",
+        "name": "Petresti",
+        "is_active": 1
+    },
+    "33":{
+        "county_id": 33,
+        "township": "",
+        "name": "Pir",
+        "is_active": 1
+    },
+    "34":{
+        "county_id": 33,
+        "township": "",
+        "name": "Piscolt",
+        "is_active": 1
+    },
+    "35":{
+        "county_id": 33,
+        "township": "",
+        "name": "Pomi",
+        "is_active": 1
+    },
+    "36":{
+        "county_id": 33,
+        "township": "",
+        "name": "Paulesti",
+        "is_active": 1
+    },
+    "37":{
+        "county_id": 33,
+        "township": "",
+        "name": "Sanislau",
+        "is_active": 1
+    },
+    "38":{
+        "county_id": 33,
+        "township": "",
+        "name": "Santau",
+        "is_active": 1
+    },
+    "39":{
+        "county_id": 33,
+        "township": "",
+        "name": "Satu Mare",
+        "is_active": 1
+    },
+    "40":{
+        "county_id": 33,
+        "township": "",
+        "name": "Socond",
+        "is_active": 1
+    },
+    "41":{
+        "county_id": 33,
+        "township": "",
+        "name": "Sacaseni",
+        "is_active": 1
+    },
+    "42":{
+        "county_id": 33,
+        "township": "",
+        "name": "Sauca",
+        "is_active": 1
+    },
+    "43":{
+        "county_id": 33,
+        "township": "",
+        "name": "Tarna Mare",
+        "is_active": 1
+    },
+    "44":{
+        "county_id": 33,
+        "township": "",
+        "name": "Terebesti",
+        "is_active": 1
+    },
+    "45":{
+        "county_id": 33,
+        "township": "",
+        "name": "Tiream",
+        "is_active": 1
+    },
+    "46":{
+        "county_id": 33,
+        "township": "",
+        "name": "Turulung",
+        "is_active": 1
+    },
+    "47":{
+        "county_id": 33,
+        "township": "",
+        "name": "Turt",
+        "is_active": 1
+    },
+    "48":{
+        "county_id": 33,
+        "township": "",
+        "name": "Tarsolt",
+        "is_active": 1
+    },
+    "49":{
+        "county_id": 33,
+        "township": "",
+        "name": "Tasnad",
+        "is_active": 1
+    },
+    "50":{
+        "county_id": 33,
+        "township": "",
+        "name": "Urziceni",
+        "is_active": 1
+    },
+    "51":{
+        "county_id": 33,
+        "township": "",
+        "name": "Valea Vinului",
+        "is_active": 1
+    },
+    "52":{
+        "county_id": 33,
+        "township": "",
+        "name": "Vama",
+        "is_active": 1
+    },
+    "53":{
+        "county_id": 33,
+        "township": "",
+        "name": "Vetis",
+        "is_active": 1
+    },
+    "54":{
+        "county_id": 33,
+        "township": "",
+        "name": "Viile Satu Mare",
+        "is_active": 1
+    },
+    "55":{
+        "county_id": 33,
+        "township": "Acis",
+        "name": "Acas",
+        "is_active": 1
+    },
+    "56":{
+        "county_id": 33,
+        "township": "Acis",
+        "name": "Ganas",
+        "is_active": 1
+    },
+    "57":{
+        "county_id": 33,
+        "township": "Acis",
+        "name": "Mihaieni",
+        "is_active": 1
+    },
+    "58":{
+        "county_id": 33,
+        "township": "Acis",
+        "name": "Unimat",
+        "is_active": 1
+    },
+    "59":{
+        "county_id": 33,
+        "township": "Andrid",
+        "name": "Dindesti",
+        "is_active": 1
+    },
+    "60":{
+        "county_id": 33,
+        "township": "Andrid",
+        "name": "Irina",
+        "is_active": 1
+    },
+    "61":{
+        "county_id": 33,
+        "township": "Apa",
+        "name": "Lunca Apei",
+        "is_active": 1
+    },
+    "62":{
+        "county_id": 33,
+        "township": "Apa",
+        "name": "Someseni",
+        "is_active": 1
+    },
+    "63":{
+        "county_id": 33,
+        "township": "Ardud",
+        "name": "Ardud-Vii",
+        "is_active": 1
+    },
+    "64":{
+        "county_id": 33,
+        "township": "Ardud",
+        "name": "Baba Novac",
+        "is_active": 1
+    },
+    "65":{
+        "county_id": 33,
+        "township": "Ardud",
+        "name": "Gerausa",
+        "is_active": 1
+    },
+    "66":{
+        "county_id": 33,
+        "township": "Ardud",
+        "name": "Madaras",
+        "is_active": 1
+    },
+    "67":{
+        "county_id": 33,
+        "township": "Ardud",
+        "name": "Saratura",
+        "is_active": 1
+    },
+    "68":{
+        "county_id": 33,
+        "township": "Barsau",
+        "name": "Barsau de Jos",
+        "is_active": 1
+    },
+    "69":{
+        "county_id": 33,
+        "township": "Barsau",
+        "name": "Barsau de Sus",
+        "is_active": 1
+    },
+    "70":{
+        "county_id": 33,
+        "township": "Batarci",
+        "name": "Comlausa",
+        "is_active": 1
+    },
+    "71":{
+        "county_id": 33,
+        "township": "Batarci",
+        "name": "Tamaseni",
+        "is_active": 1
+    },
+    "72":{
+        "county_id": 33,
+        "township": "Batarci",
+        "name": "Sirlau",
+        "is_active": 1
+    },
+    "73":{
+        "county_id": 33,
+        "township": "Beltiug",
+        "name": "Bolda",
+        "is_active": 1
+    },
+    "74":{
+        "county_id": 33,
+        "township": "Beltiug",
+        "name": "Ghirisa",
+        "is_active": 1
+    },
+    "75":{
+        "county_id": 33,
+        "township": "Beltiug",
+        "name": "Giungi",
+        "is_active": 1
+    },
+    "76":{
+        "county_id": 33,
+        "township": "Beltiug",
+        "name": "Ratesti",
+        "is_active": 1
+    },
+    "77":{
+        "county_id": 33,
+        "township": "Beltiug",
+        "name": "Sandra",
+        "is_active": 1
+    },
+    "78":{
+        "county_id": 33,
+        "township": "Berveni",
+        "name": "Lucaceni",
+        "is_active": 1
+    },
+    "79":{
+        "county_id": 33,
+        "township": "Bixad",
+        "name": "Boinesti",
+        "is_active": 1
+    },
+    "80":{
+        "county_id": 33,
+        "township": "Bixad",
+        "name": "Trip",
+        "is_active": 1
+    },
+    "81":{
+        "county_id": 33,
+        "township": "Bogdand",
+        "name": "Babta",
+        "is_active": 1
+    },
+    "82":{
+        "county_id": 33,
+        "township": "Bogdand",
+        "name": "Corund",
+        "is_active": 1
+    },
+    "83":{
+        "county_id": 33,
+        "township": "Bogdand",
+        "name": "Ser",
+        "is_active": 1
+    },
+    "84":{
+        "county_id": 33,
+        "township": "Botiz",
+        "name": "Agris",
+        "is_active": 1
+    },
+    "85":{
+        "county_id": 33,
+        "township": "Botiz",
+        "name": "Ciuperceni",
+        "is_active": 1
+    },
+    "86":{
+        "county_id": 33,
+        "township": "Calinesti-Oas",
+        "name": "Coca",
+        "is_active": 1
+    },
+    "87":{
+        "county_id": 33,
+        "township": "Calinesti-Oas",
+        "name": "Lechinta",
+        "is_active": 1
+    },
+    "88":{
+        "county_id": 33,
+        "township": "Calinesti-Oas",
+        "name": "Pasunea Mare",
+        "is_active": 1
+    },
+    "89":{
+        "county_id": 33,
+        "township": "Carei",
+        "name": "Ianculesti",
+        "is_active": 1
+    },
+    "90":{
+        "county_id": 33,
+        "township": "Cauas",
+        "name": "Ady Endre",
+        "is_active": 1
+    },
+    "91":{
+        "county_id": 33,
+        "township": "Cauas",
+        "name": "Ghenci",
+        "is_active": 1
+    },
+    "92":{
+        "county_id": 33,
+        "township": "Cauas",
+        "name": "Ghilesti",
+        "is_active": 1
+    },
+    "93":{
+        "county_id": 33,
+        "township": "Cauas",
+        "name": "Hotoan",
+        "is_active": 1
+    },
+    "94":{
+        "county_id": 33,
+        "township": "Cauas",
+        "name": "Radulesti",
+        "is_active": 1
+    },
+    "95":{
+        "county_id": 33,
+        "township": "Cehal",
+        "name": "Cehalut",
+        "is_active": 1
+    },
+    "96":{
+        "county_id": 33,
+        "township": "Cehal",
+        "name": "Orbau",
+        "is_active": 1
+    },
+    "97":{
+        "county_id": 33,
+        "township": "Certeze",
+        "name": "Huta Certeze",
+        "is_active": 1
+    },
+    "98":{
+        "county_id": 33,
+        "township": "Certeze",
+        "name": "Moiseni",
+        "is_active": 1
+    },
+    "99":{
+        "county_id": 33,
+        "township": "Craidorolt",
+        "name": "Criseni",
+        "is_active": 1
+    },
+    "100":{
+        "county_id": 33,
+        "township": "Craidorolt",
+        "name": "Eriu Sancrai",
+        "is_active": 1
+    },
+    "101":{
+        "county_id": 33,
+        "township": "Craidorolt",
+        "name": "Satu Mic",
+        "is_active": 1
+    },
+    "102":{
+        "county_id": 33,
+        "township": "Craidorolt",
+        "name": "Teghea",
+        "is_active": 1
+    },
+    "103":{
+        "county_id": 33,
+        "township": "Crucisor",
+        "name": "Iegheriste",
+        "is_active": 1
+    },
+    "104":{
+        "county_id": 33,
+        "township": "Crucisor",
+        "name": "Poiana Codrului",
+        "is_active": 1
+    },
+    "105":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Apateu",
+        "is_active": 1
+    },
+    "106":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Corod",
+        "is_active": 1
+    },
+    "107":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Culciu Mare",
+        "is_active": 1
+    },
+    "108":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Culciu Mic",
+        "is_active": 1
+    },
+    "109":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Caraseu",
+        "is_active": 1
+    },
+    "110":{
+        "county_id": 33,
+        "township": "Culciu",
+        "name": "Lipau",
+        "is_active": 1
+    },
+    "111":{
+        "county_id": 33,
+        "township": "Doba",
+        "name": "Boghis",
+        "is_active": 1
+    },
+    "112":{
+        "county_id": 33,
+        "township": "Doba",
+        "name": "Dacia",
+        "is_active": 1
+    },
+    "113":{
+        "county_id": 33,
+        "township": "Doba",
+        "name": "Paulian",
+        "is_active": 1
+    },
+    "114":{
+        "county_id": 33,
+        "township": "Doba",
+        "name": "Traian",
+        "is_active": 1
+    },
+    "115":{
+        "county_id": 33,
+        "township": "Dorolt",
+        "name": "Atea",
+        "is_active": 1
+    },
+    "116":{
+        "county_id": 33,
+        "township": "Dorolt",
+        "name": "Dara",
+        "is_active": 1
+    },
+    "117":{
+        "county_id": 33,
+        "township": "Dorolt",
+        "name": "Petea",
+        "is_active": 1
+    },
+    "118":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Babesti",
+        "is_active": 1
+    },
+    "119":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Cidreag",
+        "is_active": 1
+    },
+    "120":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Dobolt",
+        "is_active": 1
+    },
+    "121":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Halmeu Vii",
+        "is_active": 1
+    },
+    "122":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Mesteacan",
+        "is_active": 1
+    },
+    "123":{
+        "county_id": 33,
+        "township": "Halmeu",
+        "name": "Porumbesti",
+        "is_active": 1
+    },
+    "124":{
+        "county_id": 33,
+        "township": "Hodod",
+        "name": "Giurtelecu Hododului",
+        "is_active": 1
+    },
+    "125":{
+        "county_id": 33,
+        "township": "Hodod",
+        "name": "Lelei",
+        "is_active": 1
+    },
+    "126":{
+        "county_id": 33,
+        "township": "Hodod",
+        "name": "Nadisu Hododului",
+        "is_active": 1
+    },
+    "127":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Chilia",
+        "is_active": 1
+    },
+    "128":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Homorodu de Jos",
+        "is_active": 1
+    },
+    "129":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Homorodu de Mijloc",
+        "is_active": 1
+    },
+    "130":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Homorodu de Sus",
+        "is_active": 1
+    },
+    "131":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Necopoi",
+        "is_active": 1
+    },
+    "132":{
+        "county_id": 33,
+        "township": "Homoroade",
+        "name": "Solduba",
+        "is_active": 1
+    },
+    "133":{
+        "county_id": 33,
+        "township": "Lazuri",
+        "name": "Bercu",
+        "is_active": 1
+    },
+    "134":{
+        "county_id": 33,
+        "township": "Lazuri",
+        "name": "Nisipeni",
+        "is_active": 1
+    },
+    "135":{
+        "county_id": 33,
+        "township": "Lazuri",
+        "name": "Noroieni",
+        "is_active": 1
+    },
+    "136":{
+        "county_id": 33,
+        "township": "Lazuri",
+        "name": "Peles",
+        "is_active": 1
+    },
+    "137":{
+        "county_id": 33,
+        "township": "Lazuri",
+        "name": "Pelisor",
+        "is_active": 1
+    },
+    "138":{
+        "county_id": 33,
+        "township": "Livada",
+        "name": "Adrian",
+        "is_active": 1
+    },
+    "139":{
+        "county_id": 33,
+        "township": "Livada",
+        "name": "Dumbrava",
+        "is_active": 1
+    },
+    "140":{
+        "county_id": 33,
+        "township": "Livada",
+        "name": "Livada Mica",
+        "is_active": 1
+    },
+    "141":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Babasesti",
+        "is_active": 1
+    },
+    "142":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Iojib",
+        "is_active": 1
+    },
+    "143":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Medies Raturi",
+        "is_active": 1
+    },
+    "144":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Medies Vii",
+        "is_active": 1
+    },
+    "145":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Potau",
+        "is_active": 1
+    },
+    "146":{
+        "county_id": 33,
+        "township": "Mediesu Aurit",
+        "name": "Romanesti",
+        "is_active": 1
+    },
+    "147":{
+        "county_id": 33,
+        "township": "Micula",
+        "name": "Bercu Nou",
+        "is_active": 1
+    },
+    "148":{
+        "county_id": 33,
+        "township": "Micula",
+        "name": "Micula Noua",
+        "is_active": 1
+    },
+    "149":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Domanesti",
+        "is_active": 1
+    },
+    "150":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Ghilvaci",
+        "is_active": 1
+    },
+    "151":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Ghirolt",
+        "is_active": 1
+    },
+    "152":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Istrau",
+        "is_active": 1
+    },
+    "153":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Moftinu Mare",
+        "is_active": 1
+    },
+    "154":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Moftinu Mic",
+        "is_active": 1
+    },
+    "155":{
+        "county_id": 33,
+        "township": "Moftin",
+        "name": "Sanmiclaus",
+        "is_active": 1
+    },
+    "156":{
+        "county_id": 33,
+        "township": "Negresti-Oas",
+        "name": "Luna",
+        "is_active": 1
+    },
+    "157":{
+        "county_id": 33,
+        "township": "Negresti-Oas",
+        "name": "Tur",
+        "is_active": 1
+    },
+    "158":{
+        "county_id": 33,
+        "township": "Odoreu",
+        "name": "Berindan",
+        "is_active": 1
+    },
+    "159":{
+        "county_id": 33,
+        "township": "Odoreu",
+        "name": "Cucu",
+        "is_active": 1
+    },
+    "160":{
+        "county_id": 33,
+        "township": "Odoreu",
+        "name": "Eteni",
+        "is_active": 1
+    },
+    "161":{
+        "county_id": 33,
+        "township": "Odoreu",
+        "name": "Martinesti",
+        "is_active": 1
+    },
+    "162":{
+        "county_id": 33,
+        "township": "Odoreu",
+        "name": "Vanatoresti",
+        "is_active": 1
+    },
+    "163":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Orasu Nou-Vii",
+        "is_active": 1
+    },
+    "164":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Prilog",
+        "is_active": 1
+    },
+    "165":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Prilog Vii",
+        "is_active": 1
+    },
+    "166":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Racsa",
+        "is_active": 1
+    },
+    "167":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Racsa Vii",
+        "is_active": 1
+    },
+    "168":{
+        "county_id": 33,
+        "township": "Orasu Nou",
+        "name": "Remetea Oasului",
+        "is_active": 1
+    },
+    "169":{
+        "county_id": 33,
+        "township": "Paulesti",
+        "name": "Amati",
+        "is_active": 1
+    },
+    "170":{
+        "county_id": 33,
+        "township": "Paulesti",
+        "name": "Ambud",
+        "is_active": 1
+    },
+    "171":{
+        "county_id": 33,
+        "township": "Paulesti",
+        "name": "Hrip",
+        "is_active": 1
+    },
+    "172":{
+        "county_id": 33,
+        "township": "Paulesti",
+        "name": "Petin",
+        "is_active": 1
+    },
+    "173":{
+        "county_id": 33,
+        "township": "Paulesti",
+        "name": "Ruseni",
+        "is_active": 1
+    },
+    "174":{
+        "county_id": 33,
+        "township": "Petresti",
+        "name": "Dindestiu Mic",
+        "is_active": 1
+    },
+    "175":{
+        "county_id": 33,
+        "township": "Pir",
+        "name": "Piru Nou",
+        "is_active": 1
+    },
+    "176":{
+        "county_id": 33,
+        "township": "Pir",
+        "name": "Sarvazel",
+        "is_active": 1
+    },
+    "177":{
+        "county_id": 33,
+        "township": "Piscolt",
+        "name": "Resighea",
+        "is_active": 1
+    },
+    "178":{
+        "county_id": 33,
+        "township": "Piscolt",
+        "name": "Scarisoara Noua",
+        "is_active": 1
+    },
+    "179":{
+        "county_id": 33,
+        "township": "Pomi",
+        "name": "Aciua",
+        "is_active": 1
+    },
+    "180":{
+        "county_id": 33,
+        "township": "Pomi",
+        "name": "Bicau",
+        "is_active": 1
+    },
+    "181":{
+        "county_id": 33,
+        "township": "Pomi",
+        "name": "Borlesti",
+        "is_active": 1
+    },
+    "182":{
+        "county_id": 33,
+        "township": "Sacaseni",
+        "name": "Chegea",
+        "is_active": 1
+    },
+    "183":{
+        "county_id": 33,
+        "township": "Sanislau",
+        "name": "Berea",
+        "is_active": 1
+    },
+    "184":{
+        "county_id": 33,
+        "township": "Sanislau",
+        "name": "Ciumesti",
+        "is_active": 1
+    },
+    "185":{
+        "county_id": 33,
+        "township": "Sanislau",
+        "name": "Horea",
+        "is_active": 1
+    },
+    "186":{
+        "county_id": 33,
+        "township": "Sanislau",
+        "name": "Marna Noua",
+        "is_active": 1
+    },
+    "187":{
+        "county_id": 33,
+        "township": "Sanislau",
+        "name": "Viisoara",
+        "is_active": 1
+    },
+    "188":{
+        "county_id": 33,
+        "township": "Santau",
+        "name": "Chereusa",
+        "is_active": 1
+    },
+    "189":{
+        "county_id": 33,
+        "township": "Santau",
+        "name": "Sudurau",
+        "is_active": 1
+    },
+    "190":{
+        "county_id": 33,
+        "township": "Satu Mare",
+        "name": "Satmarel",
+        "is_active": 1
+    },
+    "191":{
+        "county_id": 33,
+        "township": "Sauca",
+        "name": "Becheni",
+        "is_active": 1
+    },
+    "192":{
+        "county_id": 33,
+        "township": "Sauca",
+        "name": "Cean",
+        "is_active": 1
+    },
+    "193":{
+        "county_id": 33,
+        "township": "Sauca",
+        "name": "Chisau",
+        "is_active": 1
+    },
+    "194":{
+        "county_id": 33,
+        "township": "Sauca",
+        "name": "Silvas",
+        "is_active": 1
+    },
+    "195":{
+        "county_id": 33,
+        "township": "Socond",
+        "name": "Cuta",
+        "is_active": 1
+    },
+    "196":{
+        "county_id": 33,
+        "township": "Socond",
+        "name": "Hodisa",
+        "is_active": 1
+    },
+    "197":{
+        "county_id": 33,
+        "township": "Socond",
+        "name": "Soconzel",
+        "is_active": 1
+    },
+    "198":{
+        "county_id": 33,
+        "township": "Socond",
+        "name": "Stana",
+        "is_active": 1
+    },
+    "199":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Dobra",
+        "is_active": 1
+    },
+    "200":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Giorocuta",
+        "is_active": 1
+    },
+    "201":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Hurezu Mare",
+        "is_active": 1
+    },
+    "202":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Racova",
+        "is_active": 1
+    },
+    "203":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Secheresa",
+        "is_active": 1
+    },
+    "204":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Supuru de Jos",
+        "is_active": 1
+    },
+    "205":{
+        "county_id": 33,
+        "township": "Supur",
+        "name": "Supuru de Sus",
+        "is_active": 1
+    },
+    "206":{
+        "county_id": 33,
+        "township": "Tarna Mare",
+        "name": "Bocicau",
+        "is_active": 1
+    },
+    "207":{
+        "county_id": 33,
+        "township": "Tarna Mare",
+        "name": "Valea Seaca",
+        "is_active": 1
+    },
+    "208":{
+        "county_id": 33,
+        "township": "Tarna Mare",
+        "name": "Vagas",
+        "is_active": 1
+    },
+    "209":{
+        "county_id": 33,
+        "township": "Tarsolt",
+        "name": "Aliceni",
+        "is_active": 1
+    },
+    "210":{
+        "county_id": 33,
+        "township": "Tasnad",
+        "name": "Blaja",
+        "is_active": 1
+    },
+    "211":{
+        "county_id": 33,
+        "township": "Tasnad",
+        "name": "Cig",
+        "is_active": 1
+    },
+    "212":{
+        "county_id": 33,
+        "township": "Tasnad",
+        "name": "Ratiu",
+        "is_active": 1
+    },
+    "213":{
+        "county_id": 33,
+        "township": "Tasnad",
+        "name": "Sarauad",
+        "is_active": 1
+    },
+    "214":{
+        "county_id": 33,
+        "township": "Tasnad",
+        "name": "Valea Morii",
+        "is_active": 1
+    },
+    "215":{
+        "county_id": 33,
+        "township": "Terebesti",
+        "name": "Aliza",
+        "is_active": 1
+    },
+    "216":{
+        "county_id": 33,
+        "township": "Terebesti",
+        "name": "Gelu",
+        "is_active": 1
+    },
+    "217":{
+        "county_id": 33,
+        "township": "Terebesti",
+        "name": "Piscari",
+        "is_active": 1
+    },
+    "218":{
+        "county_id": 33,
+        "township": "Tiream",
+        "name": "Portita",
+        "is_active": 1
+    },
+    "219":{
+        "county_id": 33,
+        "township": "Tiream",
+        "name": "Vezendiu",
+        "is_active": 1
+    },
+    "220":{
+        "county_id": 33,
+        "township": "Turt",
+        "name": "Gherta Mare",
+        "is_active": 1
+    },
+    "221":{
+        "county_id": 33,
+        "township": "Turt",
+        "name": "Turt Bai",
+        "is_active": 1
+    },
+    "222":{
+        "county_id": 33,
+        "township": "Turulung",
+        "name": "Draguseni",
+        "is_active": 1
+    },
+    "223":{
+        "county_id": 33,
+        "township": "Turulung",
+        "name": "Turulung Vii",
+        "is_active": 1
+    },
+    "224":{
+        "county_id": 33,
+        "township": "Urziceni",
+        "name": "Urziceni Padure",
+        "is_active": 1
+    },
+    "225":{
+        "county_id": 33,
+        "township": "Valea Vinului",
+        "name": "Marius",
+        "is_active": 1
+    },
+    "226":{
+        "county_id": 33,
+        "township": "Valea Vinului",
+        "name": "Rosiori",
+        "is_active": 1
+    },
+    "227":{
+        "county_id": 33,
+        "township": "Valea Vinului",
+        "name": "Sai",
+        "is_active": 1
+    },
+    "228":{
+        "county_id": 33,
+        "township": "Vetis",
+        "name": "Decebal",
+        "is_active": 1
+    },
+    "229":{
+        "county_id": 33,
+        "township": "Vetis",
+        "name": "Oar",
+        "is_active": 1
+    },
+    "230":{
+        "county_id": 33,
+        "township": "Viile Satu Mare",
+        "name": "Cionchesti",
+        "is_active": 1
+    },
+    "231":{
+        "county_id": 33,
+        "township": "Viile Satu Mare",
+        "name": "Medisa",
+        "is_active": 1
+    },
+    "232":{
+        "county_id": 33,
+        "township": "Viile Satu Mare",
+        "name": "Tireac",
+        "is_active": 1
+    },
+    "233":{
+        "county_id": 33,
+        "township": "Viile Satu Mare",
+        "name": "Tataresti",
+        "is_active": 1
+    }
+}

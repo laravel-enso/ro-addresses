@@ -1,0 +1,2102 @@
+{
+    "0":{
+        "county_id": 8,
+        "township": "",
+        "name": "Albesti",
+        "is_active": 1
+    },
+    "1":{
+        "county_id": 8,
+        "township": "",
+        "name": "Avrameni",
+        "is_active": 1
+    },
+    "2":{
+        "county_id": 8,
+        "township": "",
+        "name": "Botosani",
+        "is_active": 1
+    },
+    "3":{
+        "county_id": 8,
+        "township": "",
+        "name": "Broscauti",
+        "is_active": 1
+    },
+    "4":{
+        "county_id": 8,
+        "township": "",
+        "name": "Braesti",
+        "is_active": 1
+    },
+    "5":{
+        "county_id": 8,
+        "township": "",
+        "name": "Bucecea",
+        "is_active": 1
+    },
+    "6":{
+        "county_id": 8,
+        "township": "",
+        "name": "Baluseni",
+        "is_active": 1
+    },
+    "7":{
+        "county_id": 8,
+        "township": "",
+        "name": "Concesti",
+        "is_active": 1
+    },
+    "8":{
+        "county_id": 8,
+        "township": "",
+        "name": "Copalau",
+        "is_active": 1
+    },
+    "9":{
+        "county_id": 8,
+        "township": "",
+        "name": "Cordareni",
+        "is_active": 1
+    },
+    "10":{
+        "county_id": 8,
+        "township": "",
+        "name": "Corlateni",
+        "is_active": 1
+    },
+    "11":{
+        "county_id": 8,
+        "township": "",
+        "name": "Corni",
+        "is_active": 1
+    },
+    "12":{
+        "county_id": 8,
+        "township": "",
+        "name": "Cosula",
+        "is_active": 1
+    },
+    "13":{
+        "county_id": 8,
+        "township": "",
+        "name": "Cotusca",
+        "is_active": 1
+    },
+    "14":{
+        "county_id": 8,
+        "township": "",
+        "name": "Cristesti",
+        "is_active": 1
+    },
+    "15":{
+        "county_id": 8,
+        "township": "",
+        "name": "Cristinesti",
+        "is_active": 1
+    },
+    "16":{
+        "county_id": 8,
+        "township": "",
+        "name": "Curtesti",
+        "is_active": 1
+    },
+    "17":{
+        "county_id": 8,
+        "township": "",
+        "name": "Candesti",
+        "is_active": 1
+    },
+    "18":{
+        "county_id": 8,
+        "township": "",
+        "name": "Calarasi",
+        "is_active": 1
+    },
+    "19":{
+        "county_id": 8,
+        "township": "",
+        "name": "Darabani",
+        "is_active": 1
+    },
+    "20":{
+        "county_id": 8,
+        "township": "",
+        "name": "Dersca",
+        "is_active": 1
+    },
+    "21":{
+        "county_id": 8,
+        "township": "",
+        "name": "Dimacheni",
+        "is_active": 1
+    },
+    "22":{
+        "county_id": 8,
+        "township": "",
+        "name": "Dobarceni",
+        "is_active": 1
+    },
+    "23":{
+        "county_id": 8,
+        "township": "",
+        "name": "Dorohoi",
+        "is_active": 1
+    },
+    "24":{
+        "county_id": 8,
+        "township": "",
+        "name": "Draguseni",
+        "is_active": 1
+    },
+    "25":{
+        "county_id": 8,
+        "township": "",
+        "name": "Durnesti",
+        "is_active": 1
+    },
+    "26":{
+        "county_id": 8,
+        "township": "",
+        "name": "Dangeni",
+        "is_active": 1
+    },
+    "27":{
+        "county_id": 8,
+        "township": "",
+        "name": "Flamanzi",
+        "is_active": 1
+    },
+    "28":{
+        "county_id": 8,
+        "township": "",
+        "name": "Frumusica",
+        "is_active": 1
+    },
+    "29":{
+        "county_id": 8,
+        "township": "",
+        "name": "George Enescu",
+        "is_active": 1
+    },
+    "30":{
+        "county_id": 8,
+        "township": "",
+        "name": "Gorbanesti",
+        "is_active": 1
+    },
+    "31":{
+        "county_id": 8,
+        "township": "",
+        "name": "Havarna",
+        "is_active": 1
+    },
+    "32":{
+        "county_id": 8,
+        "township": "",
+        "name": "Hiliseu-Horia",
+        "is_active": 1
+    },
+    "33":{
+        "county_id": 8,
+        "township": "",
+        "name": "Hlipiceni",
+        "is_active": 1
+    },
+    "34":{
+        "county_id": 8,
+        "township": "",
+        "name": "Hudesti",
+        "is_active": 1
+    },
+    "35":{
+        "county_id": 8,
+        "township": "",
+        "name": "Hanesti",
+        "is_active": 1
+    },
+    "36":{
+        "county_id": 8,
+        "township": "",
+        "name": "Ibanesti",
+        "is_active": 1
+    },
+    "37":{
+        "county_id": 8,
+        "township": "",
+        "name": "Leorda",
+        "is_active": 1
+    },
+    "38":{
+        "county_id": 8,
+        "township": "",
+        "name": "Lozna",
+        "is_active": 1
+    },
+    "39":{
+        "county_id": 8,
+        "township": "",
+        "name": "Lunca",
+        "is_active": 1
+    },
+    "40":{
+        "county_id": 8,
+        "township": "",
+        "name": "Manoleasa",
+        "is_active": 1
+    },
+    "41":{
+        "county_id": 8,
+        "township": "",
+        "name": "Mihaileni",
+        "is_active": 1
+    },
+    "42":{
+        "county_id": 8,
+        "township": "",
+        "name": "Mihalaseni",
+        "is_active": 1
+    },
+    "43":{
+        "county_id": 8,
+        "township": "",
+        "name": "Mileanca",
+        "is_active": 1
+    },
+    "44":{
+        "county_id": 8,
+        "township": "",
+        "name": "Mitoc",
+        "is_active": 1
+    },
+    "45":{
+        "county_id": 8,
+        "township": "",
+        "name": "Nicseni",
+        "is_active": 1
+    },
+    "46":{
+        "county_id": 8,
+        "township": "",
+        "name": "Pomarla",
+        "is_active": 1
+    },
+    "47":{
+        "county_id": 8,
+        "township": "",
+        "name": "Prajeni",
+        "is_active": 1
+    },
+    "48":{
+        "county_id": 8,
+        "township": "",
+        "name": "Paltinis",
+        "is_active": 1
+    },
+    "49":{
+        "county_id": 8,
+        "township": "",
+        "name": "Ripiceni",
+        "is_active": 1
+    },
+    "50":{
+        "county_id": 8,
+        "township": "",
+        "name": "Roma",
+        "is_active": 1
+    },
+    "51":{
+        "county_id": 8,
+        "township": "",
+        "name": "Romanesti",
+        "is_active": 1
+    },
+    "52":{
+        "county_id": 8,
+        "township": "",
+        "name": "Rachiti",
+        "is_active": 1
+    },
+    "53":{
+        "county_id": 8,
+        "township": "",
+        "name": "Radauti-Prut",
+        "is_active": 1
+    },
+    "54":{
+        "county_id": 8,
+        "township": "",
+        "name": "Rauseni",
+        "is_active": 1
+    },
+    "55":{
+        "county_id": 8,
+        "township": "",
+        "name": "Santa Mare",
+        "is_active": 1
+    },
+    "56":{
+        "county_id": 8,
+        "township": "",
+        "name": "Stauceni",
+        "is_active": 1
+    },
+    "57":{
+        "county_id": 8,
+        "township": "",
+        "name": "Suharau",
+        "is_active": 1
+    },
+    "58":{
+        "county_id": 8,
+        "township": "",
+        "name": "Sulita",
+        "is_active": 1
+    },
+    "59":{
+        "county_id": 8,
+        "township": "",
+        "name": "Saveni",
+        "is_active": 1
+    },
+    "60":{
+        "county_id": 8,
+        "township": "",
+        "name": "Todireni",
+        "is_active": 1
+    },
+    "61":{
+        "county_id": 8,
+        "township": "",
+        "name": "Trusesti",
+        "is_active": 1
+    },
+    "62":{
+        "county_id": 8,
+        "township": "",
+        "name": "Tudora",
+        "is_active": 1
+    },
+    "63":{
+        "county_id": 8,
+        "township": "",
+        "name": "Ungureni",
+        "is_active": 1
+    },
+    "64":{
+        "county_id": 8,
+        "township": "",
+        "name": "Unteni",
+        "is_active": 1
+    },
+    "65":{
+        "county_id": 8,
+        "township": "",
+        "name": "Viisoara",
+        "is_active": 1
+    },
+    "66":{
+        "county_id": 8,
+        "township": "",
+        "name": "Vladeni",
+        "is_active": 1
+    },
+    "67":{
+        "county_id": 8,
+        "township": "",
+        "name": "Vlasinesti",
+        "is_active": 1
+    },
+    "68":{
+        "county_id": 8,
+        "township": "",
+        "name": "Vorniceni",
+        "is_active": 1
+    },
+    "69":{
+        "county_id": 8,
+        "township": "",
+        "name": "Vorona",
+        "is_active": 1
+    },
+    "70":{
+        "county_id": 8,
+        "township": "",
+        "name": "Varfu Campului",
+        "is_active": 1
+    },
+    "71":{
+        "county_id": 8,
+        "township": "",
+        "name": "Vaculesti",
+        "is_active": 1
+    },
+    "72":{
+        "county_id": 8,
+        "township": "",
+        "name": "Sendriceni",
+        "is_active": 1
+    },
+    "73":{
+        "county_id": 8,
+        "township": "",
+        "name": "Stefanesti",
+        "is_active": 1
+    },
+    "74":{
+        "county_id": 8,
+        "township": "",
+        "name": "Stiubieni",
+        "is_active": 1
+    },
+    "75":{
+        "county_id": 8,
+        "township": "Albesti",
+        "name": "Buimaceni",
+        "is_active": 1
+    },
+    "76":{
+        "county_id": 8,
+        "township": "Albesti",
+        "name": "Costiugeni",
+        "is_active": 1
+    },
+    "77":{
+        "county_id": 8,
+        "township": "Albesti",
+        "name": "Jijia",
+        "is_active": 1
+    },
+    "78":{
+        "county_id": 8,
+        "township": "Albesti",
+        "name": "Mascateni",
+        "is_active": 1
+    },
+    "79":{
+        "county_id": 8,
+        "township": "Albesti",
+        "name": "Tudor Vladimirescu",
+        "is_active": 1
+    },
+    "80":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Adaseni",
+        "is_active": 1
+    },
+    "81":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Aurel Vlaicu",
+        "is_active": 1
+    },
+    "82":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Dimitrie Cantemir",
+        "is_active": 1
+    },
+    "83":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Ichimeni",
+        "is_active": 1
+    },
+    "84":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Panaitoaia",
+        "is_active": 1
+    },
+    "85":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Timus",
+        "is_active": 1
+    },
+    "86":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Tudor Vladimirescu",
+        "is_active": 1
+    },
+    "87":{
+        "county_id": 8,
+        "township": "Avrameni",
+        "name": "Zoitani",
+        "is_active": 1
+    },
+    "88":{
+        "county_id": 8,
+        "township": "Baluseni",
+        "name": "Buzeni",
+        "is_active": 1
+    },
+    "89":{
+        "county_id": 8,
+        "township": "Baluseni",
+        "name": "Balusenii Noi",
+        "is_active": 1
+    },
+    "90":{
+        "county_id": 8,
+        "township": "Baluseni",
+        "name": "Cosuleni",
+        "is_active": 1
+    },
+    "91":{
+        "county_id": 8,
+        "township": "Baluseni",
+        "name": "Draxini",
+        "is_active": 1
+    },
+    "92":{
+        "county_id": 8,
+        "township": "Baluseni",
+        "name": "Zaicesti",
+        "is_active": 1
+    },
+    "93":{
+        "county_id": 8,
+        "township": "Blindesti",
+        "name": "Blandesti",
+        "is_active": 1
+    },
+    "94":{
+        "county_id": 8,
+        "township": "Blindesti",
+        "name": "Cerchejeni",
+        "is_active": 1
+    },
+    "95":{
+        "county_id": 8,
+        "township": "Blindesti",
+        "name": "Soldanesti",
+        "is_active": 1
+    },
+    "96":{
+        "county_id": 8,
+        "township": "Braesti",
+        "name": "Poiana",
+        "is_active": 1
+    },
+    "97":{
+        "county_id": 8,
+        "township": "Braesti",
+        "name": "Popeni",
+        "is_active": 1
+    },
+    "98":{
+        "county_id": 8,
+        "township": "Braesti",
+        "name": "Valcelele",
+        "is_active": 1
+    },
+    "99":{
+        "county_id": 8,
+        "township": "Broscauti",
+        "name": "Slobozia",
+        "is_active": 1
+    },
+    "100":{
+        "county_id": 8,
+        "township": "Bucecea",
+        "name": "Bohoghina",
+        "is_active": 1
+    },
+    "101":{
+        "county_id": 8,
+        "township": "Bucecea",
+        "name": "Calinesti",
+        "is_active": 1
+    },
+    "102":{
+        "county_id": 8,
+        "township": "Calarasi",
+        "name": "Libertatea",
+        "is_active": 1
+    },
+    "103":{
+        "county_id": 8,
+        "township": "Calarasi",
+        "name": "Plesani",
+        "is_active": 1
+    },
+    "104":{
+        "county_id": 8,
+        "township": "Candesti",
+        "name": "Calinesti",
+        "is_active": 1
+    },
+    "105":{
+        "county_id": 8,
+        "township": "Candesti",
+        "name": "Talpa",
+        "is_active": 1
+    },
+    "106":{
+        "county_id": 8,
+        "township": "Candesti",
+        "name": "Vitcani",
+        "is_active": 1
+    },
+    "107":{
+        "county_id": 8,
+        "township": "Concesti",
+        "name": "Movileni",
+        "is_active": 1
+    },
+    "108":{
+        "county_id": 8,
+        "township": "Copalau",
+        "name": "Cerbu",
+        "is_active": 1
+    },
+    "109":{
+        "county_id": 8,
+        "township": "Copalau",
+        "name": "Cotu",
+        "is_active": 1
+    },
+    "110":{
+        "county_id": 8,
+        "township": "Cordareni",
+        "name": "Grivita",
+        "is_active": 1
+    },
+    "111":{
+        "county_id": 8,
+        "township": "Cordăreni",
+        "name": "Slobozia",
+        "is_active": 1
+    },
+    "112":{
+        "county_id": 8,
+        "township": "Corlateni",
+        "name": "Carasa",
+        "is_active": 1
+    },
+    "113":{
+        "county_id": 8,
+        "township": "Corlateni",
+        "name": "Podeni",
+        "is_active": 1
+    },
+    "114":{
+        "county_id": 8,
+        "township": "Corlateni",
+        "name": "Vladeni",
+        "is_active": 1
+    },
+    "115":{
+        "county_id": 8,
+        "township": "Corni",
+        "name": "Balta Arsa",
+        "is_active": 1
+    },
+    "116":{
+        "county_id": 8,
+        "township": "Corni",
+        "name": "Mesteacan",
+        "is_active": 1
+    },
+    "117":{
+        "county_id": 8,
+        "township": "Corni",
+        "name": "Sarafinesti",
+        "is_active": 1
+    },
+    "118":{
+        "county_id": 8,
+        "township": "Cosula",
+        "name": "Buda",
+        "is_active": 1
+    },
+    "119":{
+        "county_id": 8,
+        "township": "Cosula",
+        "name": "Padureni",
+        "is_active": 1
+    },
+    "120":{
+        "county_id": 8,
+        "township": "Cosula",
+        "name": "Supitca",
+        "is_active": 1
+    },
+    "121":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Avram Iancu",
+        "is_active": 1
+    },
+    "122":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Cotu Miculinti",
+        "is_active": 1
+    },
+    "123":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Crasnaleuca",
+        "is_active": 1
+    },
+    "124":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Ghireni",
+        "is_active": 1
+    },
+    "125":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Mihail Kogalniceanu",
+        "is_active": 1
+    },
+    "126":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Nichiteni",
+        "is_active": 1
+    },
+    "127":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Nicolae Balcescu",
+        "is_active": 1
+    },
+    "128":{
+        "county_id": 8,
+        "township": "Cotusca",
+        "name": "Putureni",
+        "is_active": 1
+    },
+    "129":{
+        "county_id": 8,
+        "township": "Cristesti",
+        "name": "Oneaga",
+        "is_active": 1
+    },
+    "130":{
+        "county_id": 8,
+        "township": "Cristesti",
+        "name": "Schit-Oraseni",
+        "is_active": 1
+    },
+    "131":{
+        "county_id": 8,
+        "township": "Cristesti",
+        "name": "Unguroaia",
+        "is_active": 1
+    },
+    "132":{
+        "county_id": 8,
+        "township": "Cristinesti",
+        "name": "Baranca",
+        "is_active": 1
+    },
+    "133":{
+        "county_id": 8,
+        "township": "Cristinesti",
+        "name": "Dragalina",
+        "is_active": 1
+    },
+    "134":{
+        "county_id": 8,
+        "township": "Cristinesti",
+        "name": "Fundu Hertii",
+        "is_active": 1
+    },
+    "135":{
+        "county_id": 8,
+        "township": "Cristinesti",
+        "name": "Poiana",
+        "is_active": 1
+    },
+    "136":{
+        "county_id": 8,
+        "township": "Cristinești",
+        "name": "Damileni",
+        "is_active": 1
+    },
+    "137":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Agafton",
+        "is_active": 1
+    },
+    "138":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Baiceni",
+        "is_active": 1
+    },
+    "139":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Hudum",
+        "is_active": 1
+    },
+    "140":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Manastirea Doamnei",
+        "is_active": 1
+    },
+    "141":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Oraseni-Deal",
+        "is_active": 1
+    },
+    "142":{
+        "county_id": 8,
+        "township": "Curtesti",
+        "name": "Oraseni-Vale",
+        "is_active": 1
+    },
+    "143":{
+        "county_id": 8,
+        "township": "Dangeni",
+        "name": "Hulub",
+        "is_active": 1
+    },
+    "144":{
+        "county_id": 8,
+        "township": "Dangeni",
+        "name": "Iacobeni",
+        "is_active": 1
+    },
+    "145":{
+        "county_id": 8,
+        "township": "Dangeni",
+        "name": "Strahotin",
+        "is_active": 1
+    },
+    "146":{
+        "county_id": 8,
+        "township": "Darabani",
+        "name": "Bajura",
+        "is_active": 1
+    },
+    "147":{
+        "county_id": 8,
+        "township": "Darabani",
+        "name": "Esanca",
+        "is_active": 1
+    },
+    "148":{
+        "county_id": 8,
+        "township": "Darabani",
+        "name": "Lismanita",
+        "is_active": 1
+    },
+    "149":{
+        "county_id": 8,
+        "township": "Dimacheni",
+        "name": "Mateieni",
+        "is_active": 1
+    },
+    "150":{
+        "county_id": 8,
+        "township": "Dimacheni",
+        "name": "Recia-Verbia",
+        "is_active": 1
+    },
+    "151":{
+        "county_id": 8,
+        "township": "Dobarceni",
+        "name": "Bivolari",
+        "is_active": 1
+    },
+    "152":{
+        "county_id": 8,
+        "township": "Dobarceni",
+        "name": "Brateni",
+        "is_active": 1
+    },
+    "153":{
+        "county_id": 8,
+        "township": "Dobarceni",
+        "name": "Cismanesti",
+        "is_active": 1
+    },
+    "154":{
+        "county_id": 8,
+        "township": "Dobarceni",
+        "name": "Livada",
+        "is_active": 1
+    },
+    "155":{
+        "county_id": 8,
+        "township": "Dobarceni",
+        "name": "Murguta",
+        "is_active": 1
+    },
+    "156":{
+        "county_id": 8,
+        "township": "Dorohoi",
+        "name": "Dealu Mare",
+        "is_active": 1
+    },
+    "157":{
+        "county_id": 8,
+        "township": "Dorohoi",
+        "name": "Loturi Enescu",
+        "is_active": 1
+    },
+    "158":{
+        "county_id": 8,
+        "township": "Dorohoi",
+        "name": "Progresul",
+        "is_active": 1
+    },
+    "159":{
+        "county_id": 8,
+        "township": "Draguseni",
+        "name": "Podriga",
+        "is_active": 1
+    },
+    "160":{
+        "county_id": 8,
+        "township": "Draguseni",
+        "name": "Sarata-Draguseni",
+        "is_active": 1
+    },
+    "161":{
+        "county_id": 8,
+        "township": "Durnesti",
+        "name": "Brosteni",
+        "is_active": 1
+    },
+    "162":{
+        "county_id": 8,
+        "township": "Durnesti",
+        "name": "Barsanesti",
+        "is_active": 1
+    },
+    "163":{
+        "county_id": 8,
+        "township": "Durnesti",
+        "name": "Babiceni",
+        "is_active": 1
+    },
+    "164":{
+        "county_id": 8,
+        "township": "Durnesti",
+        "name": "Cucuteni",
+        "is_active": 1
+    },
+    "165":{
+        "county_id": 8,
+        "township": "Durnesti",
+        "name": "Guranda",
+        "is_active": 1
+    },
+    "166":{
+        "county_id": 8,
+        "township": "Flamanzi",
+        "name": "Chitoveni",
+        "is_active": 1
+    },
+    "167":{
+        "county_id": 8,
+        "township": "Flamanzi",
+        "name": "Nicolae Balcescu",
+        "is_active": 1
+    },
+    "168":{
+        "county_id": 8,
+        "township": "Flamanzi",
+        "name": "Poiana",
+        "is_active": 1
+    },
+    "169":{
+        "county_id": 8,
+        "township": "Flamanzi",
+        "name": "Prisacani",
+        "is_active": 1
+    },
+    "170":{
+        "county_id": 8,
+        "township": "Frumusica",
+        "name": "Boscoteni",
+        "is_active": 1
+    },
+    "171":{
+        "county_id": 8,
+        "township": "Frumusica",
+        "name": "Radeni",
+        "is_active": 1
+    },
+    "172":{
+        "county_id": 8,
+        "township": "Frumusica",
+        "name": "Storesti",
+        "is_active": 1
+    },
+    "173":{
+        "county_id": 8,
+        "township": "Frumusica",
+        "name": "Vladeni-Deal",
+        "is_active": 1
+    },
+    "174":{
+        "county_id": 8,
+        "township": "Frumusica",
+        "name": "Sendreni",
+        "is_active": 1
+    },
+    "175":{
+        "county_id": 8,
+        "township": "George Enescu",
+        "name": "Arborea",
+        "is_active": 1
+    },
+    "176":{
+        "county_id": 8,
+        "township": "George Enescu",
+        "name": "Dumeni",
+        "is_active": 1
+    },
+    "177":{
+        "county_id": 8,
+        "township": "George Enescu",
+        "name": "Popeni",
+        "is_active": 1
+    },
+    "178":{
+        "county_id": 8,
+        "township": "George Enescu",
+        "name": "Stanca",
+        "is_active": 1
+    },
+    "179":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Batranesti",
+        "is_active": 1
+    },
+    "180":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "George Cosbuc",
+        "is_active": 1
+    },
+    "181":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Mihai Eminescu",
+        "is_active": 1
+    },
+    "182":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Siliscani",
+        "is_active": 1
+    },
+    "183":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Socrujeni",
+        "is_active": 1
+    },
+    "184":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Viforeni",
+        "is_active": 1
+    },
+    "185":{
+        "county_id": 8,
+        "township": "Gorbanesti",
+        "name": "Vanatori",
+        "is_active": 1
+    },
+    "186":{
+        "county_id": 8,
+        "township": "Hanesti",
+        "name": "Borolea",
+        "is_active": 1
+    },
+    "187":{
+        "county_id": 8,
+        "township": "Hanesti",
+        "name": "Moara Jorii",
+        "is_active": 1
+    },
+    "188":{
+        "county_id": 8,
+        "township": "Hanesti",
+        "name": "Sarata-Basarab",
+        "is_active": 1
+    },
+    "189":{
+        "county_id": 8,
+        "township": "Hanesti",
+        "name": "Slobozia Hanesti",
+        "is_active": 1
+    },
+    "190":{
+        "county_id": 8,
+        "township": "Havarna",
+        "name": "Balinti",
+        "is_active": 1
+    },
+    "191":{
+        "county_id": 8,
+        "township": "Havarna",
+        "name": "Galbeni",
+        "is_active": 1
+    },
+    "192":{
+        "county_id": 8,
+        "township": "Havarna",
+        "name": "Garbeni",
+        "is_active": 1
+    },
+    "193":{
+        "county_id": 8,
+        "township": "Havarna",
+        "name": "Niculcea",
+        "is_active": 1
+    },
+    "194":{
+        "county_id": 8,
+        "township": "Havarna",
+        "name": "Tataraseni",
+        "is_active": 1
+    },
+    "195":{
+        "county_id": 8,
+        "township": "Hiliseu-Horia",
+        "name": "Corjauti",
+        "is_active": 1
+    },
+    "196":{
+        "county_id": 8,
+        "township": "Hiliseu-Horia",
+        "name": "Hiliseu-Closca",
+        "is_active": 1
+    },
+    "197":{
+        "county_id": 8,
+        "township": "Hiliseu-Horia",
+        "name": "Hiliseu-Crisan",
+        "is_active": 1
+    },
+    "198":{
+        "county_id": 8,
+        "township": "Hiliseu-Horia",
+        "name": "Iezer",
+        "is_active": 1
+    },
+    "199":{
+        "county_id": 8,
+        "township": "Hlipiceni",
+        "name": "Dragalina",
+        "is_active": 1
+    },
+    "200":{
+        "county_id": 8,
+        "township": "Hlipiceni",
+        "name": "Victoria",
+        "is_active": 1
+    },
+    "201":{
+        "county_id": 8,
+        "township": "Hudesti",
+        "name": "Alba",
+        "is_active": 1
+    },
+    "202":{
+        "county_id": 8,
+        "township": "Hudesti",
+        "name": "Baranca",
+        "is_active": 1
+    },
+    "203":{
+        "county_id": 8,
+        "township": "Hudesti",
+        "name": "Mlenauti",
+        "is_active": 1
+    },
+    "204":{
+        "county_id": 8,
+        "township": "Hudești",
+        "name": "Baseu",
+        "is_active": 1
+    },
+    "205":{
+        "county_id": 8,
+        "township": "Hudești",
+        "name": "Vatra",
+        "is_active": 1
+    },
+    "206":{
+        "county_id": 8,
+        "township": "Ibanesti",
+        "name": "Dumbravita",
+        "is_active": 1
+    },
+    "207":{
+        "county_id": 8,
+        "township": "Leorda",
+        "name": "Belcea",
+        "is_active": 1
+    },
+    "208":{
+        "county_id": 8,
+        "township": "Leorda",
+        "name": "Costinesti",
+        "is_active": 1
+    },
+    "209":{
+        "county_id": 8,
+        "township": "Leorda",
+        "name": "Dolina",
+        "is_active": 1
+    },
+    "210":{
+        "county_id": 8,
+        "township": "Leorda",
+        "name": "Mitoc",
+        "is_active": 1
+    },
+    "211":{
+        "county_id": 8,
+        "township": "Lozna",
+        "name": "Strateni",
+        "is_active": 1
+    },
+    "212":{
+        "county_id": 8,
+        "township": "Lunca",
+        "name": "Stroiesti",
+        "is_active": 1
+    },
+    "213":{
+        "county_id": 8,
+        "township": "Lunca",
+        "name": "Zlatunoaia",
+        "is_active": 1
+    },
+    "214":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Bold",
+        "is_active": 1
+    },
+    "215":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Flondora",
+        "is_active": 1
+    },
+    "216":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Iorga",
+        "is_active": 1
+    },
+    "217":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Liveni",
+        "is_active": 1
+    },
+    "218":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Loturi",
+        "is_active": 1
+    },
+    "219":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Manoleasa-Prut",
+        "is_active": 1
+    },
+    "220":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Sadoveni",
+        "is_active": 1
+    },
+    "221":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Zahoreni",
+        "is_active": 1
+    },
+    "222":{
+        "county_id": 8,
+        "township": "Manoleasa",
+        "name": "Serpenita",
+        "is_active": 1
+    },
+    "223":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Baisa",
+        "is_active": 1
+    },
+    "224":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Cervicesti",
+        "is_active": 1
+    },
+    "225":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Cervicesti-Deal",
+        "is_active": 1
+    },
+    "226":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Cucorani",
+        "is_active": 1
+    },
+    "227":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Catamaresti",
+        "is_active": 1
+    },
+    "228":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Catamaresti-Deal",
+        "is_active": 1
+    },
+    "229":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Ipotesti",
+        "is_active": 1
+    },
+    "230":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Manolesti",
+        "is_active": 1
+    },
+    "231":{
+        "county_id": 8,
+        "township": "Mihai Eminescu",
+        "name": "Stancesti",
+        "is_active": 1
+    },
+    "232":{
+        "county_id": 8,
+        "township": "Mihaileni",
+        "name": "Parau Negru",
+        "is_active": 1
+    },
+    "233":{
+        "county_id": 8,
+        "township": "Mihaileni",
+        "name": "Rogojesti",
+        "is_active": 1
+    },
+    "234":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Caraiman",
+        "is_active": 1
+    },
+    "235":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Negresti",
+        "is_active": 1
+    },
+    "236":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Nastase",
+        "is_active": 1
+    },
+    "237":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Paun",
+        "is_active": 1
+    },
+    "238":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Sarata",
+        "is_active": 1
+    },
+    "239":{
+        "county_id": 8,
+        "township": "Mihalaseni",
+        "name": "Slobozia Siliscani",
+        "is_active": 1
+    },
+    "240":{
+        "county_id": 8,
+        "township": "Mileanca",
+        "name": "Codreni",
+        "is_active": 1
+    },
+    "241":{
+        "county_id": 8,
+        "township": "Mileanca",
+        "name": "Scutari",
+        "is_active": 1
+    },
+    "242":{
+        "county_id": 8,
+        "township": "Mileanca",
+        "name": "Selistea",
+        "is_active": 1
+    },
+    "243":{
+        "county_id": 8,
+        "township": "Mitoc",
+        "name": "Horia",
+        "is_active": 1
+    },
+    "244":{
+        "county_id": 8,
+        "township": "Nicseni",
+        "name": "Dacia",
+        "is_active": 1
+    },
+    "245":{
+        "county_id": 8,
+        "township": "Nicseni",
+        "name": "Dorobanti",
+        "is_active": 1
+    },
+    "246":{
+        "county_id": 8,
+        "township": "Paltinis",
+        "name": "Cuzlau",
+        "is_active": 1
+    },
+    "247":{
+        "county_id": 8,
+        "township": "Paltinis",
+        "name": "Horodistea",
+        "is_active": 1
+    },
+    "248":{
+        "county_id": 8,
+        "township": "Paltinis",
+        "name": "Slobozia",
+        "is_active": 1
+    },
+    "249":{
+        "county_id": 8,
+        "township": "Pomarla",
+        "name": "Hulubesti",
+        "is_active": 1
+    },
+    "250":{
+        "county_id": 8,
+        "township": "Pomarla",
+        "name": "Racovat",
+        "is_active": 1
+    },
+    "251":{
+        "county_id": 8,
+        "township": "Prajeni",
+        "name": "Campeni",
+        "is_active": 1
+    },
+    "252":{
+        "county_id": 8,
+        "township": "Prajeni",
+        "name": "Luparia",
+        "is_active": 1
+    },
+    "253":{
+        "county_id": 8,
+        "township": "Prajeni",
+        "name": "Miletin",
+        "is_active": 1
+    },
+    "254":{
+        "county_id": 8,
+        "township": "Rachiti",
+        "name": "Cismea",
+        "is_active": 1
+    },
+    "255":{
+        "county_id": 8,
+        "township": "Rachiti",
+        "name": "Costesti",
+        "is_active": 1
+    },
+    "256":{
+        "county_id": 8,
+        "township": "Rachiti",
+        "name": "Rosiori",
+        "is_active": 1
+    },
+    "257":{
+        "county_id": 8,
+        "township": "Radauti-Prut",
+        "name": "Miorcani",
+        "is_active": 1
+    },
+    "258":{
+        "county_id": 8,
+        "township": "Radauti-Prut",
+        "name": "Rediu",
+        "is_active": 1
+    },
+    "259":{
+        "county_id": 8,
+        "township": "Rauseni",
+        "name": "Doina",
+        "is_active": 1
+    },
+    "260":{
+        "county_id": 8,
+        "township": "Rauseni",
+        "name": "Pogorasti",
+        "is_active": 1
+    },
+    "261":{
+        "county_id": 8,
+        "township": "Rauseni",
+        "name": "Rediu",
+        "is_active": 1
+    },
+    "262":{
+        "county_id": 8,
+        "township": "Rauseni",
+        "name": "Stolniceni",
+        "is_active": 1
+    },
+    "263":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Cinghiniia",
+        "is_active": 1
+    },
+    "264":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Lehnesti",
+        "is_active": 1
+    },
+    "265":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Movila Rupta",
+        "is_active": 1
+    },
+    "266":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Popoaia",
+        "is_active": 1
+    },
+    "267":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Ripicenii Vechi",
+        "is_active": 1
+    },
+    "268":{
+        "county_id": 8,
+        "township": "Ripiceni",
+        "name": "Rasca",
+        "is_active": 1
+    },
+    "269":{
+        "county_id": 8,
+        "township": "Roma",
+        "name": "Cotargaci",
+        "is_active": 1
+    },
+    "270":{
+        "county_id": 8,
+        "township": "Romanesti",
+        "name": "Damideni",
+        "is_active": 1
+    },
+    "271":{
+        "county_id": 8,
+        "township": "Romanesti",
+        "name": "Romanesti-Vale",
+        "is_active": 1
+    },
+    "272":{
+        "county_id": 8,
+        "township": "Romanesti",
+        "name": "Sarata",
+        "is_active": 1
+    },
+    "273":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Berza",
+        "is_active": 1
+    },
+    "274":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Bogdanesti",
+        "is_active": 1
+    },
+    "275":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Badarai",
+        "is_active": 1
+    },
+    "276":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Durnesti",
+        "is_active": 1
+    },
+    "277":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Iliseni",
+        "is_active": 1
+    },
+    "278":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Ranghilesti",
+        "is_active": 1
+    },
+    "279":{
+        "county_id": 8,
+        "township": "Santa Mare",
+        "name": "Ranghilesti-Deal",
+        "is_active": 1
+    },
+    "280":{
+        "county_id": 8,
+        "township": "Saveni",
+        "name": "Bodeasa",
+        "is_active": 1
+    },
+    "281":{
+        "county_id": 8,
+        "township": "Saveni",
+        "name": "Bozieni",
+        "is_active": 1
+    },
+    "282":{
+        "county_id": 8,
+        "township": "Saveni",
+        "name": "Chiscareni",
+        "is_active": 1
+    },
+    "283":{
+        "county_id": 8,
+        "township": "Saveni",
+        "name": "Petricani",
+        "is_active": 1
+    },
+    "284":{
+        "county_id": 8,
+        "township": "Saveni",
+        "name": "Sat Nou",
+        "is_active": 1
+    },
+    "285":{
+        "county_id": 8,
+        "township": "Sendriceni",
+        "name": "Horlaceni",
+        "is_active": 1
+    },
+    "286":{
+        "county_id": 8,
+        "township": "Sendriceni",
+        "name": "Padureni",
+        "is_active": 1
+    },
+    "287":{
+        "county_id": 8,
+        "township": "Stauceni",
+        "name": "Silistea",
+        "is_active": 1
+    },
+    "288":{
+        "county_id": 8,
+        "township": "Stauceni",
+        "name": "Tocileni",
+        "is_active": 1
+    },
+    "289":{
+        "county_id": 8,
+        "township": "Stauceni",
+        "name": "Victoria",
+        "is_active": 1
+    },
+    "290":{
+        "county_id": 8,
+        "township": "Stefanesti",
+        "name": "Bobulesti",
+        "is_active": 1
+    },
+    "291":{
+        "county_id": 8,
+        "township": "Stefanesti",
+        "name": "Badiuti",
+        "is_active": 1
+    },
+    "292":{
+        "county_id": 8,
+        "township": "Stefanesti",
+        "name": "Stanca",
+        "is_active": 1
+    },
+    "293":{
+        "county_id": 8,
+        "township": "Stefanesti",
+        "name": "Stefanesti-Sat",
+        "is_active": 1
+    },
+    "294":{
+        "county_id": 8,
+        "township": "Stiubieni",
+        "name": "Ibaneasa",
+        "is_active": 1
+    },
+    "295":{
+        "county_id": 8,
+        "township": "Stiubieni",
+        "name": "Negreni",
+        "is_active": 1
+    },
+    "296":{
+        "county_id": 8,
+        "township": "Suharau",
+        "name": "Izvoare",
+        "is_active": 1
+    },
+    "297":{
+        "county_id": 8,
+        "township": "Suharau",
+        "name": "Lisna",
+        "is_active": 1
+    },
+    "298":{
+        "county_id": 8,
+        "township": "Suharau",
+        "name": "Oroftiana",
+        "is_active": 1
+    },
+    "299":{
+        "county_id": 8,
+        "township": "Suharau",
+        "name": "Plevna",
+        "is_active": 1
+    },
+    "300":{
+        "county_id": 8,
+        "township": "Suharau",
+        "name": "Smardan",
+        "is_active": 1
+    },
+    "301":{
+        "county_id": 8,
+        "township": "Sulita",
+        "name": "Chelis",
+        "is_active": 1
+    },
+    "302":{
+        "county_id": 8,
+        "township": "Sulita",
+        "name": "Dracsani",
+        "is_active": 1
+    },
+    "303":{
+        "county_id": 8,
+        "township": "Todireni",
+        "name": "Cernesti",
+        "is_active": 1
+    },
+    "304":{
+        "county_id": 8,
+        "township": "Todireni",
+        "name": "Floresti",
+        "is_active": 1
+    },
+    "305":{
+        "county_id": 8,
+        "township": "Todireni",
+        "name": "Garbesti",
+        "is_active": 1
+    },
+    "306":{
+        "county_id": 8,
+        "township": "Todireni",
+        "name": "Iuresti",
+        "is_active": 1
+    },
+    "307":{
+        "county_id": 8,
+        "township": "Trusesti",
+        "name": "Buhaceni",
+        "is_active": 1
+    },
+    "308":{
+        "county_id": 8,
+        "township": "Trusesti",
+        "name": "Ciritei",
+        "is_active": 1
+    },
+    "309":{
+        "county_id": 8,
+        "township": "Trusesti",
+        "name": "Drislea",
+        "is_active": 1
+    },
+    "310":{
+        "county_id": 8,
+        "township": "Trusesti",
+        "name": "Ionaseni",
+        "is_active": 1
+    },
+    "311":{
+        "county_id": 8,
+        "township": "Trusesti",
+        "name": "Pasateni",
+        "is_active": 1
+    },
+    "312":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Borzesti",
+        "is_active": 1
+    },
+    "313":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Calugareni",
+        "is_active": 1
+    },
+    "314":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Calugarenii Noi",
+        "is_active": 1
+    },
+    "315":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Durnesti",
+        "is_active": 1
+    },
+    "316":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Mihai Viteazu",
+        "is_active": 1
+    },
+    "317":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Mandresti",
+        "is_active": 1
+    },
+    "318":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Plopenii Mari",
+        "is_active": 1
+    },
+    "319":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Plopenii Mici",
+        "is_active": 1
+    },
+    "320":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Tautesti",
+        "is_active": 1
+    },
+    "321":{
+        "county_id": 8,
+        "township": "Ungureni",
+        "name": "Vicoleni",
+        "is_active": 1
+    },
+    "322":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Burla",
+        "is_active": 1
+    },
+    "323":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Burlesti",
+        "is_active": 1
+    },
+    "324":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Manastireni",
+        "is_active": 1
+    },
+    "325":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Soroceni",
+        "is_active": 1
+    },
+    "326":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Valea Grajdului",
+        "is_active": 1
+    },
+    "327":{
+        "county_id": 8,
+        "township": "Unteni",
+        "name": "Vultureni",
+        "is_active": 1
+    },
+    "328":{
+        "county_id": 8,
+        "township": "Vaculesti",
+        "name": "Gorovei",
+        "is_active": 1
+    },
+    "329":{
+        "county_id": 8,
+        "township": "Vaculesti",
+        "name": "Saucenita",
+        "is_active": 1
+    },
+    "330":{
+        "county_id": 8,
+        "township": "Varfu Campului",
+        "name": "Ionaseni",
+        "is_active": 1
+    },
+    "331":{
+        "county_id": 8,
+        "township": "Varfu Campului",
+        "name": "Lunca",
+        "is_active": 1
+    },
+    "332":{
+        "county_id": 8,
+        "township": "Viisoara",
+        "name": "Cuza Voda",
+        "is_active": 1
+    },
+    "333":{
+        "county_id": 8,
+        "township": "Viisoara",
+        "name": "Viisoara Mica",
+        "is_active": 1
+    },
+    "334":{
+        "county_id": 8,
+        "township": "Vladeni",
+        "name": "Brehuiesti",
+        "is_active": 1
+    },
+    "335":{
+        "county_id": 8,
+        "township": "Vladeni",
+        "name": "Hriscani",
+        "is_active": 1
+    },
+    "336":{
+        "county_id": 8,
+        "township": "Vladeni",
+        "name": "Hutani",
+        "is_active": 1
+    },
+    "337":{
+        "county_id": 8,
+        "township": "Vladeni",
+        "name": "Mandresti",
+        "is_active": 1
+    },
+    "338":{
+        "county_id": 8,
+        "township": "Vlasinesti",
+        "name": "Miron Costin",
+        "is_active": 1
+    },
+    "339":{
+        "county_id": 8,
+        "township": "Vlasinesti",
+        "name": "Sarbi",
+        "is_active": 1
+    },
+    "340":{
+        "county_id": 8,
+        "township": "Vorniceni",
+        "name": "Davidoaia",
+        "is_active": 1
+    },
+    "341":{
+        "county_id": 8,
+        "township": "Vorniceni",
+        "name": "Dealu Crucii",
+        "is_active": 1
+    },
+    "342":{
+        "county_id": 8,
+        "township": "Vorona",
+        "name": "Icuseni",
+        "is_active": 1
+    },
+    "343":{
+        "county_id": 8,
+        "township": "Vorona",
+        "name": "Joldesti",
+        "is_active": 1
+    },
+    "344":{
+        "county_id": 8,
+        "township": "Vorona",
+        "name": "Poiana",
+        "is_active": 1
+    },
+    "345":{
+        "county_id": 8,
+        "township": "Vorona",
+        "name": "Vorona Mare",
+        "is_active": 1
+    },
+    "346":{
+        "county_id": 8,
+        "township": "Vorona",
+        "name": "Vorona-Teodoru",
+        "is_active": 1
+    },
+    "347":{
+        "county_id": 8,
+        "township": "Vârfu Câmpului",
+        "name": "Dobrinauti-Hapai",
+        "is_active": 1
+    },
+    "348":{
+        "county_id": 8,
+        "township": "Vârfu Câmpului",
+        "name": "Maghera",
+        "is_active": 1
+    },
+    "349":{
+        "county_id": 8,
+        "township": "Vârfu Câmpului",
+        "name": "Pustoaia",
+        "is_active": 1
+    }
+}

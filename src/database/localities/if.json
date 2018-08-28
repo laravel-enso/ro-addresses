@@ -1,0 +1,626 @@
+{
+    "0":{
+        "county_id": 26,
+        "township": "",
+        "name": "1 Decembrie",
+        "is_active": 1
+    },
+    "1":{
+        "county_id": 26,
+        "township": "",
+        "name": "Afumati",
+        "is_active": 1
+    },
+    "2":{
+        "county_id": 26,
+        "township": "",
+        "name": "Balotesti",
+        "is_active": 1
+    },
+    "3":{
+        "county_id": 26,
+        "township": "",
+        "name": "Berceni",
+        "is_active": 1
+    },
+    "4":{
+        "county_id": 26,
+        "township": "",
+        "name": "Bragadiru",
+        "is_active": 1
+    },
+    "5":{
+        "county_id": 26,
+        "township": "",
+        "name": "Branesti",
+        "is_active": 1
+    },
+    "6":{
+        "county_id": 26,
+        "township": "",
+        "name": "Buftea",
+        "is_active": 1
+    },
+    "7":{
+        "county_id": 26,
+        "township": "",
+        "name": "Cernica",
+        "is_active": 1
+    },
+    "8":{
+        "county_id": 26,
+        "township": "",
+        "name": "Chiajna",
+        "is_active": 1
+    },
+    "9":{
+        "county_id": 26,
+        "township": "",
+        "name": "Chitila",
+        "is_active": 1
+    },
+    "10":{
+        "county_id": 26,
+        "township": "",
+        "name": "Ciolpani",
+        "is_active": 1
+    },
+    "11":{
+        "county_id": 26,
+        "township": "",
+        "name": "Ciorogarla",
+        "is_active": 1
+    },
+    "12":{
+        "county_id": 26,
+        "township": "",
+        "name": "Clinceni",
+        "is_active": 1
+    },
+    "13":{
+        "county_id": 26,
+        "township": "",
+        "name": "Corbeanca",
+        "is_active": 1
+    },
+    "14":{
+        "county_id": 26,
+        "township": "",
+        "name": "Cornetu",
+        "is_active": 1
+    },
+    "15":{
+        "county_id": 26,
+        "township": "",
+        "name": "Dascalu",
+        "is_active": 1
+    },
+    "16":{
+        "county_id": 26,
+        "township": "",
+        "name": "Domnesti",
+        "is_active": 1
+    },
+    "17":{
+        "county_id": 26,
+        "township": "",
+        "name": "Dragomiresti-Vale",
+        "is_active": 1
+    },
+    "18":{
+        "county_id": 26,
+        "township": "",
+        "name": "Darasti-Ilfov",
+        "is_active": 1
+    },
+    "19":{
+        "county_id": 26,
+        "township": "",
+        "name": "Glina",
+        "is_active": 1
+    },
+    "20":{
+        "county_id": 26,
+        "township": "",
+        "name": "Gruiu",
+        "is_active": 1
+    },
+    "21":{
+        "county_id": 26,
+        "township": "",
+        "name": "Gradistea",
+        "is_active": 1
+    },
+    "22":{
+        "county_id": 26,
+        "township": "",
+        "name": "Ganeasa",
+        "is_active": 1
+    },
+    "23":{
+        "county_id": 26,
+        "township": "",
+        "name": "Jilava",
+        "is_active": 1
+    },
+    "24":{
+        "county_id": 26,
+        "township": "",
+        "name": "Moara Vlasiei",
+        "is_active": 1
+    },
+    "25":{
+        "county_id": 26,
+        "township": "",
+        "name": "Mogosoaia",
+        "is_active": 1
+    },
+    "26":{
+        "county_id": 26,
+        "township": "",
+        "name": "Magurele",
+        "is_active": 1
+    },
+    "27":{
+        "county_id": 26,
+        "township": "",
+        "name": "Nuci",
+        "is_active": 1
+    },
+    "28":{
+        "county_id": 26,
+        "township": "",
+        "name": "Otopeni",
+        "is_active": 1
+    },
+    "29":{
+        "county_id": 26,
+        "township": "",
+        "name": "Pantelimon",
+        "is_active": 1
+    },
+    "30":{
+        "county_id": 26,
+        "township": "",
+        "name": "Peris",
+        "is_active": 1
+    },
+    "31":{
+        "county_id": 26,
+        "township": "",
+        "name": "Petrachioaia",
+        "is_active": 1
+    },
+    "32":{
+        "county_id": 26,
+        "township": "",
+        "name": "Popesti Leordeni",
+        "is_active": 1
+    },
+    "33":{
+        "county_id": 26,
+        "township": "",
+        "name": "Snagov",
+        "is_active": 1
+    },
+    "34":{
+        "county_id": 26,
+        "township": "",
+        "name": "Tunari",
+        "is_active": 1
+    },
+    "35":{
+        "county_id": 26,
+        "township": "",
+        "name": "Vidra",
+        "is_active": 1
+    },
+    "36":{
+        "county_id": 26,
+        "township": "",
+        "name": "Voluntari",
+        "is_active": 1
+    },
+    "37":{
+        "county_id": 26,
+        "township": "",
+        "name": "Stefanestii de Jos",
+        "is_active": 1
+    },
+    "38":{
+        "county_id": 26,
+        "township": "1 Decembrie",
+        "name": "Copaceni",
+        "is_active": 1
+    },
+    "39":{
+        "county_id": 26,
+        "township": "Balotesti",
+        "name": "Dumbraveni",
+        "is_active": 1
+    },
+    "40":{
+        "county_id": 26,
+        "township": "Balotesti",
+        "name": "Saftica",
+        "is_active": 1
+    },
+    "41":{
+        "county_id": 26,
+        "township": "Branesti",
+        "name": "Islaz",
+        "is_active": 1
+    },
+    "42":{
+        "county_id": 26,
+        "township": "Branesti",
+        "name": "Pasarea",
+        "is_active": 1
+    },
+    "43":{
+        "county_id": 26,
+        "township": "Branesti",
+        "name": "Vadu Anei",
+        "is_active": 1
+    },
+    "44":{
+        "county_id": 26,
+        "township": "Buftea",
+        "name": "Buciumeni",
+        "is_active": 1
+    },
+    "45":{
+        "county_id": 26,
+        "township": "Cernica",
+        "name": "Balaceanca",
+        "is_active": 1
+    },
+    "46":{
+        "county_id": 26,
+        "township": "Cernica",
+        "name": "Caldararu",
+        "is_active": 1
+    },
+    "47":{
+        "county_id": 26,
+        "township": "Cernica",
+        "name": "Posta",
+        "is_active": 1
+    },
+    "48":{
+        "county_id": 26,
+        "township": "Cernica",
+        "name": "Tanganu",
+        "is_active": 1
+    },
+    "49":{
+        "county_id": 26,
+        "township": "Chiajna",
+        "name": "Dudu",
+        "is_active": 1
+    },
+    "50":{
+        "county_id": 26,
+        "township": "Chiajna",
+        "name": "Rosu",
+        "is_active": 1
+    },
+    "51":{
+        "county_id": 26,
+        "township": "Chitila",
+        "name": "Rudeni",
+        "is_active": 1
+    },
+    "52":{
+        "county_id": 26,
+        "township": "Ciolpani",
+        "name": "Izvorani",
+        "is_active": 1
+    },
+    "53":{
+        "county_id": 26,
+        "township": "Ciolpani",
+        "name": "Luparia",
+        "is_active": 1
+    },
+    "54":{
+        "county_id": 26,
+        "township": "Ciolpani",
+        "name": "Piscu",
+        "is_active": 1
+    },
+    "55":{
+        "county_id": 26,
+        "township": "Ciorogarla",
+        "name": "Darvari",
+        "is_active": 1
+    },
+    "56":{
+        "county_id": 26,
+        "township": "Clinceni",
+        "name": "Olteni",
+        "is_active": 1
+    },
+    "57":{
+        "county_id": 26,
+        "township": "Clinceni",
+        "name": "Ordoreanu",
+        "is_active": 1
+    },
+    "58":{
+        "county_id": 26,
+        "township": "Corbeanca",
+        "name": "Ostratu",
+        "is_active": 1
+    },
+    "59":{
+        "county_id": 26,
+        "township": "Corbeanca",
+        "name": "Petresti",
+        "is_active": 1
+    },
+    "60":{
+        "county_id": 26,
+        "township": "Corbeanca",
+        "name": "Tamasi",
+        "is_active": 1
+    },
+    "61":{
+        "county_id": 26,
+        "township": "Cornetu",
+        "name": "Buda",
+        "is_active": 1
+    },
+    "62":{
+        "county_id": 26,
+        "township": "Dascalu",
+        "name": "Creata",
+        "is_active": 1
+    },
+    "63":{
+        "county_id": 26,
+        "township": "Dascalu",
+        "name": "Gagu",
+        "is_active": 1
+    },
+    "64":{
+        "county_id": 26,
+        "township": "Dascalu",
+        "name": "Runcu",
+        "is_active": 1
+    },
+    "65":{
+        "county_id": 26,
+        "township": "Dobroiesti",
+        "name": "Dobroesti",
+        "is_active": 1
+    },
+    "66":{
+        "county_id": 26,
+        "township": "Dobroiesti",
+        "name": "Fundeni",
+        "is_active": 1
+    },
+    "67":{
+        "county_id": 26,
+        "township": "Domnesti",
+        "name": "Teghes",
+        "is_active": 1
+    },
+    "68":{
+        "county_id": 26,
+        "township": "Dragomiresti-Vale",
+        "name": "Dragomiresti-Deal",
+        "is_active": 1
+    },
+    "69":{
+        "county_id": 26,
+        "township": "Dragomiresti-Vale",
+        "name": "Zurbaua",
+        "is_active": 1
+    },
+    "70":{
+        "county_id": 26,
+        "township": "Ganeasa",
+        "name": "Cozieni",
+        "is_active": 1
+    },
+    "71":{
+        "county_id": 26,
+        "township": "Ganeasa",
+        "name": "Moara Domneasca",
+        "is_active": 1
+    },
+    "72":{
+        "county_id": 26,
+        "township": "Ganeasa",
+        "name": "Piteasca",
+        "is_active": 1
+    },
+    "73":{
+        "county_id": 26,
+        "township": "Ganeasa",
+        "name": "Sindrilita",
+        "is_active": 1
+    },
+    "74":{
+        "county_id": 26,
+        "township": "Glina",
+        "name": "Catelu",
+        "is_active": 1
+    },
+    "75":{
+        "county_id": 26,
+        "township": "Glina",
+        "name": "Manolache",
+        "is_active": 1
+    },
+    "76":{
+        "county_id": 26,
+        "township": "Gradistea",
+        "name": "Sitaru",
+        "is_active": 1
+    },
+    "77":{
+        "county_id": 26,
+        "township": "Gruiu",
+        "name": "Lipia",
+        "is_active": 1
+    },
+    "78":{
+        "county_id": 26,
+        "township": "Gruiu",
+        "name": "Silistea Snagovului",
+        "is_active": 1
+    },
+    "79":{
+        "county_id": 26,
+        "township": "Gruiu",
+        "name": "Santu Floresti",
+        "is_active": 1
+    },
+    "80":{
+        "county_id": 26,
+        "township": "Magurele",
+        "name": "Alunisu",
+        "is_active": 1
+    },
+    "81":{
+        "county_id": 26,
+        "township": "Magurele",
+        "name": "Dumitrana",
+        "is_active": 1
+    },
+    "82":{
+        "county_id": 26,
+        "township": "Magurele",
+        "name": "Pruni",
+        "is_active": 1
+    },
+    "83":{
+        "county_id": 26,
+        "township": "Magurele",
+        "name": "Varteju",
+        "is_active": 1
+    },
+    "84":{
+        "county_id": 26,
+        "township": "Moara Vlasiei",
+        "name": "Caciulati",
+        "is_active": 1
+    },
+    "85":{
+        "county_id": 26,
+        "township": "Nuci",
+        "name": "Balta Neagra",
+        "is_active": 1
+    },
+    "86":{
+        "county_id": 26,
+        "township": "Nuci",
+        "name": "Merii Petchii",
+        "is_active": 1
+    },
+    "87":{
+        "county_id": 26,
+        "township": "Nuci",
+        "name": "Micsunestii Mari",
+        "is_active": 1
+    },
+    "88":{
+        "county_id": 26,
+        "township": "Nuci",
+        "name": "Micsunestii-Moara",
+        "is_active": 1
+    },
+    "89":{
+        "county_id": 26,
+        "township": "Otopeni",
+        "name": "Odaile",
+        "is_active": 1
+    },
+    "90":{
+        "county_id": 26,
+        "township": "Peris",
+        "name": "Burias",
+        "is_active": 1
+    },
+    "91":{
+        "county_id": 26,
+        "township": "Peris",
+        "name": "Balteni",
+        "is_active": 1
+    },
+    "92":{
+        "county_id": 26,
+        "township": "Petrachioaia",
+        "name": "Maineasca",
+        "is_active": 1
+    },
+    "93":{
+        "county_id": 26,
+        "township": "Petrachioaia",
+        "name": "Surlari",
+        "is_active": 1
+    },
+    "94":{
+        "county_id": 26,
+        "township": "Petrachioaia",
+        "name": "Vanatori",
+        "is_active": 1
+    },
+    "95":{
+        "county_id": 26,
+        "township": "Snagov",
+        "name": "Cioflinceni",
+        "is_active": 1
+    },
+    "96":{
+        "county_id": 26,
+        "township": "Snagov",
+        "name": "Ghermanesti",
+        "is_active": 1
+    },
+    "97":{
+        "county_id": 26,
+        "township": "Snagov",
+        "name": "Tancabesti",
+        "is_active": 1
+    },
+    "98":{
+        "county_id": 26,
+        "township": "Snagov",
+        "name": "Vladiceasca",
+        "is_active": 1
+    },
+    "99":{
+        "county_id": 26,
+        "township": "Stefanestii De Jos",
+        "name": "Cretuleasca",
+        "is_active": 1
+    },
+    "100":{
+        "county_id": 26,
+        "township": "Stefanestii De Jos",
+        "name": "Stefanestii de Sus",
+        "is_active": 1
+    },
+    "101":{
+        "county_id": 26,
+        "township": "Tunari",
+        "name": "Dimieni",
+        "is_active": 1
+    },
+    "102":{
+        "county_id": 26,
+        "township": "Vidra",
+        "name": "Cretesti",
+        "is_active": 1
+    },
+    "103":{
+        "county_id": 26,
+        "township": "Vidra",
+        "name": "Sintesti",
+        "is_active": 1
+    }
+}
