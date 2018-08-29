@@ -12,7 +12,7 @@ class Address extends Addresses
 
     protected $attributes = ['country_id' => self::RomaniaCountryId];
 
-    protected $appends = ['locality_name', 'county_name', 'country_name', 'label'];
+    protected $appends = ['locality_name', 'county_name', 'label'];
 
     protected $casts = ['is_default' => 'boolean'];
 

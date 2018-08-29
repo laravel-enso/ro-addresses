@@ -21,7 +21,7 @@ class AddressesController extends Controller
     public function store(ValidateAddressRequest $request)
     {
         Address::store(
-            $request->except(['country_name']),
+            $request->except(['country']),
             $request->get('_params')
         );
 

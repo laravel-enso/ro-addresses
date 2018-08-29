@@ -165,7 +165,7 @@
         "columns": 3,
         "fields": [{
             "label": "Country",
-            "name": "country_name",
+            "name": "country",
             "value": "Romania",
             "meta": {
                 "readonly": true,
