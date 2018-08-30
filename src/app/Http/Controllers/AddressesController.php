@@ -32,7 +32,7 @@ class AddressesController extends Controller
 
     public function update(ValidateAddressRequest $request, Address $address)
     {
-        $address->update($request->all());
+        $address->update($request->except(['country']));
 
         return [
             'message' => __('The address have been successfully updated'),

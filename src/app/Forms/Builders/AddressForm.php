@@ -17,16 +17,17 @@ class AddressForm
 
     public function __construct()
     {
-        $this->form = new Form($this->formPath());
+        $this->form = (new Form($this->formPath()))
+            ->options('street_type', StreetTypes::select())
+            ->options('building_type', BuildingTypes::select())
+            ->options('county_id', County::active()->get(['name', 'id']))
+            ->options('sector', Sectors::select())
+            ->value('country', 'Romania');
     }
 
     public function create()
     {
         return $this->form->title('Insert')
-            ->options('street_type', StreetTypes::select())
-            ->options('building_type', BuildingTypes::select())
-            ->options('county_id', County::active()->get(['name', 'id']))
-            ->options('sector', Sectors::select())
             ->create();
     }
 
@@ -34,10 +35,6 @@ class AddressForm
     {
         return $this->form->title('Edit')
             ->actions(['update'])
-            ->options('street_type', StreetTypes::select())
-            ->options('building_type', BuildingTypes::select())
-            ->options('county_id', County::active()->get(['name', 'id']))
-            ->options('sector', Sectors::select())
             ->edit($address);
     }
 

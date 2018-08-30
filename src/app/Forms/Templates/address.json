@@ -166,7 +166,7 @@
         "fields": [{
             "label": "Country",
             "name": "country",
-            "value": "Romania",
+            "value": "",
             "meta": {
                 "readonly": true,
                 "type": "input",
