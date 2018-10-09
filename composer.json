@@ -3,7 +3,7 @@
     "description": "Romanian Addreses extension for Addresses Manager",
     "type": "library",
     "require": {
-        "laravel-enso/addressesmanager": "2.3.*"
+        "laravel-enso/addressesmanager": "2.4.*"
     },
     "license": "MIT",
     "authors": [
