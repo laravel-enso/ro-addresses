@@ -182,6 +182,26 @@
                 "content": "checkbox",
                 "disabled": true
             }
+        }, {
+            "label": "",
+            "name": "addressable_id",
+            "value": null,
+            "meta": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "hidden": true
+            }
+        }, {
+            "label": "",
+            "name": "addressable_type",
+            "value": null,
+            "meta": {
+                "custom": false,
+                "type": "input",
+                "content": "text",
+                "hidden": true
+            }
         }]
     }]
 }

@@ -11,13 +11,13 @@ use LaravelEnso\RoAddresses\app\Models\County;
 
 class AddressForm
 {
-    private const FormPath = __DIR__.'/../Templates/address.json';
+    private const TemplatePath = __DIR__.'/../Templates/address.json';
 
     private $form;
 
     public function __construct()
     {
-        $this->form = (new Form($this->formPath()))
+        $this->form = (new Form($this->templatePath()))
             ->options('street_type', StreetTypes::select())
             ->options('building_type', BuildingTypes::select())
             ->options('county_id', County::active()->get(['name', 'id']))
@@ -38,12 +38,13 @@ class AddressForm
             ->edit($address);
     }
 
-    private function formPath()
+    private function templatePath()
     {
-        $publishedForm = app_path('Forms/vendor/address.json');
+        $file = config('enso.addresses.formTemplate');
+        $templatePath = base_path($file);
 
-        return \File::exists($publishedForm)
-            ? $publishedForm
-            : self::FormPath;
+        return $file && \File::exists($templatePath)
+            ? $templatePath
+            : self::TemplatePath;
     }
 }

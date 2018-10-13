@@ -1,8 +1,8 @@
 <template>
 
-    <addresses @form-loaded="params.county_id = countyId($event)"
-        v-bind="$attrs"
-        v-on="$listeners">
+    <addresses v-bind="$attrs"
+        v-on="$listeners"
+        @form-loaded="params.county_id = countyId($event)">
         <template slot="address" slot-scope="{ address }">
             <p>
                 <span v-if="address.street_type">
@@ -61,12 +61,14 @@
 
         <template slot="county_id" slot-scope="{ field, errors }">
             <vue-select :label="field.meta.label || 'name'"
+                :has-error="errors.has(field.name)"
+                :options="field.meta.options"
                 v-model="field.value"
-                @input="params.county_id=$event;errors.clear(field.name);"
-                :options="field.meta.options"/>
+                @input="params.county_id=$event;errors.clear(field.name);"/>
         </template>
         <template slot="locality_id" slot-scope="{ field, errors }">
             <vue-select :label="field.meta.label"
+                :has-error="errors.has(field.name)"
                 :params="params"
                 v-model="field.value"
                 @input="errors.clear(field.name); sectors = $event === bucharestId;"
@@ -74,6 +76,7 @@
         </template>
         <template slot="sector" slot-scope="{ field, errors }">
             <vue-select :label="field.meta.label"
+                :has-error="errors.has(field.name)"
                 :disabled="!sectors"
                 ref="sector"
                 v-model="field.value"
