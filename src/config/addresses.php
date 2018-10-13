@@ -1,30 +1,30 @@
 <?php
 
 return [
-    'onDelete' => 'cascade',
+    'onDelete'         => 'cascade',
     'requestValidator' => 'vendor/laravel-enso/roaddresses/src/app/Http/Request/ValidateAddressRequest.php',
-    'formTemplate' => null,
-    'streetTypes' => [
-        'Street' => 'Strada',
+    'formTemplate'     => null,
+    'streetTypes'      => [
+        'Street'    => 'Strada',
         'Boulevard' => 'Bulevard',
-        'Alley' => 'Alee',
+        'Alley'     => 'Alee',
     ],
     'buildingTypes' => [
-        'House' => 'House',
-        'Bloc' => 'Bloc',
+        'House'   => 'House',
+        'Bloc'    => 'Bloc',
         'Offices' => 'Offices',
     ],
     'validations' => [
-        'street' => 'required',
+        'street'      => 'required',
         'locality_id' => 'required',
-        'county_id' => 'required',
+        'county_id'   => 'required',
         'street_type' => 'required',
-        'number' => 'required',
+        'number'      => 'required',
     ],
     'label' => [
-        'separator' => ' - ',
+        'separator'  => ' - ',
         'attributes' => [
-            'localityName', 'street', 'number'
+            'localityName', 'street', 'number',
         ],
-    ]
+    ],
 ];

@@ -3,10 +3,10 @@
 namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\RoAddresses\app\Models\Address;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
-use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
 use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressIndexRequest;
+use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\RoAddresses\app\Models\Address;
 
 class AddressesController extends Controller
 {
