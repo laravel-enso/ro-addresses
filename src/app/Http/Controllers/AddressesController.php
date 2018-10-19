@@ -21,7 +21,7 @@ class AddressesController extends Controller
     {
         $request = app()->make($this->requestValidator());
 
-        Address::create($request->all());
+        Address::create($request->except(['country']));
 
         return [
             'message' => __('The address was successfully created'),

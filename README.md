@@ -25,21 +25,19 @@ and the template for the address cards
 - add the package's `AppServiceProvider` to the `config/app.php` list of providers (package auto-discovery is not used as loading order is important)
 - run the migrations, as they change the addresses table, add two other tables, and insert all the localities
 - the configuration should be published, and inside you need to define the addresable types
-- for the models you want to make addressable, you should use **this** package's `Addresable` trait. 
-Take note that both [Addresses Manager](https://github.com/laravel-enso/AddressesManager) and this package come with a 
-trait with the same name, so make sure to import the correct one.
+- for the models you want to make addressable, you should use the [Addresses Manager](https://github.com/laravel-enso/AddressesManager) package's `Addresable` trait. 
 - publish the VueJs component.
 - insert the `RoAddreses` vue component where required. It takes the same parameters as `Addresses` - `id` and `type` 
 being the essential ones.
 
 ```
-<ro-addresses :id="modelId" type="model_alias">
+<ro-addresses :id="modelId" type="model_class">
 </ro-addresses>
 ```
 
 where
 * `modelId` is the addressable model id
-* `model_alias` is the alias given in the `config/enso/addresses.php` configuration, in the addresables section
+* `model_alias` is the respective model class
 
 ### Import
 If you need to use the import, publish the included template, importer and validator, 
@@ -56,6 +54,7 @@ and add the new import to your configuration:
 ```
 
 ### Publishes
+- `php artisan vendor:publish --tag=ro-addresses-seeds` - the seeders
 - `php artisan vendor:publish --tag=ro-addresses-config` - configuration file
 - `php artisan vendor:publish --tag=ro-addresses-form` - form used for creating/editing addresses
 - `php artisan vendor:publish --tag=ro-addresses-import` - form used for updating localities
@@ -64,7 +63,8 @@ once a newer version is released
 - `php artisan vendor:publish --tag=ro-addresses-assets` - the VueJS component,
 - `php artisan vendor:publish --tag=enso-assets` - a common alias for when wanting to update the VueJS component,
 once a newer version is released
-
+- `php artisan vendor:publish --tag=enso-seeders` - a common alias for when wanting to update the seeders,
+once a newer version is released
  
 ### Notes
 

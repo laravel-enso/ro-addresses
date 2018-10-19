@@ -20,6 +20,14 @@ class AppServiceProvider extends ServiceProvider
     private function publishesAll()
     {
         $this->publishes([
+            __DIR__.'/database/seeds' => database_path('seeds'),
+        ], 'ro-addresses-seeder');
+
+        $this->publishes([
+            __DIR__.'/database/seeds' => database_path('seeds'),
+        ], 'enso-seeders');
+
+        $this->publishes([
             __DIR__.'/config' => config_path('enso'),
         ], 'ro-addresses-config');
 
