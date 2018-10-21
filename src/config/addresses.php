@@ -1,23 +1,23 @@
 <?php
 
 return [
-    'onDelete' => 'cascade',
+    'onDelete'         => 'cascade',
     'requestValidator' => 'vendor/laravel-enso/roaddresses/src/app/Http/Request/ValidateAddressRequest.php',
-    'formTemplate' => null,
-    'streetTypes' => [
-        'Street' => 'Street',
+    'formTemplate'     => null,
+    'streetTypes'      => [
+        'Street'    => 'Street',
         'Boulevard' => 'Boulevard',
-        'Alley' => 'Alley',
+        'Alley'     => 'Alley',
     ],
     'buildingTypes' => [
-        'House' => 'House',
-        'Bloc' => 'Bloc',
+        'House'   => 'House',
+        'Bloc'    => 'Bloc',
         'Offices' => 'Offices',
     ],
     'label' => [
-        'separator' => ' - ',
+        'separator'  => ' - ',
         'attributes' => [
-            'localityName', 'street', 'number'
+            'localityName', 'street', 'number',
         ],
-    ]
+    ],
 ];

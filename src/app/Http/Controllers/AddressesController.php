@@ -3,9 +3,9 @@
 namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\RoAddresses\app\Models\Address;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\AddressesManager\app\Contracts\ValidatesAddressRequest;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\RoAddresses\app\Models\Address;
 
 class AddressesController extends Controller
 {
