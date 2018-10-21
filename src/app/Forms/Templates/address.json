@@ -59,7 +59,7 @@
                 "type": "select",
                 "multiple": false,
                 "source": null,
-                "options": []
+                "options": "LaravelEnso\\AddressesManager\\app\\Enums\\StreetTypes"
             }
         }, {
             "label": "Street",
@@ -95,7 +95,7 @@
                 "type": "select",
                 "source": null,
                 "placeholder": "Choose",
-                "options": []
+                "options": "LaravelEnso\\AddressesManager\\app\\Enums\\BuildingTypes"
             }
         }, {
             "label": "Building",

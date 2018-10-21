@@ -3,24 +3,21 @@
 namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressIndexRequest;
-use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\RoAddresses\app\Models\Address;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\AddressesManager\app\Contracts\ValidatesAddressRequest;
 
 class AddressesController extends Controller
 {
-    public function index(ValidateAddressIndexRequest $request)
+    public function index(ValidatesAddressRequest $request)
     {
         return Address::for($request->validated())
                 ->ordered()
                 ->get();
     }
 
-    public function store()
+    public function store(ValidatesAddressRequest $request)
     {
-        $request = app()->make($this->requestValidator());
-
         Address::create($request->except(['country']));
 
         return [
@@ -28,10 +25,8 @@ class AddressesController extends Controller
         ];
     }
 
-    public function update(Address $address)
+    public function update(ValidatesAddressRequest $request, Address $address)
     {
-        $request = app()->make($this->requestValidator());
-
         $address->update($request->except(['country']));
 
         return [
@@ -59,12 +54,5 @@ class AddressesController extends Controller
     public function create(AddressForm $form)
     {
         return ['form' => $form->create()];
-    }
-
-    private function requestValidator()
-    {
-        return class_exists(config('enso.addresses.requestValidator'))
-            ? config('enso.addresses.requestValidator')
-            : ValidateAddressRequest::class;
     }
 }

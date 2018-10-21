@@ -31,7 +31,8 @@ class CreateLocalitiesTable extends Migration
             $table->boolean('is_active')->default(true);
 
             $table->integer('created_by')->unsigned()->index()->nullable();
-            $table->foreign('created_by')->references('id')->on('users')->onUpdate('no action')->onDelete('no action');
+            $table->foreign('created_by')->references('id')->on('users')
+                ->onUpdate('no action')->onDelete('no action');
 
             $table->timestamps();
         });
