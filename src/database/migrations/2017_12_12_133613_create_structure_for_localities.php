@@ -9,6 +9,6 @@ class CreateStructureForLocalities extends StructureMigration
     ];
 
     protected $permissions = [
-        ['name' => 'core.addresses.localitiesSelectOptions', 'description' => 'Get localities for the select', 'type' => 0, 'is_default' => false],
+        ['name' => 'core.addresses.localitiesOptions', 'description' => 'Get localities for the select', 'type' => 0, 'is_default' => false],
     ];
 }

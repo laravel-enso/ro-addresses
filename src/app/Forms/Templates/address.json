@@ -24,7 +24,7 @@
                 "custom": true,
                 "type": "select",
                 "multiple": false,
-                "source": "core.addresses.localitiesSelectOptions",
+                "source": "core.addresses.localitiesOptions",
                 "options": [],
                 "label": "label"
             }
