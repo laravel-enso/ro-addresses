@@ -222,7 +222,7 @@ export default {
 
     watch: {
         sectors() {
-            if (!this.sectors) {
+            if (this.$refs.sector && !this.sectors) {
                 this.$refs.sector.clear();
             }
         },
