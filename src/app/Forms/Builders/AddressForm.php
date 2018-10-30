@@ -6,6 +6,7 @@ use LaravelEnso\FormBuilder\app\Classes\Form;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
 use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\County;
+use LaravelEnso\RoAddresses\app\Models\Locality;
 
 class AddressForm
 {
@@ -18,7 +19,11 @@ class AddressForm
         $this->form = (new Form($this->templatePath()))
             ->options('county_id', County::active()->get(['name', 'id']))
             ->options('sector', Sectors::select())
-            ->value('country', 'Romania');
+            ->value('country', 'Romania')
+            ->append(
+                'bucharestId',
+                Locality::whereName('Bucuresti')->first()->id
+            );
     }
 
     public function create()
