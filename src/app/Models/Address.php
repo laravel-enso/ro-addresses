@@ -6,11 +6,7 @@ use LaravelEnso\AddressesManager\app\Models\Address as Addresses;
 
 class Address extends Addresses
 {
-    private const RomaniaCountryId = 184;
-
     protected $guarded = [];
-
-    protected $attributes = ['country_id' => self::RomaniaCountryId];
 
     protected $appends = ['locality_name', 'county_name', 'label'];
 

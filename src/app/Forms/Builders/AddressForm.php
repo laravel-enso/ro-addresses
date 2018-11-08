@@ -4,9 +4,10 @@ namespace LaravelEnso\RoAddresses\app\Forms\Builders;
 
 use LaravelEnso\FormBuilder\app\Classes\Form;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
-use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\County;
+use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\AddressesManager\app\Models\Country;
 
 class AddressForm
 {
@@ -29,6 +30,7 @@ class AddressForm
     public function create()
     {
         return $this->form->title('Insert')
+            ->value('country_id', Country::whereName('Romania')->first()->id)
             ->create();
     }
 

@@ -2,7 +2,6 @@
 
 return [
     'onDelete'         => 'cascade',
-    'requestValidator' => 'vendor/laravel-enso/roaddresses/src/app/Http/Request/ValidateAddressRequest.php',
     'formTemplate'     => null,
     'streetTypes'      => [
         'Street'    => 'Street',
