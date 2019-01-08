@@ -264,6 +264,7 @@ export default {
         setFields() {
             this.$refs.form.field('addressable_type').value = this.type;
             this.$refs.form.field('addressable_id').value = this.id;
+            this.localityParams.county_id = this.$refs.form.field('county_id').value;
             this.bucharestId = this.$refs.form.param('bucharestId');
             this.$emit('form-loaded');
         },
