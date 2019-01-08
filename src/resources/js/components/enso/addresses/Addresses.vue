@@ -44,72 +44,71 @@
                 <address-card :address="address"
                     @set-default="setDefault(address)"
                     @edit="edit(address)"
-                    @delete="destroy(address, index)"
-                    :key="index">
+                    @delete="destroy(address, index)">
                     <template slot="address" slot-scope="{ address }">
                         <p>
-                <span v-if="address.street_type">
-                    {{ __(address.street_type) }}
-                </span>
+                            <span v-if="address.street_type">
+                                {{ __(address.street_type) }}
+                            </span>
                             <span v-if="address.street">
-                    {{ address.street }}
-                </span>
+                                {{ address.street }}
+                            </span>
                             <span v-if="address.number">
-                    <span >
-                        {{ __('Number') }}
-                    </span>
-                    {{ address.number }}
-                </span>
+                                <span >
+                                    {{ __('Number') }}
+                                </span>
+                                {{ address.number }}
+                            </span>
                         </p>
                         <p>
-                <span v-if="address.building">
-                    {{ __(address.building_type) }}: {{ address.building }},
-                </span>
+                            <span v-if="address.building">
+                                {{ __(address.building_type) }}: {{ address.building }},
+                            </span>
                             <span v-if="address.entry">
-                    {{ __('Entry') }}: {{ address.entry }},
-                </span>
+                                {{ __('Entry') }}: {{ address.entry }},
+                            </span>
                             <span v-if="address.floor">
-                    {{ __('Floor') }}: {{ address.floor }},
-                </span>
+                                {{ __('Floor') }}: {{ address.floor }},
+                            </span>
                             <span v-if="address.apartment">
-                    {{ __('Apt') }}: {{ address.apartment }},
-                </span>
+                                {{ __('Apt') }}: {{ address.apartment }},
+                            </span>
                         </p>
                         <p>
-                <span v-if="address.locality_name">
-                    {{ address.locality_name }},
-                </span>
+                            <span v-if="address.locality_name">
+                                {{ address.locality_name }},
+                            </span>
                             <span v-if="address.neighbourhood">
-                    {{ address.neighbourhood }}
-                </span>
+                                {{ address.neighbourhood }}
+                            </span>
                             <span v-if="address.sector">
-                    {{ __('Sector') }}: {{ address.sector }}
-                </span>
+                                {{ __('Sector') }}: {{ address.sector }}
+                            </span>
                             <br>
                             <span v-if="address.postal_area">
-                    {{ address.postal_area }}
-                </span>
+                                {{ address.postal_area }}
+                            </span>
                         </p>
                         <p>
-                <span class="icon">
-                    <fa icon="globe"/>
-                </span>
+                            <span class="icon">
+                                <fa icon="globe"/>
+                            </span>
                             {{ address.country_name }} <br>
                             <span class="icon" v-if="address.obs">
-                    <fa icon="sticky-note"/>
-                </span>
+                                <fa icon="sticky-note"/>
+                            </span>
                             {{ address.obs }}
                         </p>
                     </template>
                 </address-card>
             </div>
         </div>
-        <address-form
-            :form="form"
-            @close="form = null"
-            @delete="fetch();form = null"
-            @submit="fetch();form = null"
-            v-if="form">
+        <address-form :path="path"
+            @loaded="setFields()"
+            @close="reset();"
+            @submit="fetch(); reset();"
+            ref="form"
+            v-if="path">
             <template slot="county_id" slot-scope="{ field, errors }">
                 <vue-select :label="field.meta.label || 'name'"
                     :has-error="errors.has(field.name)"
@@ -126,7 +125,7 @@
                     :has-error="errors.has(field.name)"
                     :params="localityParams"
                     :source="field.meta.source"
-                    @input="errors.clear(field.name)"/>
+                    @input="errors.clear(field.name); sectors = field.value === bucharestId"/>
             </template>
             <template slot="sector" slot-scope="{ field, errors }">
                 <vue-select v-model="field.value"
@@ -146,12 +145,12 @@
 
 import { mapState } from 'vuex';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faSync } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faSync, faSearch } from '@fortawesome/free-solid-svg-icons';
 import AddressCard from './AddressCard.vue';
 import AddressForm from './AddressForm.vue';
 import VueSelect from '../select/VueSelect.vue';
 
-library.add(faPlus, faSync);
+library.add(faPlus, faSync, faSearch);
 
 export default {
     name: 'Addresses',
@@ -177,17 +176,17 @@ export default {
         },
     },
 
-    data() {
-        return {
-            loading: false,
-            addresses: [],
-            form: null,
-            internalQuery: '',
-            localityParams: {
-                county_id: null,
-            },
-        };
-    },
+    data: () => ({
+        loading: false,
+        addresses: [],
+        path: null,
+        internalQuery: '',
+        localityParams: {
+            county_id: null,
+        },
+        sectors: false,
+        bucharestId: null,
+    }),
 
     computed: {
         ...mapState('layout', ['isMobile']),
@@ -203,24 +202,18 @@ export default {
         count() {
             return this.filteredAddresses.length;
         },
-        customFields() {
-            return this.form && this.form.sections
-                .reduce((fields, section) => fields
-                    .concat(section.fields.filter(field => field.meta.custom)), []);
-        },
         params() {
             return {
                 addressable_id: this.id,
                 addressable_type: this.type,
             };
         },
-        sectors() {
-            return this.form
-                && this.field('locality_id').value === this.form.params.bucharestId;
-        },
     },
 
     watch: {
+        count() {
+            this.$emit('update');
+        },
         sectors() {
             if (this.$refs.sector && !this.sectors) {
                 this.$refs.sector.clear();
@@ -239,40 +232,18 @@ export default {
         fetch() {
             this.loading = true;
 
-            axios.get(
-                route('core.addresses.index'),
-                { params: this.params },
-            ).then(({ data }) => {
-                this.addresses = data;
-                this.loading = false;
-                this.$emit('update');
-            }).catch(error => this.handleError(error));
-        },
-        edit(address) {
-            this.loading = true;
-
-            axios.get(route('core.addresses.edit', address.id))
+            axios.get(route('core.addresses.index'), { params: this.params })
                 .then(({ data }) => {
-                    this.form = data.form;
-                    this.localityParams.county_id = this.field('county_id').value;
-                    this.addFields();
-                    this.$emit('form-loaded', this.form);
-                    this.loading = false;
-                })
-                .catch(error => this.handleError(error));
-        },
-        create() {
-            this.loading = true;
-
-            axios.get(route('core.addresses.create', this.params))
-                .then(({ data }) => {
-                    this.form = data.form;
-                    this.addFields();
-                    this.$emit('form-loaded', this.form);
+                    this.addresses = data;
                     this.loading = false;
                     this.$emit('update');
-                })
-                .catch(error => this.handleError(error));
+                }).catch(error => this.handleError(error));
+        },
+        edit(address) {
+            this.path = route('core.addresses.edit', address.id);
+        },
+        create() {
+            this.path = route('core.addresses.create', this.params);
         },
         setDefault(address) {
             this.loading = true;
@@ -286,20 +257,18 @@ export default {
 
             axios.delete(route('core.addresses.destroy', address.id))
                 .then(() => {
-                    this.loading = false;
                     this.addresses.splice(index, 1);
-                    this.$emit('update');
-                })
-                .catch(error => this.handleError(error));
+                    this.loading = false;
+                }).catch(error => this.handleError(error));
         },
-        addFields() {
-            this.field('addressable_type').value = this.type;
-            this.field('addressable_id').value = this.id;
+        setFields() {
+            this.$refs.form.field('addressable_type').value = this.type;
+            this.$refs.form.field('addressable_id').value = this.id;
+            this.bucharestId = this.$refs.form.param('bucharestId');
+            this.$emit('form-loaded');
         },
-        field(field) {
-            return this.form.sections
-                .reduce((fields, section) => fields.concat(section.fields), [])
-                .find(item => item.name === field);
+        reset() {
+            this.path = null;
         },
     },
 };
