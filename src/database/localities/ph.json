@@ -1387,7 +1387,7 @@
     },
     "231":{
         "county_id": 32,
-        "township": "Gherghita",
+        "township": "Olari",
         "name": "Fanari",
         "is_active": 1
     },
@@ -1405,13 +1405,13 @@
     },
     "234":{
         "county_id": 32,
-        "township": "Gherghita",
+        "township": "Olari",
         "name": "Olari",
         "is_active": 1
     },
     "235":{
         "county_id": 32,
-        "township": "Gherghita",
+        "township": "Olari",
         "name": "Olarii Vechi",
         "is_active": 1
     },
