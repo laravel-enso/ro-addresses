@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class AlterAddressesColumns extends Migration
 {
-
     public function up()
     {
         Schema::table('addresses', function (Blueprint $table) {
