@@ -3,20 +3,20 @@
 namespace LaravelEnso\RoAddresses\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\AddressesManager\app\Contracts\ValidatesAddressRequest;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
 use LaravelEnso\RoAddresses\app\Models\Address;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\AddressesManager\App\Http\Requests\ValidateAddressRequest;
 
 class AddressesController extends Controller
 {
-    public function index(ValidatesAddressRequest $request)
+    public function index(ValidateAddressRequest $request)
     {
         return Address::for($request->validated())
                 ->ordered()
                 ->get();
     }
 
-    public function store(ValidatesAddressRequest $request)
+    public function store(ValidateAddressRequest $request)
     {
         Address::create($request->except(['country']));
 
@@ -25,7 +25,7 @@ class AddressesController extends Controller
         ];
     }
 
-    public function update(ValidatesAddressRequest $request, Address $address)
+    public function update(ValidateAddressRequest $request, Address $address)
     {
         $address->update($request->except(['country']));
 
