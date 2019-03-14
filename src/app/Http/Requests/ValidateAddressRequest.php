@@ -15,22 +15,24 @@ class ValidateAddressRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'addressable_id' => 'required',
+            'addressable_id'   => 'required',
             'addressable_type' => 'required|string',
         ];
+
         return $this->method() === 'GET'
             ? $rules
             : $rules + [
-                'street' => 'required',
-                'county_id' => 'required',
-                'country_id' => 'required',
+                'street'      => 'required',
+                'county_id'   => 'required',
+                'country_id'  => 'required',
                 'locality_id' => 'required',
             ];
     }
+
     public function withValidator($validator)
     {
         $validator->after(function ($validator) {
-            if (! class_exists($this->get('addressable_type'))) {
+            if (!class_exists($this->get('addressable_type'))) {
                 throw new AddressException(
                     'The "addressable_type" property must be a valid model class'
                 );

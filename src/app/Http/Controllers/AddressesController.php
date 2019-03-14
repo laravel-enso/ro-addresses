@@ -10,7 +10,6 @@ use LaravelEnso\RoAddresses\app\Models\Address;
 
 class AddressesController extends Controller
 {
-
     public function index(ValidateAddressRequest $request)
     {
         return Resource::collection(
