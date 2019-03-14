@@ -6,14 +6,13 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class Address extends JsonResource
 {
-
     public function toArray($request)
     {
         return [
             'id'            => $this->id,
             'country'       => $this->whenLoaded('country', $this->country->name),
-            'countyName'   => $this->whenLoaded('county', $this->county->name),
-            'localityName' => $this->whenLoaded('locality', $this->locality->name),
+            'countyName'    => $this->whenLoaded('county', $this->county->name),
+            'localityName'  => $this->whenLoaded('locality', $this->locality->name),
             'neighbourhood' => $this->neighbourhood,
             'streetType'    => $this->street_type,
             'street'        => $this->street,
