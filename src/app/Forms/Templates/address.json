@@ -15,7 +15,6 @@
             "custom": true,
             "type": "select",
             "multiple": false,
-            "source": null,
             "options": []
           }
         },
@@ -50,7 +49,8 @@
           "meta": {
             "custom": true,
             "type": "select",
-            "options": []
+            "options": [],
+            "readonly": true
           }
         }
       ]
@@ -66,7 +66,6 @@
           "meta": {
             "type": "select",
             "multiple": false,
-            "source": null,
             "options": "LaravelEnso\\AddressesManager\\app\\Enums\\StreetTypes"
           }
         },
@@ -106,7 +105,6 @@
           "meta": {
             "multiple": false,
             "type": "select",
-            "source": null,
             "placeholder": "Choose",
             "options": "LaravelEnso\\AddressesManager\\app\\Enums\\BuildingTypes"
           }
