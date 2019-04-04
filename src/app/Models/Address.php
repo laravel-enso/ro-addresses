@@ -8,7 +8,7 @@ class Address extends Addresses
 {
     protected $guarded = [];
 
-    //protected $appends = ['locality_name', 'county_name', 'label'];
+    protected $appends = ['label'];
 
     protected $casts = ['is_default' => 'boolean'];
 
