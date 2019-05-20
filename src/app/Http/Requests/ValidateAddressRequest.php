@@ -3,40 +3,16 @@
 namespace LaravelEnso\RoAddresses\app\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use LaravelEnso\AddressesManager\app\Exceptions\AddressException;
+use LaravelEnso\Addresses\app\Exceptions\AddressException;
+use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressRequest as ValidateBaseAddressRequest;
 
-class ValidateAddressRequest extends FormRequest
+class ValidateAddressRequest extends ValidateBaseAddressRequest
 {
-    public function authorize()
-    {
-        return true;
-    }
-
     public function rules()
     {
-        $rules = [
-            'addressable_id'   => 'required',
-            'addressable_type' => 'required|string',
-        ];
-
-        return $this->method() === 'GET'
-            ? $rules
-            : $rules + [
-                'street'      => 'required',
-                'county_id'   => 'required',
-                'country_id'  => 'required',
-                'locality_id' => 'required',
-            ];
-    }
-
-    public function withValidator($validator)
-    {
-        $validator->after(function ($validator) {
-            if (!class_exists($this->get('addressable_type'))) {
-                throw new AddressException(
-                    'The "addressable_type" property must be a valid model class'
-                );
-            }
-        });
+        return collect(parent::rules())
+            ->except(['city', 'sub_administrative_area', 'administrative_area'])
+            ->merge(['county_id' => 'required', 'locality_id' => 'required'])
+            ->toArray();
     }
 }

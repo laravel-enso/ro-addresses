@@ -1,42 +1,39 @@
 {
-    "importerClass": "LaravelEnso\\RoAddresses\\app\\Importers\\LocalityUpdateImporter",
-    "entryLimit": 5000,
-    "stopsOnIssues": false,
+    "timeout": 500,
     "sheets": [
         {
+            "importerClass": "LaravelEnso\\RoAddresses\\app\\Imports\\Importers\\LocalityUpdateImporter",
+            "validatorClass": "LaravelEnso\\RoAddresses\\app\\Imports\\Validators\\LocalityUpdateValidator",
             "name": "localitati",
+            "chunkSize": 1000,
             "columns": [
                 {
                     "name": "county",
-                    "laravelValidations": "string|required|exists:counties,name"
+                    "validations": "string|required|exists:counties,name"
                 },
                 {
                     "name": "township",
-                    "laravelValidations": "string|nullable|exists:localities,township"
+                    "validations": "string|nullable|exists:localities,township"
                 },
                 {
                     "name": "locality",
-                    "laravelValidations": "string|required|exists:localities,name"
+                    "validations": "string|required"
                 },
                 {
                     "name": "siruta",
-                    "laravelValidations": "nullable"
+                    "validations": "nullable"
                 },
                 {
                     "name": "is_active",
-                    "laravelValidations": "required|in:0,1"
-                },
-                {
-                    "name": "region",
-                    "laravelValidations": "string|nullable"
+                    "validations": "required|in:0,1"
                 },
                 {
                     "name": "lat",
-                    "laravelValidations": "numeric|nullable"
+                    "validations": "numeric|nullable"
                 },
                 {
                     "name": "long",
-                    "laravelValidations": "numeric|nullable"
+                    "validations": "numeric|nullable"
                 }
             ]
         }

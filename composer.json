@@ -1,20 +1,27 @@
 {
-    "name": "laravel-enso/roaddresses",
-    "description": "Romanian Addreses extension for Addresses Manager",
+    "name": "laravel-enso/ro-addresses",
+    "description": "Romanian Addreses extension for Addresses",
     "type": "library",
     "require": {
-        "laravel-enso/addressesmanager": "3.0.*"
+        "laravel-enso/addresses": "3.1.*"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Mihai Ocneanu",
             "email": "mihai.ocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
             "role": "Developer"
         },
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Vlad Chiovianu",
+            "email": "vlad.chiovianu@gmail.com",
             "homepage": "https://laravel-enso.com",
             "role": "Developer"
         }

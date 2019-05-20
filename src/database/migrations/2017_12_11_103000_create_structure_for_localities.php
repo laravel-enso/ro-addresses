@@ -1,8 +1,8 @@
 <?php
 
-use LaravelEnso\StructureManager\app\Classes\StructureMigration;
+use LaravelEnso\Migrator\app\Database\Migration;
 
-class CreateStructureForLocalities extends StructureMigration
+class CreateStructureForLocalities extends Migration
 {
     protected $permissionGroup = [
         'name' => 'core.addresses', 'description' => 'Addresses group',

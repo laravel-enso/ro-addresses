@@ -2,18 +2,21 @@
 
 namespace LaravelEnso\RoAddresses\app\Forms\Builders;
 
-use LaravelEnso\AddressesManager\app\Models\Country;
-use LaravelEnso\FormBuilder\app\Classes\Form;
+use Illuminate\Support\Facades\File;
+use LaravelEnso\Forms\app\Services\Form;
+use LaravelEnso\Addresses\app\Models\Country;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
-use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\County;
+use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\Addresses\app\Forms\Builders\AddressForm as BaseAddressForm;
 
-class AddressForm
+
+class AddressForm extends BaseAddressForm
 {
     private const TemplatePath = __DIR__.'/../Templates/address.json';
 
-    private $form;
+    protected $form;
 
     public function __construct()
     {
@@ -34,19 +37,12 @@ class AddressForm
             ->create();
     }
 
-    public function edit(Address $address)
-    {
-        return $this->form->title('Edit')
-            ->actions('update')
-            ->edit($address);
-    }
-
     private function templatePath()
     {
         $file = config('enso.addresses.formTemplate');
         $templatePath = base_path($file);
 
-        return $file && \File::exists($templatePath)
+        return $file && File::exists($templatePath)
             ? $templatePath
             : self::TemplatePath;
     }
