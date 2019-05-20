@@ -3,18 +3,37 @@
 namespace LaravelEnso\RoAddresses;
 
 use Illuminate\Support\ServiceProvider;
+use LaravelEnso\Addresses\app\Models\Address;
+use LaravelEnso\Addresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\RoAddresses\app\Models\Address as RoAddress;
+use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressRequest;
+use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm as Form;
+use LaravelEnso\RoAddresses\app\Http\Requests\ValidateAddressRequest as ValidateRoAddressRequest;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadDependencies()
+        $this->customize()
+            ->loadDependencies()
             ->publishesDependencies();
     }
 
-    public function register()
+    private function customize()
     {
-        //
+        $this->app->bind(AddressForm::class, function () {
+            return new Form();
+        });
+
+        $this->app->bind(Address::class, function () {
+            return new RoAddress();
+        });
+
+        $this->app->bind(ValidateAddressRequest::class, function () {
+            return new ValidateRoAddressRequest();
+        });
+
+        return $this;
     }
 
     private function loadDependencies()
@@ -32,7 +51,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'ro-addresses-seeder');
+        ], 'ro-addresses-seeders');
 
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),

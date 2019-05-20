@@ -1,67 +1,34 @@
 <?php
 
-namespace App\Importing\Validators;
+namespace LaravelEnso\RoAddresses\app\Imports\Validators;
 
-use LaravelEnso\DataImport\app\Classes\Reporting\Issue;
-use LaravelEnso\DataImport\app\Classes\Validators\AbstractValidator;
+use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\DataImport\app\Services\Validators\Validator;
 
-class LocalityUpdateValidator extends AbstractValidator
+class LocalityUpdateValidator extends Validator
 {
-    const MISSING_LOCALITY = 'localitate lipsa';
-    const UNCERTAIN_LOCALITY = 'localitate incerta';
-
-    public function run()
+    public function run(Obj $row)
     {
-        $sheet = $this->sheets->first();
+        $county = County::whereName($row->county)->first();
 
-        foreach ($sheet as $index => $row) {
-            $this->check($sheet->getTitle(), $row, $index + 1);
-        }
-    }
+        $localityCount = Locality::whereName($row->locality)
+            ->where('county_id', $county->id)
+            ->when($row->township !== null, function ($query) use ($row) {
+                $query->whereTownship($row->township);
+            })->count();
 
-    public function check(String $sheetName, $row, $rowNumber)
-    {
-        $county = County::whereName($row['county'])->first();
-        $queryBuilder = Locality::whereName($row['locality'])
-            ->where('county_id', $county->id);
-
-        if (!empty($row['township'])) {
-            $queryBuilder->whereTownship($row['township']);
+        if ($localityCount === 0) {
+            $this->addError(__(
+                'The locality is not present in the database'
+            ));
         }
 
-        $localities = $queryBuilder->get();
-        $this->checkValidity($sheetName, $rowNumber, $localities, $row['locality']);
-    }
-
-    private function checkValidity(String $sheetName, $rowNumber, $localities, String $localityName)
-    {
-        if ($localities->count() === 0) {
-            $this->addIssue($sheetName,
-                self::MISSING_LOCALITY,
-                $rowNumber,
-                'locality',
-                $localityName);
+        if ($localityCount > 1) {
+            $this->addError(__(
+                'There are more localities that match the criteria'
+            ));
         }
-
-        if ($localities->count() > 1) {
-            $this->addIssue($sheetName,
-                self::UNCERTAIN_LOCALITY,
-                $rowNumber,
-                'locality',
-                $localityName);
-        }
-    }
-
-    private function addIssue(string $sheetName, string $category, int $rowNumber = null, string $column = null, $value = null)
-    {
-        $issue = new Issue([
-            'rowNumber' => $rowNumber,
-            'column'    => $column,
-            'value'     => $value,
-        ]);
-
-        $this->summary->addContentIssue($issue, $category, $sheetName);
     }
 }

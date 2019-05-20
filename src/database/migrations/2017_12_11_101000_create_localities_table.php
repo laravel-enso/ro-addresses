@@ -1,16 +1,11 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateLocalitiesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('localities', function (Blueprint $table) {
@@ -22,27 +17,21 @@ class CreateLocalitiesTable extends Migration
 
             $table->string('township')->nullable();
             $table->string('name');
-            $table->string('region')->nullable();
             $table->string('siruta')->nullable();
 
             $table->float('lat', 10, 6)->nullable();
             $table->float('long', 10, 6)->nullable();
 
-            $table->boolean('is_active')->default(true);
+            $table->boolean('is_active');
 
             $table->integer('created_by')->unsigned()->index()->nullable();
             $table->foreign('created_by')->references('id')->on('users')
-                ->onUpdate('no action')->onDelete('no action');
+                ->onDelete('set null');
 
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('localities');

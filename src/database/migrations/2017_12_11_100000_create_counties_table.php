@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateCountiesTable extends Migration
 {
@@ -14,11 +15,11 @@ class CreateCountiesTable extends Migration
             $table->string('abbreviation', 2);
             $table->string('name');
 
-            $table->boolean('is_active')->default(true);
+            $table->boolean('is_active');
 
             $table->integer('created_by')->unsigned()->index()->nullable();
             $table->foreign('created_by')->references('id')->on('users')
-                ->onUpdate('no action')->onDelete('no action');
+                ->onDelete('set null');
 
             $table->timestamps();
         });
