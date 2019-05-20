@@ -25,6 +25,7 @@ class LocalitySeeder extends Seeder
 
         return collect($localities)->map(function ($locality) {
             $locality['is_active'] = true;
+
             return $locality;
         })->toArray();
     }
