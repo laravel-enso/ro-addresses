@@ -2,15 +2,18 @@
 
 namespace LaravelEnso\RoAddresses\app\Models;
 
-use LaravelEnso\AddressesManager\app\Models\Address as Addresses;
+use LaravelEnso\Addresses\app\Models\Address as Addresses;
 
 class Address extends Addresses
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'addressable_id', 'addressable_type', 'country_id', 'county_id', 'locality_id',
+        'sector', 'neighbourhood', 'apartment', 'floor', 'entry', 'building',
+        'building_type', 'number', 'street', 'street_type', 'postal_area', 'obs',
+        'lat', 'long', 'is_default',
+    ];
 
     protected $appends = ['label'];
-
-    protected $casts = ['is_default' => 'boolean'];
 
     public function county()
     {

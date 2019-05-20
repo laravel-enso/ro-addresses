@@ -1,14 +1,16 @@
 <!--h-->
 # Romanian Addresses
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7404086a15a4db6b2080b1d09b0688a)](https://www.codacy.com/app/laravel-enso/addresses?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/addresses&amp;utm_campaign=Badge_Grade)
 [![StyleCI](https://styleci.io/repos/114126709/shield?branch=master)](https://styleci.io/repos/114126709)
-[![License](https://poser.pugx.org/laravel-enso/permissionmanager/license)](https://packagist.org/packages/laravel-enso/roaddresses)
-[![Total Downloads](https://poser.pugx.org/laravel-enso/roaddresses/downloads)](https://packagist.org/packages/laravel-enso/roaddresses)
-[![Latest Stable Version](https://poser.pugx.org/laravel-enso/roaddresses/version)](https://packagist.org/packages/laravel-enso/roaddresses)
+[![License](https://poser.pugx.org/laravel-enso/permissionmanager/license)](https://packagist.org/packages/laravel-enso/ro-addresses)
+[![Total Downloads](https://poser.pugx.org/laravel-enso/ro-addresses/downloads)](https://packagist.org/packages/laravel-enso/ro-addresses)
+[![Latest Stable Version](https://poser.pugx.org/laravel-enso/ro-addresses/version)](https://packagist.org/packages/laravel-enso/ro-addresses)
 <!--/h-->
 
-Romanian Addresses extension for [Addresses Manager](https://github.com/laravel-enso/AddressesManager), the [Laravel Enso](https://github.com/laravel-enso/Enso) package.
+Romanian Addresses extension for [Addresses](https://github.com/laravel-enso/addresses), the [Laravel Enso](https://github.com/laravel-enso/Enso) package.
 
-[![Screenshot](https://laravel-enso.github.io/roaddresses/screenshots/bulma_040_thumb.png)](https://laravel-enso.github.io/roaddresses/screenshots/bulma_040.png)
+[![Screenshot](https://laravel-enso.github.io/ro-addresses/screenshots/bulma_040_thumb.png)](https://laravel-enso.github.io/ro-addresses/screenshots/bulma_040.png)
 
 ### Features
 
@@ -25,7 +27,7 @@ and the template for the address cards
 - add the package's `AppServiceProvider` to the `config/app.php` list of providers (package auto-discovery is not used as loading order is important)
 - run the migrations, as they change the addresses table, add two other tables, and insert all the localities
 - the configuration should be published, and inside you need to define the addresable types
-- for the models you want to make addressable, you should use the [Addresses Manager](https://github.com/laravel-enso/AddressesManager) package's `Addresable` trait. 
+- for the models you want to make addressable, you should use the [Addresses](https://github.com/laravel-enso/addresses) package's `Addresable` trait. 
 - publish the VueJs component.
 - insert the `RoAddreses` vue component where required. It takes the same parameters as `Addresses` - `id` and `type` 
 being the essential ones.
@@ -69,9 +71,9 @@ once a newer version is released
 ### Notes
 
 The [Laravel Enso Core](https://github.com/laravel-enso/Core) package does NOT come with this package included, 
-only with the generic [Addresses Manager](https://github.com/laravel-enso/AddressesManager).
+only with the generic [Addresses](https://github.com/laravel-enso/addresses).
 
-This package depends on the [Addresses Manager](https://github.com/laravel-enso/AddressesManager) and 
+This package depends on the [Addresses](https://github.com/laravel-enso/addresses) and 
 it does not work standalone.
 
 <!--h-->

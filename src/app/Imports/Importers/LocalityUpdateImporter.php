@@ -1,43 +1,42 @@
 <?php
 
-namespace App\Importing\Importers;
+namespace LaravelEnso\RoAddresses\app\Imports\Importers;
 
-use LaravelEnso\DataImport\app\Classes\Importers\AbstractImporter;
+use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\DataImport\app\Contracts\Importable;
 
-class LocalityUpdateImporter extends AbstractImporter
+class LocalityUpdateImporter implements Importable
 {
-    public function run()
+    public function run(Obj $row, Obj $params)
     {
-        \DB::transaction(function () {
-            $this->rowsFromSheet('localitati')
-                ->each(function ($row) {
-                    $this->importRow($row);
-                });
-        });
+        $this->importLocalities($row);
     }
 
-    private function importRow($row)
+    private function importLocalities($row)
     {
-        $this->locality($row)->update($row);
-        $this->incSuccess();
+        $this->locality($row)->update([
+            'siruta' => $row->siruta,
+            'lat' => $row->lat,
+            'long' => $row->long,
+            'is_active' => $row->is_active,
+        ]);
     }
 
     private function locality($row)
     {
-        $query = Locality::whereName($row['locality'])
-            ->where('county_id', $this->countyId($row));
-
-        if (!empty($row['township'])) {
-            $query->whereTownship($row['township']);
-        }
-
-        return $query->first();
+        return Locality::whereName($row->locality)
+            ->where('county_id', $this->countyId($row->county))
+            ->when($row->township !== null, function ($query) use ($row) {
+                $query->whereTownship($row->township);
+            })->first();
     }
 
-    private function countyId($row)
+    private function countyId($county)
     {
-        return County::whereName($row['county'])->first(['id'])->id;
+        return County::whereName($county)
+            ->first()
+            ->id;
     }
 }
