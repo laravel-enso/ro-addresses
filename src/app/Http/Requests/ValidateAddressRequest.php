@@ -2,8 +2,6 @@
 
 namespace LaravelEnso\RoAddresses\app\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
-use LaravelEnso\Addresses\app\Exceptions\AddressException;
 use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressRequest as ValidateBaseAddressRequest;
 
 class ValidateAddressRequest extends ValidateBaseAddressRequest

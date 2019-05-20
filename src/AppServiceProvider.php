@@ -48,7 +48,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     private function publishesDependencies()
-    {        
+    {
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
         ], 'ro-addresses-seeders');

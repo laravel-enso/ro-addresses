@@ -11,7 +11,6 @@ use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\RoAddresses\app\Models\Locality;
 use LaravelEnso\Addresses\app\Forms\Builders\AddressForm as BaseAddressForm;
 
-
 class AddressForm extends BaseAddressForm
 {
     private const TemplatePath = __DIR__.'/../Templates/address.json';

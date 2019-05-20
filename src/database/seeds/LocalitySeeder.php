@@ -3,13 +3,12 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
-use LaravelEnso\RoAddresses\app\Models\Locality;
 
 class LocalitySeeder extends Seeder
 {
     const Localities = __DIR__.'/../../vendor/laravel-enso/ro-addresses/src/database/localities';
 
-   public function run()
+    public function run()
     {
         collect(File::files(self::Localities))
             ->each(function ($file) {
@@ -26,6 +25,7 @@ class LocalitySeeder extends Seeder
 
         return collect($localities)->map(function ($locality) {
             $locality['is_active'] = true;
+
             return $locality;
         })->toArray();
     }

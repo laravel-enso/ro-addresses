@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Resources\Json\Resource;
 use LaravelEnso\RoAddresses\app\Models\Address;
 use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressFetch;
-use LaravelEnso\RoAddresses\app\Http\Requests\ValidateAddressRequest;
 
 class Index extends Controller
 {

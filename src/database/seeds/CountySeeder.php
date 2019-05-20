@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\File;
 use LaravelEnso\RoAddresses\app\Models\County;
 
 class CountySeeder extends Seeder

@@ -1,20 +1,20 @@
 <?php
 
 return [
-    'onDelete'         => 'cascade',
-    'formTemplate'     => null,
-    'streetTypes'      => [
-        'Street'    => 'Street',
+    'onDelete' => 'cascade',
+    'formTemplate' => null,
+    'streetTypes' => [
+        'Street' => 'Street',
         'Boulevard' => 'Boulevard',
-        'Alley'     => 'Alley',
+        'Alley' => 'Alley',
     ],
     'buildingTypes' => [
-        'House'   => 'House',
-        'Bloc'    => 'Bloc',
+        'House' => 'House',
+        'Bloc' => 'Bloc',
         'Offices' => 'Offices',
     ],
     'label' => [
-        'separator'  => ' - ',
+        'separator' => ' - ',
         'attributes' => [
             'localityName', 'street', 'number',
         ],
