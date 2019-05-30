@@ -2,7 +2,6 @@
 
 namespace LaravelEnso\RoAddresses\app\Forms\Builders;
 
-use Illuminate\Support\Facades\File;
 use LaravelEnso\Forms\app\Services\Form;
 use LaravelEnso\Addresses\app\Models\Country;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
@@ -12,7 +11,7 @@ use LaravelEnso\Addresses\app\Forms\Builders\AddressForm as BaseAddressForm;
 
 class AddressForm extends BaseAddressForm
 {
-    private const TemplatePath = __DIR__.'/../Templates/address.json';
+    protected const TemplatePath = __DIR__.'/../Templates/address.json';
 
     protected $form;
 
@@ -33,15 +32,5 @@ class AddressForm extends BaseAddressForm
         return $this->form->title('Insert')
             ->value('country_id', Country::whereName('Romania')->first()->id)
             ->create();
-    }
-
-    private function templatePath()
-    {
-        $file = config('enso.addresses.formTemplate');
-        $templatePath = base_path($file);
-
-        return $file && File::exists($templatePath)
-            ? $templatePath
-            : self::TemplatePath;
     }
 }
