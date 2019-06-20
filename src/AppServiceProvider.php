@@ -12,28 +12,16 @@ use LaravelEnso\RoAddresses\app\Http\Requests\ValidateAddressRequest as Validate
 
 class AppServiceProvider extends ServiceProvider
 {
+    public $bindings = [
+        ValidateAddressRequest::class => ValidateRoAddressRequest::class,
+        AddressForm::class => Form::class,
+        Address::class => RoAddress::class,
+    ];
+
     public function boot()
     {
-        $this->customize()
-            ->loadDependencies()
+        $this->loadDependencies()
             ->publishesDependencies();
-    }
-
-    private function customize()
-    {
-        $this->app->bind(AddressForm::class, function () {
-            return new Form();
-        });
-
-        $this->app->bind(Address::class, function () {
-            return new RoAddress();
-        });
-
-        $this->app->bind(ValidateAddressRequest::class, function () {
-            return new ValidateRoAddressRequest();
-        });
-
-        return $this;
     }
 
     private function loadDependencies()
