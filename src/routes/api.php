@@ -6,5 +6,6 @@ Route::middleware(['web', 'auth', 'core'])
     ->namespace('LaravelEnso\RoAddresses\app\Http\Controllers')
     ->group(function () {
         Route::get('localitiesOptions', 'LocalityOptions')->name('localitiesOptions');
+        Route::get('countiesOptions', 'CountyOptions')->name('countiesOptions');
         Route::get('', 'Index')->name('index');
     });
