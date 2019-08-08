@@ -13,8 +13,6 @@ class Address extends Addresses
         'lat', 'long', 'is_default',
     ];
 
-    protected $appends = ['label'];
-
     public function county()
     {
         return $this->belongsTo(County::class);
