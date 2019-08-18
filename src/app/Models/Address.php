@@ -25,12 +25,12 @@ class Address extends Addresses
 
     public function getLocalityNameAttribute()
     {
-        return $this->locality->name;
+        return optional($this->locality)->name;
     }
 
     public function getCountyNameAttribute()
     {
-        return $this->county->name;
+        return optional($this->county)->name;
     }
 
     public function getLabelAttribute()
