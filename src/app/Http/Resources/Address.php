@@ -10,9 +10,9 @@ class Address extends JsonResource
     {
         return [
             'id' => $this->id,
-            'country' => $this->whenLoaded('country', $this->country->name),
-            'countyName' => $this->whenLoaded('county', $this->county->name),
-            'localityName' => $this->whenLoaded('locality', $this->locality->name),
+            'country' => optional($this->country)->name,
+            'countyName' => optional($this->county)->name,
+            'localityName' => optional($this->locality)->name,
             'neighbourhood' => $this->neighbourhood,
             'streetType' => $this->street_type,
             'street' => $this->street,
