@@ -23,7 +23,7 @@ class CreateLocalitiesTable extends Migration
             $table->float('long', 10, 6)->nullable();
 
             $table->boolean('is_active');
-            
+
             $table->timestamps();
         });
     }
