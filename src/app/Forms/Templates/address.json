@@ -167,6 +167,28 @@
       ]
     },
     {
+      "columns": 2,
+      "fields": [{
+        "label": "Lat",
+        "name": "lat",
+        "value": "",
+        "meta": {
+          "type": "input",
+          "content": "text",
+          "disabled": false
+        }
+      }, {
+        "label": "Long",
+        "name": "long",
+        "value": "",
+        "meta": {
+          "type": "input",
+          "content": "text",
+          "disabled": false
+        }
+      }]
+    },
+    {
       "columns": 1,
       "fields": [
         {

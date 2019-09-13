@@ -3,7 +3,7 @@
     "description": "Romanian Addreses extension for Addresses",
     "type": "library",
     "require": {
-        "laravel-enso/addresses": "3.1.*"
+        "laravel-enso/addresses": "3.2.*"
     },
     "license": "MIT",
     "authors": [
@@ -34,7 +34,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\RoAddresses\\AppServiceProvider"
+                "LaravelEnso\\RoAddresses\\AppServiceProvider",
+                "LaravelEnso\\RoAddresses\\EnumServiceProvider"
             ],
             "aliases": {}
         }
