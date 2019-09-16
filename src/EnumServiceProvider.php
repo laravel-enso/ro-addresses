@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\RoAddresses;
 
-use LaravelEnso\IO\EnumServiceProvider as ServiceProvider;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
+use LaravelEnso\IO\EnumServiceProvider as ServiceProvider;
 
 class EnumServiceProvider extends ServiceProvider
 {
