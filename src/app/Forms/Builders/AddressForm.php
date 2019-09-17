@@ -29,8 +29,9 @@ class AddressForm extends BaseAddressForm
 
     public function create()
     {
-        return $this->form->title('Insert')
+        return $this->form->title('Create')
             ->value('country_id', Country::whereName('Romania')->first()->id)
+            ->actions('store')
             ->create();
     }
 }
