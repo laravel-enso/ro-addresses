@@ -17,7 +17,7 @@ class AddressForm extends BaseAddressForm
 
     public function __construct()
     {
-        $this->form = (new Form($this->templatePath()))
+        $this->form = (new Form(static::TemplatePath))
             ->options('county_id', County::active()->get(['name', 'id']))
             ->options('sector', Sectors::select())
             ->value('country', 'Romania')
