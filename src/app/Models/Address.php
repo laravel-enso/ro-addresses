@@ -32,13 +32,4 @@ class Address extends Addresses
     {
         return optional($this->county)->name;
     }
-
-    public function getLabelAttribute()
-    {
-        return collect(config('enso.addresses.label.attributes'))
-            ->map(function ($attribute) {
-                return $this->$attribute;
-            })->filter()
-            ->implode(config('enso.addresses.label.separator'));
-    }
 }
