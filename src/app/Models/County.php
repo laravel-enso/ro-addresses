@@ -4,8 +4,9 @@ namespace LaravelEnso\RoAddresses\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\Helpers\app\Traits\ActiveState;
+use LaravelEnso\Helpers\app\Contracts\Activatable;
 
-class County extends Model
+class County extends Model implements Activatable
 {
     use ActiveState;
 

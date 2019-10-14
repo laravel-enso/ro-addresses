@@ -4,8 +4,9 @@ namespace LaravelEnso\RoAddresses\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\Helpers\app\Traits\ActiveState;
+use LaravelEnso\Helpers\app\Contracts\Activatable;
 
-class Locality extends Model
+class Locality extends Model implements Activatable
 {
     use ActiveState;
 
