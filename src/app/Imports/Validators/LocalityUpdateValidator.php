@@ -2,10 +2,10 @@
 
 namespace LaravelEnso\RoAddresses\app\Imports\Validators;
 
+use LaravelEnso\DataImport\app\Services\Validators\Validator;
 use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
-use LaravelEnso\DataImport\app\Services\Validators\Validator;
 
 class LocalityUpdateValidator extends Validator
 {

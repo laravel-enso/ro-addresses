@@ -2,10 +2,10 @@
 
 namespace LaravelEnso\RoAddresses\app\Imports\Importers;
 
+use LaravelEnso\DataImport\app\Contracts\Importable;
 use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
-use LaravelEnso\DataImport\app\Contracts\Importable;
 
 class LocalityUpdateImporter implements Importable
 {
