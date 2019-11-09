@@ -3,7 +3,8 @@
     "description": "Romanian Addreses extension for Addresses",
     "type": "library",
     "require": {
-        "laravel-enso/addresses": "3.2.*"
+        "laravel-enso/addresses": "3.3.*",
+        "laravel-enso/countries": "1.0.*"
     },
     "license": "MIT",
     "authors": [

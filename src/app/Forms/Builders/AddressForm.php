@@ -3,7 +3,7 @@
 namespace LaravelEnso\RoAddresses\app\Forms\Builders;
 
 use LaravelEnso\Forms\app\Services\Form;
-use LaravelEnso\Addresses\app\Models\Country;
+use LaravelEnso\Countries\app\Models\Country;
 use LaravelEnso\RoAddresses\app\Enums\Sectors;
 use LaravelEnso\RoAddresses\app\Models\County;
 use LaravelEnso\RoAddresses\app\Models\Locality;
