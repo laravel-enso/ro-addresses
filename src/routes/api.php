@@ -5,7 +5,7 @@ Route::middleware(['web', 'auth', 'core'])
     ->as('core.addresses.')
     ->namespace('LaravelEnso\RoAddresses\app\Http\Controllers')
     ->group(function () {
-        Route::get('localitiesOptions', 'LocalityOptions')->name('localitiesOptions');
-        Route::get('countiesOptions', 'CountyOptions')->name('countiesOptions');
-        Route::get('', 'Index')->name('index');
+        require 'app/counties.php';
+        require 'app/localities.php';
+        require 'app/addresses.php';
     });
