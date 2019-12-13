@@ -37,6 +37,14 @@ class AppServiceProvider extends ServiceProvider
 
     private function publishesDependencies()
     {
+        $this->publishSeeders()
+            ->publishConfig()
+            ->publishForm()
+            ->publishImport();
+    }
+
+    private function publishSeeders()
+    {
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
         ], 'ro-addresses-seeders');
@@ -45,20 +53,37 @@ class AppServiceProvider extends ServiceProvider
             __DIR__.'/database/seeds' => database_path('seeds'),
         ], 'enso-seeders');
 
+        return $this;
+    }
+
+    private function publishConfig()
+    {
         $this->publishes([
             __DIR__.'/config' => config_path('enso'),
         ], 'ro-addresses-config');
 
         $this->publishes([
+            __DIR__.'/config' => config_path('enso'),
+        ], 'enso-config');
+
+        return $this;
+    }
+
+    private function publishForm()
+    {
+        $this->publishes([
             __DIR__.'/app/Forms/Templates' => app_path('Forms/vendor/'),
         ], 'ro-addresses-form');
 
+        return $this;
+    }
+
+    private function publishImport()
+    {
         $this->publishes([
             __DIR__.'/app/Imports' => app_path('Imports/'),
         ], 'ro-addresses-import');
 
-        $this->publishes([
-            __DIR__.'/config' => config_path('enso'),
-        ], 'enso-config');
+        return $this;
     }
 }
