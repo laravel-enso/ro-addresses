@@ -15,9 +15,9 @@ class LocalityUpdateValidator extends Validator
 
         $localityCount = Locality::whereName($row->locality)
             ->where('county_id', $county->id)
-            ->when($row->township !== null, function ($query) use ($row) {
-                $query->whereTownship($row->township);
-            })->count();
+            ->when($row->township !== null, fn($query) => (
+                $query->whereTownship($row->township)
+            ))->count();
 
         if ($localityCount === 0) {
             $this->addError(__(

@@ -28,9 +28,9 @@ class LocalityUpdateImporter implements Importable
     {
         return Locality::whereName($row->locality)
             ->where('county_id', $this->countyId($row->county))
-            ->when($row->township !== null, function ($query) use ($row) {
-                $query->whereTownship($row->township);
-            })->first();
+            ->when($row->township !== null, fn($query) => (
+                $query->whereTownship($row->township)
+            ))->first();
     }
 
     private function countyId($county)

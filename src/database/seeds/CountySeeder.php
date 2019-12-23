@@ -10,10 +10,9 @@ class CountySeeder extends Seeder
 
     public function run()
     {
-        $this->counties()
-            ->each(function ($county) {
-                County::create($county + ['is_active' => true]);
-            });
+        $this->counties()->each(fn($county) => (
+            County::create($county + ['is_active' => true])
+        ));
     }
 
     public function counties()

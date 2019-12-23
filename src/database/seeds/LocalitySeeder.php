@@ -11,11 +11,10 @@ class LocalitySeeder extends Seeder
     public function run()
     {
         collect(File::files(self::Localities))
-            ->each(function ($file) {
-                DB::table('localities')->insert(
-                        $this->localities($file)
-                    );
-            });
+            ->each(fn($file) => (
+                DB::table('localities')
+                    ->insert($this->localities($file))
+            ));
     }
 
     public function localities($file)
