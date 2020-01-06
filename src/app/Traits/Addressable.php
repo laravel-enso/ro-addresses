@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Traits;
+namespace LaravelEnso\RoAddresses\App\Traits;
 
-use LaravelEnso\Addresses\app\Traits\Addressable as BaseAddressable;
-use LaravelEnso\RoAddresses\app\Models\Address;
+use LaravelEnso\RoAddresses\App\Models\Address;
+use LaravelEnso\Addresses\App\Traits\Addressable as BaseAddressable;
 
 trait Addressable
 {

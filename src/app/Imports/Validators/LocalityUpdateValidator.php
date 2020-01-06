@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Imports\Validators;
+namespace LaravelEnso\RoAddresses\App\Imports\Validators;
 
-use LaravelEnso\DataImport\app\Services\Validators\Validator;
-use LaravelEnso\Helpers\app\Classes\Obj;
-use LaravelEnso\RoAddresses\app\Models\County;
-use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\DataImport\App\Services\Validators\Validator;
+use LaravelEnso\Helpers\App\Classes\Obj;
+use LaravelEnso\RoAddresses\App\Models\County;
+use LaravelEnso\RoAddresses\App\Models\Locality;
 
 class LocalityUpdateValidator extends Validator
 {
@@ -15,9 +15,8 @@ class LocalityUpdateValidator extends Validator
 
         $localityCount = Locality::whereName($row->locality)
             ->where('county_id', $county->id)
-            ->when($row->township !== null, function ($query) use ($row) {
-                $query->whereTownship($row->township);
-            })->count();
+            ->when($row->township !== null, fn ($query) => $query->whereTownship($row->township))
+            ->count();
 
         if ($localityCount === 0) {
             $this->addError(__(

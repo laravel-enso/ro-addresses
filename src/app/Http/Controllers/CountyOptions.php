@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Http\Controllers;
+namespace LaravelEnso\RoAddresses\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\RoAddresses\app\Models\County;
-use LaravelEnso\Select\app\Traits\OptionsBuilder;
+use LaravelEnso\RoAddresses\App\Models\County;
+use LaravelEnso\Select\App\Traits\OptionsBuilder;
 
 class CountyOptions extends Controller
 {

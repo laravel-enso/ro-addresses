@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
-use LaravelEnso\RoAddresses\app\Models\County;
+use LaravelEnso\RoAddresses\App\Models\County;
 
 class CountySeeder extends Seeder
 {
@@ -11,15 +12,15 @@ class CountySeeder extends Seeder
     public function run()
     {
         $this->counties()
-            ->each(function ($county) {
-                County::create($county + ['is_active' => true]);
-            });
+            ->each(fn ($county) => County::create($county + [
+                'is_active' => true
+            ]));
     }
 
     public function counties()
     {
-        $counties = json_decode(File::get(self::CountiesJSON), true);
-
-        return collect($counties);
+        return new Collection(
+            json_decode(File::get(self::CountiesJSON), true)
+        );
     }
 }

@@ -3,12 +3,12 @@
 namespace LaravelEnso\RoAddresses;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\Addresses\app\Forms\Builders\AddressForm;
+use LaravelEnso\Addresses\App\Models\Address;
+use LaravelEnso\Addresses\App\Forms\Builders\AddressForm;
+use LaravelEnso\RoAddresses\App\Models\Address as RoAddress;
 use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressRequest;
-use LaravelEnso\Addresses\app\Models\Address;
-use LaravelEnso\RoAddresses\app\Forms\Builders\AddressForm as Form;
-use LaravelEnso\RoAddresses\app\Http\Requests\ValidateAddressRequest as ValidateRoAddressRequest;
-use LaravelEnso\RoAddresses\app\Models\Address as RoAddress;
+use LaravelEnso\RoAddresses\App\Forms\Builders\AddressForm as Form;
+use LaravelEnso\RoAddresses\App\Http\Requests\ValidateAddressRequest as ValidateRoAddressRequest;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -39,15 +39,11 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'ro-addresses-seeders');
-
-        $this->publishes([
-            __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'enso-seeders');
+        ], ['ro-addresses-seeders', 'enso-seeders']);
 
         $this->publishes([
             __DIR__.'/config' => config_path('enso'),
-        ], 'ro-addresses-config');
+        ], ['ro-addresses-config', 'enso-config']);
 
         $this->publishes([
             __DIR__.'/app/Forms/Templates' => app_path('Forms/vendor/'),
@@ -56,9 +52,5 @@ class AppServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/app/Imports' => app_path('Imports/'),
         ], 'ro-addresses-import');
-
-        $this->publishes([
-            __DIR__.'/config' => config_path('enso'),
-        ], 'enso-config');
     }
 }

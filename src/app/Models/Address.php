@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Models;
+namespace LaravelEnso\RoAddresses\App\Models;
 
-use LaravelEnso\Addresses\app\Models\Address as Addresses;
+use LaravelEnso\Addresses\App\Models\Address as Addresses;
 
 class Address extends Addresses
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Http\Controllers;
+namespace LaravelEnso\RoAddresses\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use LaravelEnso\RoAddresses\App\Models\Address;
 use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressFetch;
-use LaravelEnso\RoAddresses\app\Http\Resources\Address as Resource;
-use LaravelEnso\RoAddresses\app\Models\Address;
+use LaravelEnso\RoAddresses\App\Http\Resources\Address as Resource;
 
 class Index extends Controller
 {
