@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
@@ -10,23 +11,19 @@ class LocalitySeeder extends Seeder
 
     public function run()
     {
-        collect(File::files(self::Localities))
-            ->each(function ($file) {
-                DB::table('localities')->insert(
-                        $this->localities($file)
-                    );
-            });
+        (new Collection(File::files(self::Localities)))
+            ->each(fn ($file) => DB::table('localities')->insert(
+                $this->localities($file)
+            ));
     }
 
-    public function localities($file)
+    public function localities($file): array
     {
         $fileName = self::Localities.DIRECTORY_SEPARATOR.$file->getFileName();
         $localities = json_decode(File::get($fileName), true);
 
-        return collect($localities)->map(function ($locality) {
-            $locality['is_active'] = true;
-
-            return $locality;
-        })->toArray();
+        return (new Collection($localities))
+            ->map(fn ($locality) => ['is_active' => true] + $locality)
+            ->toArray();
     }
 }

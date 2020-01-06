@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Http\Controllers;
+namespace LaravelEnso\RoAddresses\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use LaravelEnso\RoAddresses\app\Models\Locality;
-use LaravelEnso\Select\app\Traits\OptionsBuilder;
+use LaravelEnso\RoAddresses\App\Models\Locality;
+use LaravelEnso\Select\App\Traits\OptionsBuilder;
 
 class LocalityOptions extends Controller
 {

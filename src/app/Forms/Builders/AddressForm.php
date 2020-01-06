@@ -1,13 +1,13 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Forms\Builders;
+namespace LaravelEnso\RoAddresses\App\Forms\Builders;
 
-use LaravelEnso\Addresses\app\Forms\Builders\AddressForm as BaseAddressForm;
-use LaravelEnso\Countries\app\Models\Country;
-use LaravelEnso\Forms\app\Services\Form;
-use LaravelEnso\RoAddresses\app\Enums\Sectors;
-use LaravelEnso\RoAddresses\app\Models\County;
-use LaravelEnso\RoAddresses\app\Models\Locality;
+use LaravelEnso\Addresses\App\Forms\Builders\AddressForm as BaseAddressForm;
+use LaravelEnso\Countries\App\Models\Country;
+use LaravelEnso\Forms\App\Services\Form;
+use LaravelEnso\RoAddresses\App\Enums\Sectors;
+use LaravelEnso\RoAddresses\App\Models\County;
+use LaravelEnso\RoAddresses\App\Models\Locality;
 
 class AddressForm extends BaseAddressForm
 {
@@ -27,7 +27,7 @@ class AddressForm extends BaseAddressForm
             );
     }
 
-    public function create()
+    public function create(): void
     {
         return $this->form->title('Create')
             ->value('country_id', Country::whereName('Romania')->first()->id)
