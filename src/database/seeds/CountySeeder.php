@@ -13,7 +13,7 @@ class CountySeeder extends Seeder
     {
         $this->counties()
             ->each(fn ($county) => County::create($county + [
-                'is_active' => true
+                'is_active' => true,
             ]));
     }
 

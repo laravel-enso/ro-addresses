@@ -1,7 +1,7 @@
  <?php
 
-use LaravelEnso\Permissions\app\Enums\Types;
 use LaravelEnso\Migrator\App\Database\Migration;
+use LaravelEnso\Permissions\app\Enums\Types;
 
 class CreateStructureForCounties extends Migration
 {

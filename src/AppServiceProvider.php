@@ -3,12 +3,12 @@
 namespace LaravelEnso\RoAddresses;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\Addresses\App\Models\Address;
 use LaravelEnso\Addresses\App\Forms\Builders\AddressForm;
-use LaravelEnso\RoAddresses\App\Models\Address as RoAddress;
 use LaravelEnso\Addresses\App\Http\Requests\ValidateAddressRequest;
+use LaravelEnso\Addresses\App\Models\Address;
 use LaravelEnso\RoAddresses\App\Forms\Builders\AddressForm as Form;
 use LaravelEnso\RoAddresses\App\Http\Requests\ValidateAddressRequest as ValidateRoAddressRequest;
+use LaravelEnso\RoAddresses\App\Models\Address as RoAddress;
 
 class AppServiceProvider extends ServiceProvider
 {

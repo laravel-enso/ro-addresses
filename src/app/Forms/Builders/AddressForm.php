@@ -2,12 +2,12 @@
 
 namespace LaravelEnso\RoAddresses\App\Forms\Builders;
 
-use LaravelEnso\Forms\App\Services\Form;
+use LaravelEnso\Addresses\App\Forms\Builders\AddressForm as BaseAddressForm;
 use LaravelEnso\Countries\App\Models\Country;
+use LaravelEnso\Forms\App\Services\Form;
 use LaravelEnso\RoAddresses\App\Enums\Sectors;
 use LaravelEnso\RoAddresses\App\Models\County;
 use LaravelEnso\RoAddresses\App\Models\Locality;
-use LaravelEnso\Addresses\App\Forms\Builders\AddressForm as BaseAddressForm;
 
 class AddressForm extends BaseAddressForm
 {
