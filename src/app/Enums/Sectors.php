@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelEnso\RoAddresses\app\Enums;
+namespace LaravelEnso\RoAddresses\App\Enums;
 
-use LaravelEnso\Enums\app\Services\Enum;
+use LaravelEnso\Enums\App\Services\Enum;
 
 class Sectors extends Enum
 {
