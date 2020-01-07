@@ -17,7 +17,7 @@ class AddressForm extends BaseAddressForm
     {
         $this->prepare();
         $this->form->value('country_id', Country::whereName('Romania')->first()->id);
-        
+
         return parent::create();
     }
 
