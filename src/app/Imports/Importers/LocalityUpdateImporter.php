@@ -34,8 +34,6 @@ class LocalityUpdateImporter implements Importable
 
     private function countyId($county)
     {
-        return County::whereName($county)
-            ->first()
-            ->id;
+        return County::whereName($county)->first()->id;
     }
 }

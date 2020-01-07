@@ -6,7 +6,7 @@ use LaravelEnso\Enums\App\Services\Enum;
 
 class Sectors extends Enum
 {
-    protected static $data = [
+    protected static array $data = [
         1 => '1',
         2 => '2',
         3 => '3',
