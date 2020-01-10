@@ -5,7 +5,7 @@ namespace LaravelEnso\RoAddresses\App\Forms\Builders;
 use LaravelEnso\Addresses\App\Forms\Builders\AddressForm as BaseAddressForm;
 use LaravelEnso\Countries\App\Models\Country;
 use LaravelEnso\RoAddresses\App\Enums\Sectors;
-use LaravelEnso\RoAddresses\App\Models\Address;
+use LaravelEnso\Addresses\App\Models\Address;
 use LaravelEnso\RoAddresses\App\Models\County;
 use LaravelEnso\RoAddresses\App\Models\Locality;
 
