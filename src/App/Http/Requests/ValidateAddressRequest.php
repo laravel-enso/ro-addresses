@@ -14,7 +14,7 @@ class ValidateAddressRequest extends ValidateBaseAddressRequest
             ->merge([
                 'county_id' => 'required',
                 'locality_id' => 'required',
-                'neighbourhood' => 'nullable|max:255'
+                'neighbourhood' => 'nullable|max:255',
             ])
             ->toArray();
     }
