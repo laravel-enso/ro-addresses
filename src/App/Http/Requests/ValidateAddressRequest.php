@@ -11,7 +11,11 @@ class ValidateAddressRequest extends ValidateBaseAddressRequest
     {
         return (new Collection(parent::rules()))
             ->except(['city', 'sub_administrative_area', 'administrative_area'])
-            ->merge(['county_id' => 'required', 'locality_id' => 'required'])
+            ->merge([
+                'county_id' => 'required',
+                'locality_id' => 'required',
+                'neighbourhood' => 'nullable|max:255'
+            ])
             ->toArray();
     }
 }
