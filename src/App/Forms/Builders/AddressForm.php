@@ -33,9 +33,11 @@ class AddressForm extends BaseAddressForm
         $this->form->options('county_id', County::active()->get(['name', 'id']))
             ->options('sector', Sectors::select())
             ->value('country', 'Romania')
-            ->append(
-                'bucharestId',
-                Locality::whereName('Bucuresti')->first()->id
-            );
+            ->append('bucharestId', optional($this->capital())->id);
+    }
+
+    private function capital(): ?Locality
+    {
+        return Locality::whereName('Bucuresti')->first();
     }
 }

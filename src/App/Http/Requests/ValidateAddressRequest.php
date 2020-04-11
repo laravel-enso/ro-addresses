@@ -15,7 +15,6 @@ class ValidateAddressRequest extends ValidateBaseAddressRequest
                 'county_id' => 'required',
                 'locality_id' => 'required',
                 'neighbourhood' => 'nullable|max:255',
-            ])
-            ->toArray();
+            ])->toArray();
     }
 }

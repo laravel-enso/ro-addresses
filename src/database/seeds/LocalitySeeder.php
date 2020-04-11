@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use LaravelEnso\Helpers\App\Classes\JsonReader;
 
 class LocalitySeeder extends Seeder
 {
@@ -11,19 +12,22 @@ class LocalitySeeder extends Seeder
 
     public function run()
     {
-        (new Collection(File::files(self::Localities)))
-            ->each(fn ($file) => DB::table('localities')->insert(
-                $this->localities($file)
-            ));
+        $this->counties()->each(fn ($county) => DB::table('localities')
+            ->insert($this->localities($county)));
     }
 
-    public function localities($file): array
+    private function localities($county): array
     {
-        $fileName = self::Localities.DIRECTORY_SEPARATOR.$file->getFileName();
-        $localities = json_decode(File::get($fileName), true);
+        $fileName = self::Localities.DIRECTORY_SEPARATOR.$county->getFileName();
 
-        return (new Collection($localities))
+        return (new JsonReader($fileName))->collection()
             ->map(fn ($locality) => ['is_active' => true] + $locality)
             ->toArray();
+    }
+
+    private function counties(): Collection
+    {
+        return (new Collection(File::files(self::Localities)))
+            ->when(App::runningUnitTests(), fn ($counties) => $counties->slice(0, 1));
     }
 }
