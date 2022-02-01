@@ -1,10 +1,10 @@
+risky: true
+
 preset: laravel
 
 enabled:
   - strict
   - unalign_double_arrow
-  - phpdoc_order
-  - phpdoc_separation
 
 disabled:
   - short_array_syntax
